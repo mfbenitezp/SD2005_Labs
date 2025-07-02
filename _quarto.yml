@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "SD2005_Labs"
-  author: "Norah Jones"
+  title: "SD2005 Labs"
+  author: "Fernando Benitez-Paez"
   date: "7/2/2025"
   chapters:
     - index.qmd
