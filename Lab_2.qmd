@@ -1,5 +1,5 @@
-# Lab No 2: Create a Map Lab
-
+# Lab No 2: Create a Map Lab {.unnumbered}
+ 
 **Objective:** Add a data layer to a new map and start visualizing patterns
 
 ## Download and Examine the Data
