@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SD2005_Labs - 3&nbsp; Lab No 2: Create a Map Lab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./Lab_1.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lab_2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lab No 2: Create a Map Lab</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">SD2005_Labs</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab No 1: Getting Started with ArcGIS Online</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lab No 2: Create a Map Lab</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#download-and-examine-the-data" id="toc-download-and-examine-the-data" class="nav-link active" data-scroll-target="#download-and-examine-the-data"><span class="header-section-number">3.1</span> Download and Examine the Data</a></li>
+  <li><a href="#create-a-map-layer" id="toc-create-a-map-layer" class="nav-link" data-scroll-target="#create-a-map-layer"><span class="header-section-number">3.2</span> Create a Map Layer</a></li>
+  <li><a href="#change-the-basemap-and-layer-style" id="toc-change-the-basemap-and-layer-style" class="nav-link" data-scroll-target="#change-the-basemap-and-layer-style"><span class="header-section-number">3.3</span> Change the Basemap and Layer Style</a></li>
+  <li><a href="#configure-pop-ups-and-view-a-table" id="toc-configure-pop-ups-and-view-a-table" class="nav-link" data-scroll-target="#configure-pop-ups-and-view-a-table"><span class="header-section-number">3.4</span> Configure Pop-ups and View a Table</a></li>
+  <li><a href="#style-the-layer-in-another-way" id="toc-style-the-layer-in-another-way" class="nav-link" data-scroll-target="#style-the-layer-in-another-way"><span class="header-section-number">3.5</span> Style the Layer in Another Way</a></li>
+  <li><a href="#update-the-item-details" id="toc-update-the-item-details" class="nav-link" data-scroll-target="#update-the-item-details"><span class="header-section-number">3.6</span> Update the Item Details</a></li>
+  <li><a href="#submit-your-work" id="toc-submit-your-work" class="nav-link" data-scroll-target="#submit-your-work"><span class="header-section-number">3.7</span> Submit Your Work</a></li>
+  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next"><span class="header-section-number">3.8</span> What’s Next?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lab No 2: Create a Map Lab</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><strong>Objective:</strong> Add a data layer to a new map and start visualizing patterns</p>
+<section id="download-and-examine-the-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="download-and-examine-the-data"><span class="header-section-number">3.1</span> Download and Examine the Data</h2>
+<p>First, you will download a .csv file that contains general information about public high schools in Detroit, Michigan.</p>
+<ol type="1">
+<li>Download the <a href="https://arcgis.com/sharing/rest/content/items/66d7523c560c4ca894b1acf70a2f8005/data">DetroitSchoolCharacteristics.csv</a> file to your computer and open it in Microsoft Excel or another spreadsheet program like Google Sheets.</li>
+</ol>
+<p>You will see a table with columns of longitude, latitude, school name, total students eligible for free and reduced meal plans, and race and ethnicity data. This data comes from the National Center for Education Statistics’ (NCES) Education Demographic and Geographic Estimate (EDGE) program.</p>
+<p>It’s hard to visualize where these schools are located or any patterns in the information from the table alone. Making a map is a better way to understand your data than viewing it as a table, so that’s your next task.</p>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> You can find data about public schools across the United States in the <a href="https://arcgis.com/home/item.html?id=5cd68dad64f641f6b847367493e92657">Public School Characteristics - Current</a> layer.</p>
+</blockquote>
+<ol start="2" type="1">
+<li>Close the .csv file.</li>
+</ol>
+</section>
+<section id="create-a-map-layer" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="create-a-map-layer"><span class="header-section-number">3.2</span> Create a Map Layer</h2>
+<p>Layers are the way geographic data is organized and combined to create maps. For example, a map may consist of a roads layer, a lakes layer, and buildings layer. These layers are also the basis for geographic analysis to aid in decision making. You will create a map layer by adding your .csv file to an empty map.</p>
+<ol type="1">
+<li>Sign in to your <a href="https://www.arcgis.com/home/signin.html">ArcGIS organizational account</a> or into ArcGIS Enterprise using a named user account.</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> If you don’t have an organizational account, <a href="https://learn.arcgis.com/en/become-a-member/">see options for software access</a>.</p>
+</blockquote>
+<ol start="2" type="1">
+<li><p>On the ribbon, click the <strong>Map</strong> tab.</p></li>
+<li><p>In Map Viewer, in the Layers pane, click the arrow next to the <strong>Add</strong> button and click <strong>Add layer from file</strong>.</p></li>
+</ol>
+<p>The Add Layer window appears.</p>
+<ol start="4" type="1">
+<li>Drag the DetroitSchoolCharacteristics.csv file to the Add Layer window.</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> Alternatively, click <strong>Your device</strong> and browse to the .csv file.</p>
+</blockquote>
+<ol start="5" type="1">
+<li>For <strong>How would you like to add this file</strong>, choose <strong>Create a hosted feature layer and add it to the map</strong>. Click <strong>Next</strong>.</li>
+</ol>
+<p>A list of fields appears. Map layers consist of spatial and tabular information. The table will contain the same columns—also called fields or attributes—as the .csv file. On this page, you can choose which fields from the .csv file you want to include, provide display names, and data type information.</p>
+<p>The software automatically detected the fields and produced default display name and data types. This page is an opportunity for you to review that the automatic assignments are accurate.</p>
+<p>In this example, you will choose to include all the fields, so you won’t adjust the check boxes.</p>
+<p><strong>Display name</strong> sets a nickname or shortened name of the field name that is more readily understandable to others. Field names cannot include spaces or numbers, so sometimes you may want these in the display name. Setting Display name allows you to provide meaningful names without changing the Field name text.</p>
+<p><strong>Type</strong> describes the data you will store in the field: - <strong>Date</strong>—Date and time. - <strong>Double</strong>—Numbers with decimal places. - <strong>Integer</strong>—Whole numbers from -2,147,483,648 to 2,147,483,647 (long integer). - <strong>Big Integer</strong>—Whole numbers between -(2^53) and 2^53. - <strong>String</strong>—Any sequence of characters. The default length is 256 characters.</p>
+<p>You will accept all the default settings and continue.</p>
+<ol start="6" type="1">
+<li>Click <strong>Next</strong>.</li>
+</ol>
+<p>The Location settings page appears. Spatial information for the layer will be derived from the Latitude and Longitude columns in the .csv file.</p>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> If your table contains the names or addresses of locations (like Paris or 15 Central St.&nbsp;Bethlehem, PA) instead of latitude and longitude fields, try this tutorial about geocoding data: <a href="https://learn.arcgis.com/en/projects/convert-a-list-of-historic-places-into-a-map/arcgis-online/">Convert a list of historic places into a map</a>.</p>
+</blockquote>
+<ol start="7" type="1">
+<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>For <strong>Title</strong>, type “Detroit high schools” followed by your name or initials (for example “Detroit high school (Your name)”).</p></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> You cannot create two layers in an ArcGIS organization with the same name. Adding your initials to a layer name ensures that other people in your organization can also complete this tutorial. Once a layer has been created, you can rename it in the map to remove your initials, which will not affect the name of the underlying data layer.</p>
+</blockquote>
+<ol start="9" type="1">
+<li>Click <strong>Create and add to map</strong>.</li>
+</ol>
+<p>The new layer appears on the map. The map displays the locations of the schools listed in the .csv file. Each school is considered a feature in the layer. You have access to the descriptive information, or attributes, by viewing pop-ups for features on the map.</p>
+<ol start="10" type="1">
+<li>On the map, click any circle.</li>
+</ol>
+<p>A pop-up window appears with information about the school from the layer’s table.</p>
+<ol start="11" type="1">
+<li>Close the pop-up.</li>
+</ol>
+<p>Before you continue, you will save the map.</p>
+<ol start="12" type="1">
+<li><p>In the Contents pane, click <strong>Save and open</strong> and click <strong>Save as</strong>.</p></li>
+<li><p>In the Save map window, enter the following:</p>
+<ul>
+<li>For <strong>Title</strong>, type “Public high schools in Detroit”.</li>
+<li>For <strong>Summary</strong>, type “Map of public high schools and student body race and ethnicity data in Detroit, Michigan”.</li>
+</ul></li>
+<li><p>Click <strong>Save</strong>.</p></li>
+</ol>
+</section>
+<section id="change-the-basemap-and-layer-style" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="change-the-basemap-and-layer-style"><span class="header-section-number">3.3</span> Change the Basemap and Layer Style</h2>
+<p>Maps in ArcGIS Online consist of layers. You added the Detroit high schools layer, but the map also has a basemap layer by default. Next, you’ll change the basemap layer and the style of the feature layer.</p>
+<ol type="1">
+<li>On the Contents (dark) toolbar, click <strong>Basemap</strong>.</li>
+</ol>
+<p>The Basemap pane appears. The Topographic basemap is selected. This basemap looks good but is better suited for a reference map. You’ll choose a more minimally designed basemap so it does not distract from the school data.</p>
+<ol start="2" type="1">
+<li>In the Basemap pane, click <strong>Light Gray Canvas</strong>. Close the Basemap pane.</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> You may see different basemaps depending on the configuration of your organization. If the Light Gray Canvas basemap is not available, skip to the next step without changing the basemap.</p>
+</blockquote>
+<p>Next, you’ll configure the high school layer’s symbols so they are sized based on the number of students at each school eligible for free and reduced meal plan programs.</p>
+<ol start="3" type="1">
+<li>On the Settings (light) toolbar, click <strong>Styles</strong>.</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> If the Settings toolbar is unavailable, on the Contents toolbar, click <strong>Layers</strong>. In the Layers pane, click <strong>Detroit high schools</strong> to select the layer.</p>
+</blockquote>
+<p>The Styles pane appears. Currently, the style is based on the data’s location only. You’ll configure the symbols to convey both location and one of the data’s attributes.</p>
+<ol start="4" type="1">
+<li>In the Styles pane, click the <strong>Field</strong> button.</li>
+</ol>
+<p>You will choose to style the map by the number of students at each high school who are eligible for free and reduced price meal (FRPM).</p>
+<p><a href="https://www.fns.usda.gov/cn/fr-020923">Eligibility for FRPM</a> is set by U.S. Department of Agriculture Child Nutrition Programs and is based on Federal poverty guidelines issued by the Department of Health and Human Services. The number or percent of students eligible for FRPM is often used as an equity indicator to understand the needs of school-aged children.</p>
+<ol start="5" type="1">
+<li>On the Select fields menu, choose <strong>Total of free lunch and reduced-price lunch eligible</strong> and click <strong>Add</strong>.</li>
+</ol>
+<p>The options under Pick a style update to reflect choices that are suitable for the Total of free lunch and reduced price lunch eligible field. <strong>Counts and Amounts (size)</strong> is selected and the map updates to reflect this style. This style reveals some new patterns in the data. The larger the circle, the more students are eligible for FRPM at the school.</p>
+<ol start="6" type="1">
+<li><p>On the <strong>Counts and Amounts (Size)</strong> card, click <strong>Style options</strong>.</p></li>
+<li><p>In the Counts and Amounts (size) pane, for <strong>Symbol style</strong>, click the current symbol.</p></li>
+</ol>
+<p>The Symbol style window appears. You’ll adjust the symbol’s properties so circles can be seen even when they are overlapping.</p>
+<ol start="8" type="1">
+<li>Set <strong>Fill transparency</strong> to 25. Set <strong>Outline transparency</strong> to 0.</li>
+</ol>
+<p>The symbols on the map update. It is now easier to see overlapping circles.</p>
+<ol start="9" type="1">
+<li>In the Symbol style window, for <strong>Fill color</strong>, click the current color. In the Select color window, for <strong>#</strong>, type <strong>0070FF</strong> and press Enter.</li>
+</ol>
+<p>The color of the map symbols changes to blue.</p>
+<ol start="10" type="1">
+<li>Click <strong>Done</strong> in the Select color window, the Style options pane, and the Styles pane.</li>
+</ol>
+<p>The map shows the number of students at each high school who are eligible for FRPM programs. The schools with more students who are eligible for FRPM programs are represented by larger circles. Schools represented with smaller circles have fewer students who are eligible for FRPM programs.</p>
+<ol start="11" type="1">
+<li>On the Contents pane, click <strong>Save and open</strong> and click <strong>Save</strong> to save your map.</li>
+</ol>
+</section>
+<section id="configure-pop-ups-and-view-a-table" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="configure-pop-ups-and-view-a-table"><span class="header-section-number">3.4</span> Configure Pop-ups and View a Table</h2>
+<p>The pop-up that you viewed earlier displayed all the attributes for the features, which may be unnecessary for your map. You can configure pop-ups to show only those attributes that are important to your map. In this example, you want to show only the name of the school and the number of students eligible for FRPM programs.</p>
+<ol type="1">
+<li><p>In the Layers pane, ensure that the <strong>Detroit high schools</strong> layer is selected.</p></li>
+<li><p>On the Settings toolbar, click <strong>Pop-ups</strong>.</p></li>
+</ol>
+<p>The Pop-ups pane appears and a sample pop-up appears on the map. The pop-up’s title contains the name of the layer and the name of the school. This title is unnecessary for your map, so you’ll remove it.</p>
+<ol start="3" type="1">
+<li>In the Pop-ups pane, click <strong>Title</strong>. Erase the text in the box.</li>
+</ol>
+<p>The title text disappears from the sample pop-up. You’ll replace the list of fields with a sentence that includes the relevant information.</p>
+<ol start="4" type="1">
+<li><p>Next to <strong>Fields list</strong>, click the <strong>Options</strong> button. Click <strong>Delete</strong>.</p></li>
+<li><p>Click <strong>Add content</strong> and click <strong>Text</strong>.</p></li>
+<li><p>In the text editing window, type <strong>{</strong>. In the menu that appears, scroll almost to the bottom and click <strong>School name</strong>.</p></li>
+</ol>
+<p>The School_name field was one of the fields in the .csv file you used to create the feature layer. By setting the dynamic text to this field, the pop-up that displays for each school point will display the corresponding School_name field.</p>
+<ol start="7" type="1">
+<li>After <strong>{School_name}</strong>, type <strong>enrolled {Total_elementary_secondary_stud} students during the 2019-2020 school year.</strong></li>
+</ol>
+<p>You can add fields by typing their names inside of curly brackets or by choosing them from the list that appears when you type a curly bracket.</p>
+<ol start="8" type="1">
+<li><p>Press Enter to start a new paragraph. Type <strong>{Total_of_free_lunch_and_reduced} of those students were eligible for the free and reduced meal plan program.</strong></p></li>
+<li><p>Use the <strong>Bold</strong> button on the toolbar to add bold formatting to <strong>{School_name}</strong>, <strong>{Total_elementary_secondary_stud}</strong>, and <strong>{Total_of_free_lunch_and_reduced}</strong>.</p></li>
+<li><p>Click <strong>OK</strong>.</p></li>
+</ol>
+<p>The preview pop-up replaces the field names with the attribute values of one of the features.</p>
+<p>All the fields still exist in the data table, but they don’t display in the pop-up. You can modify the contents of the pop-up at any time. You can still see all the attributes by showing the table.</p>
+<ol start="11" type="1">
+<li>In the Layers pane, next to <strong>Detroit high schools</strong>, click the <strong>Options</strong> button. Click <strong>Show table</strong>.</li>
+</ol>
+<p>The layer’s table appears below the map.</p>
+<ol start="12" type="1">
+<li><p>Review the data in the table. Close the table when you are finished.</p></li>
+<li><p>Close the Pop-ups pane.</p></li>
+<li><p>Save the map.</p></li>
+</ol>
+</section>
+<section id="style-the-layer-in-another-way" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="style-the-layer-in-another-way"><span class="header-section-number">3.5</span> Style the Layer in Another Way</h2>
+<p>Your goal is to identify which schools would most benefit from more after-school programs. You have styled the school data by the number of students eligible for FRPM. But there are other aspects of equity that are also important to consider. Due to historic and present-day practices, race and ethnicity can play a critical role in how many resources and opportunities students have at their schools. Practices like segregation in schools and neighborhoods have widened inequities in resource allocation to schools.</p>
+<p>Next, you will style the schools to show the race and ethnicity of the student body. First, you will rename the layer you had previously styled to show FRPM eligibility.</p>
+<ol type="1">
+<li><p>In the Layers pane, for the <strong>Detroit high schools</strong> layer, click the <strong>Options</strong> button and click <strong>Rename</strong>.</p></li>
+<li><p>For <strong>Title</strong>, type <strong>Students FRPM eligible</strong> and click <strong>OK</strong>.</p></li>
+</ol>
+<p>Next, you will make a copy of the layer.</p>
+<ol start="3" type="1">
+<li><p>For the <strong>Students FRPM eligible</strong> layer, click the <strong>Options</strong> button and click <strong>Duplicate</strong>.</p></li>
+<li><p>Rename the copied layer to be <strong>Race and ethnicity data</strong>.</p></li>
+<li><p>Next to <strong>Students FRPM eligible</strong>, click the <strong>Visibility</strong> button to hide the layer on the map.</p></li>
+</ol>
+<p>Next, you will style the Race and ethnicity data layer with race and ethnicity attributes.</p>
+<ol start="6" type="1">
+<li><p>Ensure that the <strong>Race and ethnicity data</strong> layer is selected in the Layers pane. In the Styles pane, remove the <strong>Total FRPM eligible</strong> attribute.</p></li>
+<li><p>Click the <strong>Field</strong> button.</p></li>
+<li><p>In the Add fields window, check the following fields:</p>
+<ul>
+<li>All students - American Indian/Alaska Native</li>
+<li>All students - Asian</li>
+<li>All Students - Black or African American</li>
+<li>All Students - Native Hawai’ian or Other Pacific Islander</li>
+<li>All Students - Hispanic</li>
+<li>All Students - Two or More Races</li>
+<li>All Students - White</li>
+</ul></li>
+<li><p>Click <strong>Add</strong>.</p></li>
+<li><p>Under <strong>Pick a style</strong>, click the <strong>Charts and Size</strong> style.</p></li>
+</ol>
+<p>The layer style updates.</p>
+<p>The map now shows pie charts of the student body’s race and ethnicity categories. The sizes of the pie charts represent the number of students at the schools.</p>
+<ol start="11" type="1">
+<li>Save the map.</li>
+</ol>
+</section>
+<section id="update-the-item-details" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="update-the-item-details"><span class="header-section-number">3.6</span> Update the Item Details</h2>
+<p>Your map now tells a story about the locations and some socioeconomic attributes of public high schools. For example, the school with the largest number of students eligible for FRPM programs is Western International High School in southwest Detroit. Many of the schools have a high percentage of students who identify as Black or African American. In southwest Detroit, there are more schools with higher percentages of Hispanic or Latino students.</p>
+<p>By saving your map, you also created a corresponding item page that contains information, actions, options, and settings for the map.</p>
+<ol type="1">
+<li>On the Contents toolbar, click <strong>Map properties</strong>. In the Map Properties pane, click <strong>Item details</strong>.</li>
+</ol>
+<p>Your map’s item page opens in a new browser tab. The item details are missing important attribution and descriptive information that you will fill in before you share the map. For example, you must give credit to the data providers.</p>
+<ol start="2" type="1">
+<li><p>Scroll to the bottom of the page. Next to <strong>Credits (Attribution)</strong>, click <strong>Edit</strong>.</p></li>
+<li><p>Type <strong>National Center for Education Statistics’ (NCES) Education Demographic and Geographic Estimates (EDGE)</strong>. Click <strong>Save</strong>.</p></li>
+<li><p>Close the item page’s tab.</p></li>
+</ol>
+</section>
+<section id="submit-your-work" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="submit-your-work"><span class="header-section-number">3.7</span> Submit Your Work</h2>
+<p>To demonstrate completion of this lab, take a screenshot that includes your entire computer screen showing your completed map. Ensure that the date and time are visible on your screen (either in the system taskbar or by opening the system clock). This screenshot will allow the instructor to validate that you have successfully completed the mapping exercise.</p>
+<p>Submit your screenshot through the designated course submission portal.</p>
+</section>
+<section id="whats-next" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="whats-next"><span class="header-section-number">3.8</span> What’s Next?</h2>
+<p>You have created a web map with a .csv file of school location and demographic data. Now that you have the data mapped, you have more ideas for how to share and explore potential after-school program needs in your city.</p>
+<p>You can create a web app to display your map data in an interactive way so viewers can explore the data without editing the map. There are many ways you can use your web map to visualize data, understand problems, determine informed solutions, and discover what else is possible.</p>
+<p>You can find more tutorials in the <a href="https://learn.arcgis.com/en/gallery/">tutorial gallery</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Lab_1.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab No 1: Getting Started with ArcGIS Online</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

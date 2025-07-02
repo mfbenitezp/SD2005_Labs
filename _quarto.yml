@@ -9,6 +9,8 @@ book:
     - index.qmd
     - intro.qmd
     - summary.qmd
+    - Lab_1.qmd
+    - Lab_2.qmd
     - references.qmd
 
 bibliography: references.bib

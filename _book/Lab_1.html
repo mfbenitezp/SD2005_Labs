@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SD2005_Labs - Lab No 1: Getting Started with ArcGIS Online</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Lab_2.html" rel="next">
+<link href="./summary.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lab_1.html">Lab No 1: Getting Started with ArcGIS Online</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">SD2005_Labs</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab No 1: Getting Started with ArcGIS Online</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lab No 2: Create a Map Lab</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#mapping-census-data-for-emergency-planning" id="toc-mapping-census-data-for-emergency-planning" class="nav-link active" data-scroll-target="#mapping-census-data-for-emergency-planning">Mapping Census Data for Emergency Planning</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><strong>Background</strong></a></li>
+  </ul></li>
+  <li><a href="#part-1-begin-a-map" id="toc-part-1-begin-a-map" class="nav-link" data-scroll-target="#part-1-begin-a-map"><strong>Part 1: Begin a Map</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-access-arcgis-online" id="toc-step-1-access-arcgis-online" class="nav-link" data-scroll-target="#step-1-access-arcgis-online">Step 1: Access ArcGIS Online</a></li>
+  <li><a href="#step-2-navigate-to-your-area-of-interest" id="toc-step-2-navigate-to-your-area-of-interest" class="nav-link" data-scroll-target="#step-2-navigate-to-your-area-of-interest">Step 2: Navigate to Your Area of Interest</a></li>
+  </ul></li>
+  <li><a href="#part-2-add-a-layer" id="toc-part-2-add-a-layer" class="nav-link" data-scroll-target="#part-2-add-a-layer"><strong>Part 2: Add a Layer</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-manage-layer-groups" id="toc-step-1-manage-layer-groups" class="nav-link" data-scroll-target="#step-1-manage-layer-groups">Step 1: Manage Layer Groups</a></li>
+  </ul></li>
+  <li><a href="#part-3-style-demographic-data" id="toc-part-3-style-demographic-data" class="nav-link" data-scroll-target="#part-3-style-demographic-data"><strong>Part 3: Style Demographic Data</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-select-styling-options" id="toc-step-1-select-styling-options" class="nav-link" data-scroll-target="#step-1-select-styling-options">Step 1: Select Styling Options</a></li>
+  <li><a href="#step-2-customize-symbol-style" id="toc-step-2-customize-symbol-style" class="nav-link" data-scroll-target="#step-2-customize-symbol-style">Step 2: Customize Symbol Style</a></li>
+  <li><a href="#step-3-rename-the-layer" id="toc-step-3-rename-the-layer" class="nav-link" data-scroll-target="#step-3-rename-the-layer">Step 3: Rename the Layer</a></li>
+  </ul></li>
+  <li><a href="#part-4-change-the-basemap" id="toc-part-4-change-the-basemap" class="nav-link" data-scroll-target="#part-4-change-the-basemap"><strong>Part 4: Change the Basemap</strong></a></li>
+  <li><a href="#part-5-filter-the-map" id="toc-part-5-filter-the-map" class="nav-link" data-scroll-target="#part-5-filter-the-map"><strong>Part 5: Filter the Map</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-create-a-geographic-filter" id="toc-step-1-create-a-geographic-filter" class="nav-link" data-scroll-target="#step-1-create-a-geographic-filter">Step 1: Create a Geographic Filter</a></li>
+  </ul></li>
+  <li><a href="#part-6-emphasize-the-top-tracts" id="toc-part-6-emphasize-the-top-tracts" class="nav-link" data-scroll-target="#part-6-emphasize-the-top-tracts"><strong>Part 6: Emphasize the Top Tracts</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-examine-the-attribute-table" id="toc-step-1-examine-the-attribute-table" class="nav-link" data-scroll-target="#step-1-examine-the-attribute-table">Step 1: Examine the Attribute Table</a></li>
+  <li><a href="#step-2-apply-visual-effects" id="toc-step-2-apply-visual-effects" class="nav-link" data-scroll-target="#step-2-apply-visual-effects">Step 2: Apply Visual Effects</a></li>
+  </ul></li>
+  <li><a href="#part-7-final-documentation-and-submission" id="toc-part-7-final-documentation-and-submission" class="nav-link" data-scroll-target="#part-7-final-documentation-and-submission"><strong>Part 7: Final Documentation and Submission</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-save-your-map" id="toc-step-1-save-your-map" class="nav-link" data-scroll-target="#step-1-save-your-map">Step 1: Save Your Map</a></li>
+  <li><a href="#step-2-submission-requirements" id="toc-step-2-submission-requirements" class="nav-link" data-scroll-target="#step-2-submission-requirements">Step 2: Submission Requirements</a></li>
+  </ul></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><strong>Additional Resources</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab No 1: Getting Started with ArcGIS Online</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This tutorial is inspired from ArcGIS Online Learning resources available at <a href="https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/" class="uri">https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/</a></p>
+<section id="mapping-census-data-for-emergency-planning" class="level2">
+<h2 class="anchored" data-anchor-id="mapping-census-data-for-emergency-planning">Mapping Census Data for Emergency Planning</h2>
+<p>By the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes</p>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background"><strong>Background</strong></h3>
+<p>In this lab, you will create a web map to identify areas that may need additional evacuation assistance during emergencies. You will work with census data to identify households with limited vehicle access, which is crucial information for emergency planning and resource allocation.</p>
+<p><strong>Estimated time of completion:</strong> 45 Minutes</p>
+<hr>
+</section>
+</section>
+<section id="part-1-begin-a-map" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-begin-a-map"><strong>Part 1: Begin a Map</strong></h2>
+<section id="step-1-access-arcgis-online" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-access-arcgis-online">Step 1: Access ArcGIS Online</h3>
+<ol type="1">
+<li><p>Sign in to <a href="https://www.arcgis.com/home/signin.html">ArcGIS</a><a href="https://uostandrews.maps.arcgis.com/">Online</a>, using your University Credentials.</p></li>
+<li><p>On the ribbon, click the <strong>Map</strong> tab</p>
+<p><img src="images/clipboard-4208502011.png" class="img-fluid"></p></li>
+</ol>
+<p>A default web map appears. Your map’s appearance varies based on your account or organizational settings and your browser window size. It may show the United States, the world, or another extent.</p>
+<p><img src="images/clipboard-1630368884.png" class="img-fluid"></p>
+<p>The only layer on the map is the basemap, which provides geographic context such as water bodies and political boundaries. The default basemap is <strong>Topographic</strong>, but your map may have a different basemap depending on your organization’s settings.</p>
+<p>On either side of the map are the toolbars: - <strong>Contents (dark) toolbar:</strong> Allows you to manage and view map contents - <strong>Settings (light) toolbar:</strong> Provides tools and options for configuring and interacting with map layers - <strong>Layers pane:</strong> Lists the data you add to the map</p>
+</section>
+<section id="step-2-navigate-to-your-area-of-interest" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-navigate-to-your-area-of-interest">Step 2: Navigate to Your Area of Interest</h3>
+<ol type="1">
+<li><p>On the map, at the bottom corner, click the <strong>Search</strong> button</p>
+<p><img src="images/clipboard-2766155457.png" class="img-fluid"></p></li>
+<li><p>In the search box, type <code>Houston</code> and choose <strong>Houston, TX, USA</strong> from the list of suggested locations</p>
+<p><img src="images/clipboard-1697004408.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2535147857.png" class="img-fluid"></p></li>
+<li><p>Close the <strong>Search</strong> result window when the map zooms to your location</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="part-2-add-a-layer" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-add-a-layer"><strong>Part 2: Add a Layer</strong></h2>
+<p>Layers contain geographic data that can be displayed on your map. To determine areas that may need evacuation assistance, you’ll add a layer containing demographic data by census tract.</p>
+<ol type="1">
+<li><p>In the <strong>Layers pane</strong>, click <strong>Add</strong></p></li>
+<li><p>In the <strong>Add layer pane</strong>, click <strong>My content</strong> and choose <strong>Living Atlas</strong></p></li>
+<li><p>In the search box, type or paste <strong><code>ACS Vehicle Availability</code></strong></p></li>
+<li><p>Click the <strong>ACS Vehicle Availability Variables - Boundaries</strong> result</p>
+<p><img src="images/clipboard-1758592847.png" class="img-fluid"></p></li>
+<li><p>In the item pane, expand the <strong>Description</strong> section and read about the layer</p></li>
+<li><p>Close the item pane</p></li>
+<li><p>For the <strong>ACS Vehicle Availability Variables - Boundaries</strong> layer, click <strong>Add</strong></p>
+<p><img src="images/clipboard-2922632351.png" class="img-fluid"></p></li>
+</ol>
+<p>The layer is added to the map, styled to show the percentage of households with no vehicle available in each census tract. Darker areas have higher percentages of households without vehicle access.</p>
+<p><img src="images/clipboard-1612838109.png" class="img-fluid"></p>
+<section id="step-1-manage-layer-groups" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-manage-layer-groups">Step 1: Manage Layer Groups</h3>
+<ol type="1">
+<li><p>At the top of the Add layer pane, click the <strong>Back</strong> button</p>
+<p><img src="images/clipboard-3835106586.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Layers pane</strong>, expand the <strong>ACS Vehicle Availability Variables - Boundaries</strong> group</p>
+<p><img src="images/clipboard-3432024810.png" class="img-fluid"></p></li>
+<li><p>Drag the <strong>==Tract==</strong> layer above the group</p>
+<p><img src="images/clipboard-2260686071.png" class="img-fluid"></p></li>
+<li><p>For the group, click the <strong>Options</strong> button and choose <strong>Remove</strong></p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="part-3-style-demographic-data" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-style-demographic-data"><strong>Part 3: Style Demographic Data</strong></h2>
+<section id="step-1-select-styling-options" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-select-styling-options">Step 1: Select Styling Options</h3>
+<ol type="1">
+<li><p>In the <strong>Layers pane</strong>, click the <strong>Tract</strong> layer to select it</p>
+<p><img src="images/clipboard-3977612144.png" class="img-fluid"></p></li>
+<li><p>On the <strong>Settings toolbar</strong>, click the <strong>Styles</strong> button</p>
+<p><img src="images/clipboard-3143514192.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Styles pane</strong>, ensure <strong>==Percent of households with no vehicle available==</strong> is selected</p>
+<p><img src="images/clipboard-1037912759.png" class="img-fluid"></p>
+<p>The list of available styles is determined by the data type. In this case, the options are for numeric data. The map shows the <strong>Counts and Amounts (color)</strong> style. The colors are based on the <strong>High to low</strong> theme. This style symbolizes each census tract with a different color based on the percentage of households without a vehicle. Census tracts with the lowest values have a light color, while those with the highest values have a dark color.</p></li>
+</ol>
+</section>
+<section id="step-2-customize-symbol-style" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-customize-symbol-style">Step 2: Customize Symbol Style</h3>
+<ol type="1">
+<li><p>For <strong>Pick a style</strong>, on the <strong>Counts and Amounts (color)</strong> card, click <strong>Style options</strong></p>
+<p><img src="images/clipboard-248830677.png" class="img-fluid"></p></li>
+<li><p>For <strong>Symbol style</strong>, click the color ramp</p>
+<p><img src="images/clipboard-883336426.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Symbol style</strong> window, for <strong>Colors</strong>, click the color ramp</p></li>
+<li><p>In the <strong>Ramp</strong> window, choose <strong>Purple 18</strong></p>
+<p><img src="images/clipboard-723304470.png" class="img-fluid"></p>
+<p>The new color ramp is applied to the map. Census tracts with high percentages are displayed in dark purple while low percentages are white.</p>
+<p><img src="images/clipboard-1283156492.png" class="img-fluid"></p></li>
+<li><p>If needed, click <strong>Flip ramp colors</strong> so high percentages show in dark purple</p></li>
+<li><p>Click <strong>Done</strong> to close all style windows</p></li>
+</ol>
+</section>
+<section id="step-3-rename-the-layer" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-rename-the-layer">Step 3: Rename the Layer</h3>
+<ol type="1">
+<li><p>In the <strong>Layers pane</strong>, for the layer, click the <strong>Options</strong> button and choose <strong>Rename</strong></p>
+<p><img src="images/clipboard-4092610490.png" class="img-fluid"></p></li>
+<li><p>For <strong>Title</strong>, type <strong>Percent of Households with No Vehicle Access</strong></p></li>
+<li><p>Click <strong>OK</strong></p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="part-4-change-the-basemap" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-change-the-basemap"><strong>Part 4: Change the Basemap</strong></h2>
+<ol type="1">
+<li><p>On the <strong>Contents toolbar</strong>, click <strong>Basemap</strong></p>
+<p><img src="images/clipboard-1432200995.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Basemap pane</strong>, find and choose <strong>Human Geography Map</strong></p>
+<p><img src="images/clipboard-3817407266.png" class="img-fluid"></p></li>
+<li><p>On the <strong>Contents toolbar</strong>, click <strong>Layers</strong> to return to the Layers pane</p>
+<p><img src="images/clipboard-457391797.png" class="img-fluid"></p></li>
+</ol>
+<p>The new basemap shows labels and contextual information over the census data.</p>
+<hr>
+</section>
+<section id="part-5-filter-the-map" class="level2">
+<h2 class="anchored" data-anchor-id="part-5-filter-the-map"><strong>Part 5: Filter the Map</strong></h2>
+<section id="step-1-create-a-geographic-filter" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-create-a-geographic-filter">Step 1: Create a Geographic Filter</h3>
+<ol type="1">
+<li><p>Ensure the <strong>Percent of Households with No Vehicle Access</strong> layer is selected</p></li>
+<li><p>In the <strong>Settings pane</strong>, click <strong>Filter</strong></p>
+<p><img src="images/clipboard-3041167384.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Filter pane</strong>, click <strong>Add new</strong></p></li>
+<li><p>Under <strong>Condition</strong>, click the first box and choose <strong>==County==</strong></p>
+<p><img src="images/clipboard-668989916.png" class="img-fluid"></p></li>
+<li><p>Leave the operator as <strong>is</strong></p></li>
+<li><p>For the third box, click the drop-down arrow, type <strong>==Harris County==</strong> and select it</p>
+<p><img src="images/clipboard-3483512619.png" class="img-fluid"></p></li>
+<li><p>Click <strong>Save</strong> to apply the filter</p>
+<p><img src="images/clipboard-2203001877.png" class="img-fluid"></p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="part-6-emphasize-the-top-tracts" class="level2">
+<h2 class="anchored" data-anchor-id="part-6-emphasize-the-top-tracts"><strong>Part 6: Emphasize the Top Tracts</strong></h2>
+<section id="step-1-examine-the-attribute-table" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-examine-the-attribute-table">Step 1: Examine the Attribute Table</h3>
+<ol type="1">
+<li><p>For the layer, click the <strong>Options</strong> button and choose <strong>Show table</strong><img src="images/clipboard-2618926047.png" class="img-fluid"></p>
+<p>The layer’s attribute table appears. The attribute table is a way of viewing all of the attributes that exist for each feature. Each row in the table represents a feature (in this case, a census tract area). The columns, or fields, provide information about the census tract features, such as the <strong>County</strong> attribute that you used to filter the data earlier.</p>
+<p>The top of the table indicates that there are 1,122 census tracts in Harris County.</p></li>
+<li><p>Scroll right to find the <strong>==Percent of households with no vehicle available==</strong> column</p>
+<p><img src="images/clipboard-1271130688.png" class="img-fluid"></p>
+<p>The table is sorted so that the <strong>Percent of households with no vehicle available</strong> field shows tracts in order of highest to lowest values. The highest value is 48.9 percent.</p></li>
+<li><p>Click the <strong>Menu</strong> button for this column and choose <strong>Sort descending</strong></p></li>
+<li><p>Identify the 10 highest values in the table</p></li>
+<li><p>Close the table</p></li>
+</ol>
+</section>
+<section id="step-2-apply-visual-effects" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-apply-visual-effects">Step 2: Apply Visual Effects</h3>
+<ol type="1">
+<li><p>In the <strong>Settings pane</strong>, click the <strong>Effects</strong> button</p>
+<p><img src="images/clipboard-3835037207.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Effects pane</strong>, click <strong>Feature-specific</strong></p>
+<p><img src="images/clipboard-3170494910.png" class="img-fluid"></p></li>
+<li><p>Click the <strong>Drop Shadow + Transparency</strong> effect</p>
+<p><img src="images/clipboard-471597224.png" class="img-fluid"></p></li>
+<li><p>In the <strong>Drop Shadow + Transparency</strong> pane, drag the histogram slider to the <strong>48.9</strong> label. This will adjust the histogram slider to emphasize the top 10 tracts</p>
+<p><img src="images/clipboard-3748600506.png" class="img-fluid"></p></li>
+<li><p>Modify the logical expression to highlight areas above your identified threshold. Change the logical expression to read <strong>Percent of households with no vehicle available is greater than 36.8</strong>.</p>
+<p><img src="images/clipboard-1085096050.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2578876002.png" class="img-fluid"></p></li>
+<li><p>Close the effects windows</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="part-7-final-documentation-and-submission" class="level2">
+<h2 class="anchored" data-anchor-id="part-7-final-documentation-and-submission"><strong>Part 7: Final Documentation and Submission</strong></h2>
+<section id="step-1-save-your-map" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-save-your-map">Step 1: Save Your Map</h3>
+<ol type="1">
+<li><p>On the <strong>Contents toolbar</strong>, click <strong>Save and open</strong> and choose <strong>Save as</strong></p></li>
+<li><p>For <strong>Title</strong>, type: <strong>==Census tracts in Houston with low vehicle access==</strong></p></li>
+<li><p>For <strong>Tags</strong>, add the following (press Enter after each):</p>
+<ul>
+<li><strong>==Hurricanes==</strong></li>
+<li><strong>==Evacuation Assistance==</strong></li>
+<li><strong>==Houston==</strong></li>
+</ul></li>
+<li><p>For <strong>Summary</strong>, type: <strong>==This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.==</strong></p></li>
+</ol>
+<p>The map is saved. It now appears in your account’s content. You can access your content by clicking the options button next to the map’s name and choosing <strong>Content</strong>. For now, you’ll set the sharing permissions.</p>
+<p>By default, your content is private and only visible to you and your organization’s administrator. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content’s audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization as you can access your content. For this tutorial, you’ve created a public information map and you want it to be available to everyone, so you’ll share it publicly.</p>
+<ol type="1">
+<li>Click <strong>Save</strong></li>
+</ol>
+</section>
+<section id="step-2-submission-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-submission-requirements">Step 2: Submission Requirements</h3>
+<p><strong>IMPORTANT:</strong> Instead of sharing your map publicly, you must provide descriptions of your completed work.</p>
+<p><strong>Take a screenshot that includes:</strong> - Your complete computer screen - The ArcGIS Online map you created - The system date and time visible (usually in the taskbar/menu bar) - All relevant map elements (legend, layers panel, styled data)</p>
+<ol type="1">
+<li><p>Ensure your map displays all required elements: - Properly filtered census data - Appropriate styling with color scheme - basemap - Applied effects highlighting top areas - Descriptive layer name.</p></li>
+<li><p>Take a full-screen screenshot showing:</p>
+<ul>
+<li><p>Your completed map</p></li>
+<li><p>Current date and time from your system</p></li>
+<li><p>ArcGIS Online interface with your map title visible</p></li>
+</ul></li>
+<li><p>The date-time stamp allows the marker to validate when the work was completed</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources"><strong>Additional Resources</strong></h2>
+<ul>
+<li><p><a href="https://www.arcgis.com/home/item.html?id=9a9e43ec1603446880c50d4ed1df2207">ACS Vehicle Availability Variables - Boundaries data</a> is from the American Community Survey.</p></li>
+<li><p><a href="https://arcgis.com/home/item.html?id=67372ff42cd145319639a99152b15bc3">Topographic</a> map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community</p></li>
+<li><p><a href="https://arcgis.com/home/item.html?id=3582b744bba84668b52a16b0b6942544">Human Geography Map</a> sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community</p></li>
+</ul>
+<p>To extend your learning with ArcGIS Online: - Create interactive apps from web maps - Learn advanced styling techniques - Explore spatial analysis tools - Access the ArcGIS tutorial gallery for more exercises</p>
+<ul>
+<li><p>To learn how to transform your web map into an interactive app, check out the tutorial <a href="https://learn.arcgis.com/en/projects/create-an-app/">Create an app</a>.</p></li>
+<li><p>To learn useful tips and tricks for web maps, check out the series <a href="https://learn.arcgis.com/en/paths/common-skills-for-working-with-data-arcgis-online/">Common skills for working with data in ArcGIS Online</a>.</p></li>
+<li><p>To learn about performing spatial analysis, check out the series <a href="https://learn.arcgis.com/en/paths/data-analysis/">Perform analysis in Map Viewer</a>.</p></li>
+<li><p>To learn more advanced techniques for styling your map, check out the series <a href="https://learn.arcgis.com/en/paths/cartographic-creations-with-web-maps/">Cartographic creations with web maps</a>.</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./summary.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Lab_2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lab No 2: Create a Map Lab</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
