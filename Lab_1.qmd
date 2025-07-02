@@ -1,0 +1,303 @@
+# Lab No 1: Getting Started with ArcGIS Online {.unnumbered}
+
+This tutorial is inspired from ArcGIS Online Learning resources available at <https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/>
+
+## Mapping Census Data for Emergency Planning
+
+By the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes
+
+### **Background**
+
+In this lab, you will create a web map to identify areas that may need additional evacuation assistance during emergencies. You will work with census data to identify households with limited vehicle access, which is crucial information for emergency planning and resource allocation.
+
+**Estimated time of completion:** 45 Minutes
+
+------------------------------------------------------------------------
+
+## **Part 1: Begin a Map**
+
+### Step 1: Access ArcGIS Online
+
+1.  Sign in to [ArcGIS](https://www.arcgis.com/home/signin.html)[Online](https://uostandrews.maps.arcgis.com/), using your University Credentials.
+
+2.  On the ribbon, click the **Map** tab
+
+    ![](images/clipboard-4208502011.png)
+
+A default web map appears. Your map's appearance varies based on your account or organizational settings and your browser window size. It may show the United States, the world, or another extent.
+
+![](images/clipboard-1630368884.png)
+
+The only layer on the map is the basemap, which provides geographic context such as water bodies and political boundaries. The default basemap is **Topographic**, but your map may have a different basemap depending on your organization's settings.
+
+On either side of the map are the toolbars: - **Contents (dark) toolbar:** Allows you to manage and view map contents - **Settings (light) toolbar:** Provides tools and options for configuring and interacting with map layers - **Layers pane:** Lists the data you add to the map
+
+### Step 2: Navigate to Your Area of Interest
+
+1.  On the map, at the bottom corner, click the **Search** button
+
+    ![](images/clipboard-2766155457.png)
+
+2.  In the search box, type `Houston` and choose **Houston, TX, USA** from the list of suggested locations
+
+    ![](images/clipboard-1697004408.png)
+
+    ![](images/clipboard-2535147857.png)
+
+3.  Close the **Search** result window when the map zooms to your location
+
+------------------------------------------------------------------------
+
+## **Part 2: Add a Layer**
+
+Layers contain geographic data that can be displayed on your map. To determine areas that may need evacuation assistance, you'll add a layer containing demographic data by census tract.
+
+1.  In the **Layers pane**, click **Add**
+
+2.  In the **Add layer pane**, click **My content** and choose **Living Atlas**
+
+3.  In the search box, type or paste **`ACS Vehicle Availability`**
+
+4.  Click the **ACS Vehicle Availability Variables - Boundaries** result
+
+    ![](images/clipboard-1758592847.png)
+
+5.  In the item pane, expand the **Description** section and read about the layer
+
+6.  Close the item pane
+
+7.  For the **ACS Vehicle Availability Variables - Boundaries** layer, click **Add**
+
+    ![](images/clipboard-2922632351.png)
+
+The layer is added to the map, styled to show the percentage of households with no vehicle available in each census tract. Darker areas have higher percentages of households without vehicle access.
+
+![](images/clipboard-1612838109.png)
+
+### Step 1: Manage Layer Groups
+
+1.  At the top of the Add layer pane, click the **Back** button
+
+    ![](images/clipboard-3835106586.png)
+
+2.  In the **Layers pane**, expand the **ACS Vehicle Availability Variables - Boundaries** group
+
+    ![](images/clipboard-3432024810.png)
+
+3.  Drag the **==Tract==** layer above the group
+
+    ![](images/clipboard-2260686071.png)
+
+4.  For the group, click the **Options** button and choose **Remove**
+
+------------------------------------------------------------------------
+
+## **Part 3: Style Demographic Data**
+
+### Step 1: Select Styling Options
+
+1.  In the **Layers pane**, click the **Tract** layer to select it
+
+    ![](images/clipboard-3977612144.png)
+
+2.  On the **Settings toolbar**, click the **Styles** button
+
+    ![](images/clipboard-3143514192.png)
+
+3.  In the **Styles pane**, ensure **==Percent of households with no vehicle available==** is selected
+
+    ![](images/clipboard-1037912759.png)
+
+    The list of available styles is determined by the data type. In this case, the options are for numeric data. The map shows the **Counts and Amounts (color)** style. The colors are based on the **High to low** theme. This style symbolizes each census tract with a different color based on the percentage of households without a vehicle. Census tracts with the lowest values have a light color, while those with the highest values have a dark color.
+
+### Step 2: Customize Symbol Style
+
+1.  For **Pick a style**, on the **Counts and Amounts (color)** card, click **Style options**
+
+    ![](images/clipboard-248830677.png)
+
+2.  For **Symbol style**, click the color ramp
+
+    ![](images/clipboard-883336426.png)
+
+3.  In the **Symbol style** window, for **Colors**, click the color ramp
+
+4.  In the **Ramp** window, choose **Purple 18**
+
+    ![](images/clipboard-723304470.png)
+
+    The new color ramp is applied to the map. Census tracts with high percentages are displayed in dark purple while low percentages are white.
+
+    ![](images/clipboard-1283156492.png)
+
+5.  If needed, click **Flip ramp colors** so high percentages show in dark purple
+
+6.  Click **Done** to close all style windows
+
+### Step 3: Rename the Layer
+
+1.  In the **Layers pane**, for the layer, click the **Options** button and choose **Rename**
+
+    ![](images/clipboard-4092610490.png)
+
+2.  For **Title**, type **Percent of Households with No Vehicle Access**
+
+3.  Click **OK**
+
+------------------------------------------------------------------------
+
+## **Part 4: Change the Basemap**
+
+1.  On the **Contents toolbar**, click **Basemap**
+
+    ![](images/clipboard-1432200995.png)
+
+2.  In the **Basemap pane**, find and choose **Human Geography Map**
+
+    ![](images/clipboard-3817407266.png)
+
+3.  On the **Contents toolbar**, click **Layers** to return to the Layers pane
+
+    ![](images/clipboard-457391797.png)
+
+The new basemap shows labels and contextual information over the census data.
+
+------------------------------------------------------------------------
+
+## **Part 5: Filter the Map**
+
+### Step 1: Create a Geographic Filter
+
+1.  Ensure the **Percent of Households with No Vehicle Access** layer is selected
+
+2.  In the **Settings pane**, click **Filter**
+
+    ![](images/clipboard-3041167384.png)
+
+3.  In the **Filter pane**, click **Add new**
+
+4.  Under **Condition**, click the first box and choose **==County==**
+
+    ![](images/clipboard-668989916.png)
+
+5.  Leave the operator as **is**
+
+6.  For the third box, click the drop-down arrow, type **==Harris County==** and select it
+
+    ![](images/clipboard-3483512619.png)
+
+7.  Click **Save** to apply the filter
+
+    ![](images/clipboard-2203001877.png)
+
+------------------------------------------------------------------------
+
+## **Part 6: Emphasize the Top Tracts**
+
+### Step 1: Examine the Attribute Table
+
+1.  For the layer, click the **Options** button and choose **Show table**![](images/clipboard-2618926047.png)
+
+    The layer's attribute table appears. The attribute table is a way of viewing all of the attributes that exist for each feature. Each row in the table represents a feature (in this case, a census tract area). The columns, or fields, provide information about the census tract features, such as the **County** attribute that you used to filter the data earlier.
+
+    The top of the table indicates that there are 1,122 census tracts in Harris County.
+
+2.  Scroll right to find the **==Percent of households with no vehicle available==** column
+
+    ![](images/clipboard-1271130688.png)
+
+    The table is sorted so that the **Percent of households with no vehicle available** field shows tracts in order of highest to lowest values. The highest value is 48.9 percent.
+
+3.  Click the **Menu** button for this column and choose **Sort descending**
+
+4.  Identify the 10 highest values in the table
+
+5.  Close the table
+
+### Step 2: Apply Visual Effects
+
+1.  In the **Settings pane**, click the **Effects** button
+
+    ![](images/clipboard-3835037207.png)
+
+2.  In the **Effects pane**, click **Feature-specific**
+
+    ![](images/clipboard-3170494910.png)
+
+3.  Click the **Drop Shadow + Transparency** effect
+
+    ![](images/clipboard-471597224.png)
+
+4.  In the **Drop Shadow + Transparency** pane, drag the histogram slider to the **48.9** label. This will adjust the histogram slider to emphasize the top 10 tracts
+
+    ![](images/clipboard-3748600506.png)
+
+5.  Modify the logical expression to highlight areas above your identified threshold. Change the logical expression to read **Percent of households with no vehicle available is greater than 36.8**.
+
+    ![](images/clipboard-1085096050.png)
+
+    ![](images/clipboard-2578876002.png)
+
+6.  Close the effects windows
+
+------------------------------------------------------------------------
+
+## **Part 7: Final Documentation and Submission**
+
+### Step 1: Save Your Map
+
+1.  On the **Contents toolbar**, click **Save and open** and choose **Save as**
+
+2.  For **Title**, type: **==Census tracts in Houston with low vehicle access==**
+
+3.  For **Tags**, add the following (press Enter after each):
+
+    -   **==Hurricanes==**
+    -   **==Evacuation Assistance==**
+    -   **==Houston==**
+
+4.  For **Summary**, type: **==This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.==**
+
+The map is saved. It now appears in your account's content. You can access your content by clicking the options button next to the map's name and choosing **Content**. For now, you'll set the sharing permissions.
+
+By default, your content is private and only visible to you and your organization's administrator. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content's audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization as you can access your content. For this tutorial, you've created a public information map and you want it to be available to everyone, so you'll share it publicly.
+
+1.  Click **Save**
+
+### Step 2: Submission Requirements
+
+**IMPORTANT:** Instead of sharing your map publicly, you must provide descriptions of your completed work.
+
+**Take a screenshot that includes:** - Your complete computer screen - The ArcGIS Online map you created - The system date and time visible (usually in the taskbar/menu bar) - All relevant map elements (legend, layers panel, styled data)
+
+1.  Ensure your map displays all required elements: - Properly filtered census data - Appropriate styling with color scheme - basemap - Applied effects highlighting top areas - Descriptive layer name.
+
+2.  Take a full-screen screenshot showing:
+
+    -   Your completed map
+
+    -   Current date and time from your system
+
+    -   ArcGIS Online interface with your map title visible
+
+3.  The date-time stamp allows the marker to validate when the work was completed
+
+------------------------------------------------------------------------
+
+## **Additional Resources**
+
+-   [ACS Vehicle Availability Variables - Boundaries data](https://www.arcgis.com/home/item.html?id=9a9e43ec1603446880c50d4ed1df2207) is from the American Community Survey.
+
+-   [Topographic](https://arcgis.com/home/item.html?id=67372ff42cd145319639a99152b15bc3) map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community
+
+-   [Human Geography Map](https://arcgis.com/home/item.html?id=3582b744bba84668b52a16b0b6942544) sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community
+
+To extend your learning with ArcGIS Online: - Create interactive apps from web maps - Learn advanced styling techniques - Explore spatial analysis tools - Access the ArcGIS tutorial gallery for more exercises
+
+-   To learn how to transform your web map into an interactive app, check out the tutorial [Create an app](https://learn.arcgis.com/en/projects/create-an-app/).
+
+-   To learn useful tips and tricks for web maps, check out the series [Common skills for working with data in ArcGIS Online](https://learn.arcgis.com/en/paths/common-skills-for-working-with-data-arcgis-online/).
+
+-   To learn about performing spatial analysis, check out the series [Perform analysis in Map Viewer](https://learn.arcgis.com/en/paths/data-analysis/).
+
+-   To learn more advanced techniques for styling your map, check out the series [Cartographic creations with web maps](https://learn.arcgis.com/en/paths/cartographic-creations-with-web-maps/).
