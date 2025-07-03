@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "SD2005 Labs",
+    "title": "SD2005 - QUANTITATIVE DATA REPORT",
     "section": "",
     "text": "Preface\nThis is a Quarto book. To learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
@@ -132,91 +132,91 @@
   {
     "objectID": "Lab_2.html",
     "href": "Lab_2.html",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "",
     "text": "Overview:\nThis tutorial is inspired from ArcGIS Online Learning resources available at:\nhttps://learn.arcgis.com/en/projects/create-a-map/\nThe idea of this tutorial is you learn how to create a web map using ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.\nEstimated time of completion: 45 Minutes",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#download-and-examine-the-data",
     "href": "Lab_2.html#download-and-examine-the-data",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Download and Examine the Data",
     "text": "Download and Examine the Data\nFirst, you will download a .csv file that contains general information about public high schools in Detroit, Michigan.\n\nDownload the DetroitSchoolCharacteristics.csv file to your computer and open it in Microsoft Excel or another spreadsheet program like Google Sheets.\n\n\nYou will see a table with columns of longitude, latitude, school name, total students eligible for free and reduced meal plans, and race and ethnicity data. This data comes from the National Center for Education Statistics’ (NCES) Education Demographic and Geographic Estimate (EDGE) program.\nIt’s hard to visualize where these schools are located or any patterns in the information from the table alone. Making a map is a better way to understand your data than viewing it as a table, so that’s your next task.\n\nNote: You can find data about public schools across the United States in the Public School Characteristics - Current layer.\n\n\nClose the .csv file.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#create-a-map-layer",
     "href": "Lab_2.html#create-a-map-layer",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Create a Map Layer",
     "text": "Create a Map Layer\nLayers are the way geographic data is organized and combined to create maps. For example, a map may consist of a roads layer, a lakes layer, and buildings layer. These layers are also the basis for geographic analysis to aid in decision making. You will create a map layer by adding your .csv file to an empty map.\n\nSign in to your ArcGIS account using your university credentials.\nOn the ribbon, click the Map tab.\nIn Map Viewer, in the Layers pane, click the arrow next to the Add button and click Add layer from file.\n\n\nThe Add Layer window appears.\n\n\nDrag the DetroitSchoolCharacteristics.csv file to the Add Layer window.\n\n\nTip: Alternatively, click Your device and browse to the .csv file.\n\n\nFor How would you like to add this file, choose Create a hosted feature layer and add it to the map. Click Next.\n\nA list of fields appears. Map layers consist of spatial and tabular information. The table will contain the same columns—also called fields or attributes—as the .csv file. On this page, you can choose which fields from the .csv file you want to include, provide display names, and data type information.\nThe software automatically detected the fields and produced default display name and data types. This page is an opportunity for you to review that the automatic assignments are accurate.\n\nIn this example, you will choose to include all the fields, so you won’t adjust the check boxes.\nDisplay name sets a nickname or shortened name of the field name that is more readily understandable to others. Field names cannot include spaces or numbers, so sometimes you may want these in the display name. Setting Display name allows you to provide meaningful names without changing the Field name text.\nType describes the data you will store in the field: - Date—Date and time. - Double—Numbers with decimal places. - Integer—Whole numbers from -2,147,483,648 to 2,147,483,647 (long integer). - Big Integer—Whole numbers between -(2^53) and 2^53. - String—Any sequence of characters. The default length is 256 characters.\nYou will accept all the default settings and continue.\n\nClick Next.\n\nThe Location settings page appears. Spatial information for the layer will be derived from the Latitude and Longitude columns in the .csv file.\n\nNote: If your table contains the names or addresses of locations (like Paris or 15 Central St. Bethlehem, PA) instead of latitude and longitude fields, try this tutorial about geocoding data: Convert a list of historic places into a map.\n\n\nClick Next.\nFor Title, type “Detroit high schools” followed by your name or initials (for example “Detroit high school (Your name)”).\n\n\nNote: You cannot create two layers in an ArcGIS organization with the same name. Adding your initials to a layer name ensures that other people in your organization can also complete this tutorial. Once a layer has been created, you can rename it in the map to remove your initials, which will not affect the name of the underlying data layer.\n\n\nClick Create and add to map.\n\n\nThe new layer appears on the map. The map displays the locations of the schools listed in the .csv file. Each school is considered a feature in the layer. You have access to the descriptive information, or attributes, by viewing pop-ups for features on the map.\n\nOn the map, click any circle.\n\nA pop-up window appears with information about the school from the layer’s table.\n\nClose the pop-up.\n\n\nBefore you continue, you will save the map.\n\nIn the Contents pane, click Save and open and click Save as.\n\nIn the Save map window, enter the following:\n\nFor Title, type “Public high schools in Detroit”.\nFor Summary, type “Map of public high schools and student body race and ethnicity data in Detroit, Michigan”.\n\n\nClick Save.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#change-the-basemap-and-layer-style",
     "href": "Lab_2.html#change-the-basemap-and-layer-style",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Change the Basemap and Layer Style",
     "text": "Change the Basemap and Layer Style\nMaps in ArcGIS Online consist of layers. You added the Detroit high schools layer, but the map also has a basemap layer by default. Next, you’ll change the basemap layer and the style of the feature layer.\n\nOn the Contents (dark) toolbar, click Basemap.\n\n\nThe Basemap pane appears. The Topographic basemap is selected. This basemap looks good but is better suited for a reference map. You’ll choose a more minimally designed basemap so it does not distract from the school data.\n\nIn the Basemap pane, click Light Gray Canvas. Close the Basemap pane.\n\n\nNote: You may see different basemaps depending on the configuration of your organization. If the Light Gray Canvas basemap is not available, skip to the next step without changing the basemap.\n\n\nNext, you’ll configure the high school layer’s symbols so they are sized based on the number of students at each school eligible for free and reduced meal plan programs.\n\nOn the Settings (light) toolbar, click Styles.\n\n\nNote: If the Settings toolbar is unavailable, on the Contents toolbar, click Layers. In the Layers pane, click Detroit high schools to select the layer.\n\n\nThe Styles pane appears. Currently, the style is based on the data’s location only. You’ll configure the symbols to convey both location and one of the data’s attributes.\n\nIn the Styles pane, click the Field button.\n\n\nYou will choose to style the map by the number of students at each high school who are eligible for free and reduced price meal (FRPM).\nEligibility for FRPM is set by U.S. Department of Agriculture Child Nutrition Programs and is based on Federal poverty guidelines issued by the Department of Health and Human Services. The number or percent of students eligible for FRPM is often used as an equity indicator to understand the needs of school-aged children.\n\nOn the Select fields menu, choose Total of free lunch and reduced-price lunch eligible and click Add.\n\n\nThe options under Pick a style update to reflect choices that are suitable for the Total of free lunch and reduced price lunch eligible field. Counts and Amounts (size) is selected and the map updates to reflect this style. This style reveals some new patterns in the data. The larger the circle, the more students are eligible for FRPM at the school.\n\nOn the Counts and Amounts (Size) card, click Style options.\n\nIn the Counts and Amounts (size) pane, for Symbol style, click the current symbol.\n\n\nThe Symbol style window appears. You’ll adjust the symbol’s properties so circles can be seen even when they are overlapping.\n\nSet Fill transparency to 25. Set Outline transparency to 0.\n\n\nThe symbols on the map update. It is now easier to see overlapping circles.\n\nIn the Symbol style window, for Fill color, click the current color. In the Select color window, for #, type 0070FF and press Enter.\n\n\nThe color of the map symbols changes to blue.\n\nClick Done in the Select color window, the Style options pane, and the Styles pane.\n\n\nThe map shows the number of students at each high school who are eligible for FRPM programs. The schools with more students who are eligible for FRPM programs are represented by larger circles. Schools represented with smaller circles have fewer students who are eligible for FRPM programs.\n\nOn the Contents pane, click Save and open and click Save to save your map.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#configure-pop-ups-and-view-a-table",
     "href": "Lab_2.html#configure-pop-ups-and-view-a-table",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Configure Pop-ups and View a Table",
     "text": "Configure Pop-ups and View a Table\nThe pop-up that you viewed earlier displayed all the attributes for the features, which may be unnecessary for your map. You can configure pop-ups to show only those attributes that are important to your map. In this example, you want to show only the name of the school and the number of students eligible for FRPM programs.\n\nIn the Layers pane, ensure that the Detroit high schools layer is selected.\nOn the Settings toolbar, click Pop-ups.\n\nThe Pop-ups pane appears and a sample pop-up appears on the map. The pop-up’s title contains the name of the layer and the name of the school. This title is unnecessary for your map, so you’ll remove it.\n\nIn the Pop-ups pane, click Title. Erase the text in the box.\n\n\nThe title text disappears from the sample pop-up. You’ll replace the list of fields with a sentence that includes the relevant information.\n\nNext to Fields list, click the Options button. Click Delete.\n\nClick Add content and click Text.\nIn the text editing window, type {. In the menu that appears, scroll almost to the bottom and click School name.\n\n\nThe School_name field was one of the fields in the .csv file you used to create the feature layer. By setting the dynamic text to this field, the pop-up that displays for each school point will display the corresponding School_name field.\n\nAfter {School_name}, type enrolled {Total_elementary_secondary_stud} students during the 2019-2020 school year.\n\nYou can add fields by typing their names inside of curly brackets or by choosing them from the list that appears when you type a curly bracket.\n\nPress Enter to start a new paragraph. Type {Total_of_free_lunch_and_reduced} of those students were eligible for the free and reduced meal plan program.\nUse the Bold button on the toolbar to add bold formatting to {School_name}, {Total_elementary_secondary_stud}, and {Total_of_free_lunch_and_reduced}.\n\nClick OK.\n\nThe preview pop-up replaces the field names with the attribute values of one of the features.\n\nAll the fields still exist in the data table, but they don’t display in the pop-up. You can modify the contents of the pop-up at any time. You can still see all the attributes by showing the table.\n\nIn the Layers pane, next to Detroit high schools, click the Options button. Click Show table.\n\n\nThe layer’s table appears below the map.\n\nReview the data in the table. Close the table when you are finished.\nClose the Pop-ups pane.\nSave the map.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#style-the-layer-in-another-way",
     "href": "Lab_2.html#style-the-layer-in-another-way",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Style the Layer in Another Way",
     "text": "Style the Layer in Another Way\nYour goal is to identify which schools would most benefit from more after-school programs. You have styled the school data by the number of students eligible for FRPM. But there are other aspects of equity that are also important to consider. Due to historic and present-day practices, race and ethnicity can play a critical role in how many resources and opportunities students have at their schools. Practices like segregation in schools and neighborhoods have widened inequities in resource allocation to schools.\nNext, you will style the schools to show the race and ethnicity of the student body. First, you will rename the layer you had previously styled to show FRPM eligibility.\n\nIn the Layers pane, for the Detroit high schools layer, click the Options button and click Rename.\nFor Title, type Students FRPM eligible and click OK.\n\nNext, you will make a copy of the layer.\n\nFor the Students FRPM eligible layer, click the Options button and click Duplicate.\n\nRename the copied layer to be Race and ethnicity data.\nNext to Students FRPM eligible, click the Visibility button to hide the layer on the map.\n\nNext, you will style the Race and ethnicity data layer with race and ethnicity attributes.\n\nEnsure that the Race and ethnicity data layer is selected in the Layers pane. In the Styles pane, remove the Total FRPM eligible attribute.\n\nClick the Field button.\nIn the Add fields window, check the following fields:\n\nAll students - American Indian/Alaska Native\nAll students - Asian\nAll Students - Black or African American\nAll Students - Native Hawai’ian or Other Pacific Islander\nAll Students - Hispanic\nAll Students - Two or More Races\nAll Students - White\n\n\nClick Add.\nUnder Pick a style, click the Charts and Size style.\n\n\nThe layer style updates.\n\nThe map now shows pie charts of the student body’s race and ethnicity categories. The sizes of the pie charts represent the number of students at the schools.\n\nSave the map.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#update-the-item-details",
     "href": "Lab_2.html#update-the-item-details",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Update the Item Details",
     "text": "Update the Item Details\nYour map now tells a story about the locations and some socioeconomic attributes of public high schools. For example, the school with the largest number of students eligible for FRPM programs is Western International High School in southwest Detroit. Many of the schools have a high percentage of students who identify as Black or African American. In southwest Detroit, there are more schools with higher percentages of Hispanic or Latino students.\nBy saving your map, you also created a corresponding item page that contains information, actions, options, and settings for the map.\n\nOn the Contents toolbar, click Map properties. In the Map Properties pane, click Item details.\n\n\nYour map’s item page opens in a new browser tab. The item details are missing important attribution and descriptive information that you will fill in before you share the map. For example, you must give credit to the data providers.\n\nScroll to the bottom of the page. Next to Credits (Attribution), click Edit.\nType National Center for Education Statistics’ (NCES) Education Demographic and Geographic Estimates (EDGE). Click Save.\nClose the item page’s tab.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#submit-your-work",
     "href": "Lab_2.html#submit-your-work",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "Submit Your Work",
     "text": "Submit Your Work\nTo demonstrate completion of this lab, take a screenshot that includes your entire computer screen showing your completed map. Ensure that the date and time are visible on your screen (either in the system taskbar or by opening the system clock). This screenshot will allow the instructor to validate that you have successfully completed the mapping exercise.\nSubmit your screenshot through the designated course submission portal.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
     "objectID": "Lab_2.html#whats-next",
     "href": "Lab_2.html#whats-next",
-    "title": "Lab No 2: Create a Map Lab",
+    "title": "Lab No 2: Create a Web Map",
     "section": "What’s Next?",
     "text": "What’s Next?\nYou have created a web map with a .csv file of school location and demographic data. Now that you have the data mapped, you have more ideas for how to share and explore potential after-school program needs in your city.\nYou can create a web app to display your map data in an interactive way so viewers can explore the data without editing the map. There are many ways you can use your web map to visualize data, understand problems, determine informed solutions, and discover what else is possible.\nYou can find more tutorials in the tutorial gallery.",
     "crumbs": [
-      "Lab No 2: Create a Map Lab"
+      "Lab No 2: Create a Web Map"
     ]
   },
   {
@@ -392,101 +392,101 @@
   {
     "objectID": "Lab_5.html",
     "href": "Lab_5.html",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "",
-    "text": "Overview\nIn this tutorial, you will configure a web map and use it to create an interactive dashboard for finding electric vehicle charging stations. This tutorial demonstrates how to create dashboards that can be applied to various geographic contexts, including examples relevant to Scotland such as monitoring renewable energy infrastructure, analyzing tourism patterns, or tracking public transport usage.",
+    "text": "Overview\nEstimated time of completion: 60 Minutes\nIn this tutorial, you will configure a web map and use it to create an interactive dashboard for finding electric vehicle charging stations. This tutorial demonstrates how to create dashboards that can be applied to various geographic contexts, including examples relevant to Scotland such as monitoring renewable energy infrastructure, analyzing tourism patterns, or tracking public transport usage.",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#learning-objectives",
     "href": "Lab_5.html#learning-objectives",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nBy the end of this tutorial, you will be able to: - Configure web map pop-ups for dashboard use - Create and customize dashboard elements (headers, indicators, tables, and details) - Implement interactive selectors for data filtering - Configure actions to connect dashboard elements - Share dashboards within your organization",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#part-1-configure-a-web-map",
     "href": "Lab_5.html#part-1-configure-a-web-map",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Part 1: Configure a Web Map",
     "text": "Part 1: Configure a Web Map\n\nStep 1: Access the Base Map\n\nOpen the Electric charging stations in Canada web map\nClick Sign In and sign in with your ArcGIS Online account\n\nA map appears showing charging stations for electric vehicles across Canada. This type of infrastructure mapping is equally relevant for Scotland, where you might map: - Electric vehicle charging points across Scottish cities like Edinburgh, Glasgow, and Aberdeen - Renewable energy installations such as wind farms in the Highlands or solar installations in the Borders - Public transport hubs including bus stations, train stations, and ferry terminals\n\n\n\nStep 2: Save Your Copy of the Map\n\nIf necessary, on the Contents (dark) toolbar, at the bottom, click the Expand button\n\nClick Save and open and choose Save as\n\nIn the Save map window, for Title, add your name or initials to the end of the existing text\n\n\nImportant: You cannot create two layers in an ArcGIS organization with the same name. Adding your initials ensures that other students can also complete this tutorial. For example, if your name is John Smith, you might title it “Electric charging stations in Canada - JS”\n\n\n\nClick Save\n\n\n\nStep 3: Explore the Available Layers\n\nOn the Contents toolbar, click Layers to open the Layers pane\n\n\nThree layers are available: - Electric Charging Stations: Blue dots representing charging locations with comprehensive attribute data - OpenStreetMap Amenities for North America: Context layer showing nearby facilities - Provinces and Territories of Canada: Boundary layer for spatial filtering\n\nZoom in on the map until more symbols appear to see the OpenStreetMap amenities layer\n\n\nThe amenities layer provides crucial context - since vehicle charging takes time, proximity to restaurants, shops, or libraries makes stations more attractive. In a Scottish context, this could include: - Proximity to tourist attractions (castles, distilleries, hiking trails) - Access to amenities (shops, cafes, accommodation) - Integration with public transport (bus stops, railway stations)\n\n\nStep 4: Configure Pop-ups\n\nIn the Layers pane, click the Electric Charging Stations layer to select it\nExpand the Settings (light) toolbar and click Pop-ups\n\n\nA sample pop-up appears over the map showing all available fields, many of which may be empty.\n\n\nIn the Pop-ups pane, click Title and confirm that the field is blank\n\nClick Fields list and click Select fields\nIn the Select fields window, click Deselect all to clear all fields\nClick the Station Name field to select it\n\n\nClick Search fields and type “EV Connectors”, then select the EV Connectors field\n\nSearch for and add the following fields:\n\nStreet Address\nStation Phone\nEV Pricing\nAccess\nAccess Days Time\nCards Accepted\nDate Last Confirmed\n\nClick Done\n\nClose the Pop-ups pane\n\n\nScottish Context Example: If creating a similar dashboard for Scotland, you might include fields such as: - Accessibility information (wheelchair access, disabled parking) - Pricing in GBP (including contactless payment options) - Network provider (ChargePlace Scotland, Polar, etc.) - Connection to renewable energy (wind or solar powered)",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#part-2-create-a-dashboard-from-the-web-map",
     "href": "Lab_5.html#part-2-create-a-dashboard-from-the-web-map",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Part 2: Create a Dashboard from the Web Map",
     "text": "Part 2: Create a Dashboard from the Web Map\n\nStep 1: Set Default View and Create Dashboard\n\nClick the Default map view button to return to the default map view\n\nOn the Contents toolbar, click Save and open and click Save\nOn the Contents toolbar, click Create app and click Dashboards\n\nIn the Create new dashboard window, type:\n\nTitle: Vehicle charging stations\nTags: electric vehicles (press Enter)\nSummary: Delete existing text and type “This dashboard allows you to find electric vehicle charging stations near you.”\n\nClick Create dashboard\n\nThe new dashboard appears with your configured web map taking up the full space.",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#part-3-configure-dashboard-information-elements",
     "href": "Lab_5.html#part-3-configure-dashboard-information-elements",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Part 3: Configure Dashboard Information Elements",
     "text": "Part 3: Configure Dashboard Information Elements\n\nStep 1: Add a Header\n\nAt the bottom of the dashboard toolbar, click the Expand button\nOn the toolbar, click the View button to open the View pane\n\nClick the Header tab and click Add header\n\nFor Title, type “Electric vehicle charging stations”\n\nExpand the Menu links section and turn off Sign out\n\nClick Done\n\n\n\n\nStep 2: Add an Indicator for Operational Stations\n\nOn the toolbar, click Add element\n\nBelow the map, click the Add button and click Indicator\n\nIn the Select a layer window, click Electric Charging Stations\n\nA preview of the indicator appears.\n\nBy default, an indicator’s value is the count of features in the data source. In this case, the value is the total number of operational stations across Canada. Since this layer receives updates daily, the preview may show a different number than the images in this tutorial.\nThe indicator has no context to explain the meaning of the number. You’ll add labels to explain its meaning.\nClick the Indicator tab\nFor Bottom text, type “Operational stations”\n\nClick Add icon\nExpand Miscellaneous and click the check mark in a circle icon\n\nClick OK\nEnsure Position is set to Left\nClick the Fill color. For Hex, type 005ce6 and press Enter\nExpand Value formatting and turn off Unit prefix\nThe preview now shows the exact number of stations instead of a rounded number.\n\nLater, you will connect the indicator element to others on the dashboard, so the number can change based on filters that the user applies. For now, you’ll give the indicator element a meaningful name so it is easier for you to identify it later when you configure actions.\nClick the General tab\nFor Name field, type “Operational stations indicator”\nClick Done\n\n\nScottish Application: For a Scottish renewable energy dashboard, you might create indicators showing: - Active wind turbines in the Highlands - Solar installations generating power - Hydroelectric facilities operational - Carbon offset achieved through renewable sources\n\n\n\nStep 3: Add a Table\n\nOn the toolbar, click Add element\nPoint to the indicator element and click the Add button on the left side\nClick Table\n\nIn the Select a layer window, click Electric Charging Stations\nFor Table type, choose Features\nFor Value fields, click Add field and choose Station_Name\n\nThe Station Name field appears in the Value fields list and as the first column in the preview table.\n\nThe Value fields section determines the columns of the table, with each row representing an individual feature.\nAdd four more fields:\n\nStreet_Address\nCity\nZIP\nFacility_Type\n\nClick the Table tab and turn on Row striping\n\nClick the Header tab\nIn the Label override section, remove underscores from labels (e.g., “Station Name”, “Street Address”, “Facility Type”)\nChange Text color to #ffffff and Background color to #004da8\nThe table’s header changes to a dark blue color with white text.\n\nThe table’s visual area is now configured. Next, you will name the table so it is easier to identify later when you set up actions.\nClick the General tab and set Name to “Station table”\nExpand the No selection section and click Edit next to Label\nClick Format and choose Heading 3\n\nType “Select a province to start viewing stations”\nClick Done\n\n\n\n\nStep 4: Add a Details Element\n\nOn the toolbar, click Add element\nClick the Add button on the left of the dashboard and click Details\n\nChoose Electric Charging Stations\nClick the General tab and set Name to “Station details”\nFor Title, click Edit\nClick Format, choose Heading 2, and type “Station details”\n\nThe title appears on the preview.\n\nExpand No selection section, click Edit next to Label\nClick Format, choose Heading 3, and type “Select a station to view details”\nClick Done\nDrag the right edge of the details pane until it takes up about 25% of the dashboard width\n\nThe dashboard is now configured with a map, a header, an indicator, a table, and a details element. Next, you’ll give users the ability to filter the data on the dashboard",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#part-4-configure-dashboard-selectors",
     "href": "Lab_5.html#part-4-configure-dashboard-selectors",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Part 4: Configure Dashboard Selectors",
     "text": "Part 4: Configure Dashboard Selectors\n\nStep 1: Add a Province Selector\n\nIn the View pane, click the Header tab\nClick Add selector and choose Category selector\n\nFor Categories from, choose Features\nSelect Provinces and Territories of Canada\n\nFor Line item template, click Add field and choose PRENAME\n\nPRENAME is short for province English name. The preview updates to show a province name.\n\nClick the Selector tab\nFor Label, type “Select a province”\nClick Add icon, expand Hub section, choose Boundaries icon, and click OK\n\nTurn on Show search\nClick the preview.\nThe list of provinces appears. At the top is a search bar that allows you to search the list with text.\n\nYou’ll add an item to this list that allows users to select no province or territory.\nTurn on None option and set Label for none to “No province selected”\n\nExpand General section and set Name to “Province selector”\nClick Done\nThe province selector appears on the dashboard’s header, above the map.\n\n\n\n\nStep 2: Add a City Selector\n\nClick Add selector and choose Category selector\nFor Categories from, choose Grouped values\n\nChoose Electric Charging Stations\nFor Category field, choose City\nThe City field is also added to the Sort by section. This will sort the cities alphabetically in the selector to make them easier to find.\n\nMaximum categories is set to 50, which means that only the first 50 cities will appear in the selector. There are more than 50 cities and towns in most provinces, so you will increase this limit.\nFor Maximum categories, type 350\nClick the Selector tab\nFor Label, type “Select a city”\n\nClick Add icon, expand Hub section, choose City icon, and click OK\n\nFor Selection, choose Multiple\nSet Placeholder text to “No city selected”\n\nTurn on Show search and Show reset and select all\nClick the preview to expand the list of cities.\n\nReset and Select all buttons appear below the list. These tools can help users interact with longer lists more easily.\nExpand General section and set Name to “City selector”\nClick Done\nThe new selector appears on the dashboard’s header.\n\n\n\n\nStep 3: Add a Connector Selector\n\nClick Add selector and choose Category selector\nFor Categories from, choose Grouped values\nChoose Electric Charging Stations\nFor Category field, choose EV_Connector_Types\n\nClick the Selector tab\nFor Label, type “Select connector type”\nClick Add icon, expand Points of interest section, choose fueling station icon, and click OK\n\nFor Selection, choose Multiple\nSet Placeholder text to “No connector selected”\nTurn on Show search and Show reset and select all\n\nExpand General section and set Name to “Connector selector”\nClick Done\n\nAll three of the selectors are now configured. However, they can’t yet be used to filter data on the dashboard. Next, you’ll configure actions to connect all of the dashboard’s elements so users can tailor the dashboard to their needs.\n\n\nScottish Context Example: For a Scottish tourism dashboard, selectors might include: - Council areas (Highland, Fife, Glasgow City, etc.) - Attraction types (Castles, Distilleries, Museums, Natural sites) - Accessibility features (Wheelchair accessible, Family-friendly, Dog-friendly) - Seasonal availability (Year-round, Summer only, Winter sports)",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#part-5-configure-actions",
     "href": "Lab_5.html#part-5-configure-actions",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Part 5: Configure Actions",
     "text": "Part 5: Configure Actions\n\nStep 1: Configure Province Selector Actions\n\nIn the View pane, Header tab, point to Province selector\nClick the options button and click Configure\n\nClick the Actions tab\nYou can configure a Filter, Flash, Show pop-up, Pan, or Zoom action to occur when a new province is selected.\n\nThe first action that you’ll configure is a filter action. When users select a province in the province selector, it will filter the city selector to only show cities within that province.\nExpand the Filter section\nTurn on City selector and set:\n\nSource field: Province Postal Abbreviation\nTarget field: State\n\n\nTurn on filter actions for Electric Charging Stations, Operational stations indicator, and Station table\nFor each, set Source field to Province Postal Abbreviation and Target field to State\n\nFor Station table, check Render only when filtered\n\nYou’ll add one more action to the province selector, to make the map zoom to the selected province.\nExpand Zoom section and turn on Electric charging stations in Canada\n\nClick Done\nThe dashboard looks the same as before, except that the table has been replaced by a message.\n\nYou’ll test that the actions you configured are working as expected.\n\n\n\nStep 2: Test Province Selector\n\nClick Select a province and choose Prince Edward Island\nObserve how the map zooms, table populates, and indicator updates\nClick Select a city to see only relevant cities listed\n\n\n\n\nStep 3: Configure City and Connector Selector Actions\n\nConfigure City selector:\n\nPoint to City selector, click options, and Configure\nClick Actions tab, expand Filter section\nTurn on Connector selector, Electric Charging Stations, Operational stations indicator, and Station table\nClick Done\n\n\nConfigure Connector selector:\n\nPoint to Connector selector, click options, and Configure\nClick Actions tab, expand Filter section\nTurn on Electric Charging Stations, Operational stations indicator, and Station table\n\nYou don’t need to define matching fields this time because all of the connected elements are based on the same layer: Electric charging stations in Canada.\nClick Done\nIn the Layout pane, point to Connector selector, click the options button, and click Configure.\nClick the Actions tab and expand the Filter section.\nTurn on Electric Charging Stations, Operational stations indicator, and Station table.\n\nClick Done.\nYou’ll test that the actions behave as expected together.\nIf necessary, on the header, click Select a province and choose Prince Edward Island.\nClick Select a city and choose Charlottetown.\nThe map, table, and indicator all update to show fewer stations.\n\nOn the header, click Select connector type.\n\nThe list has fewer options than before.\nIn the connector selector, click TESLA.\nThe map, table, and indicator all update to show fewer stations.\n\n\n\n\nStep 4: Configure Table Actions\nThe last actions you will configure are on the table. The table only populates once a province is selected on the header. Similarly, you will ensure that the details element only populates when a station is selected in the table. Otherwise, viewers will see details for stations that are probably not relevant to them. When there is no selection on the table, the message you configured earlier will display.\n\nIn the View pane, click the Body tab\nPoint to Station table, click options, and Configure\n\nClick Actions tab, expand Filter section\nTurn on Station details and check Render only when filtered\n\nExpand Flash section and turn on Electric charging stations in Canada\nExpand Zoom section and turn on Electric charging stations in Canada\nClick Done\nOn the dashboard, click any row in the table.\n\n\n\n\nStep 5: Test Complete Functionality\n\nSelect Prince Edward Island from province selector\nSelect Charlottetown from city selector\nSelect TESLA from connector selector\nClick any row in the table to see details populate and map zoom/flash",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#part-6-share-the-dashboard",
     "href": "Lab_5.html#part-6-share-the-dashboard",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Part 6: Share the Dashboard",
     "text": "Part 6: Share the Dashboard\n\nStep 1: Save and Access Dashboard Settings\n\nOn the dashboard toolbar, click Save and click Save\n\nNext to the dashboard title, click the menu button and click Dashboard item details\n\nClick Open Dashboard to test in a new browser tab\n\nTest the dashboard functionality (e.g., find J1772 charging stations in Thunder Bay, Ontario)\n\n\n\n\nStep 2: Share the Dashboard\n\nReturn to the item page and click Share\nImportant: In the Share window, choose Members of my organization (University of St Andrews) and click Save\n\n\nNote: This differs from the original tutorial which shared publicly. We’re restricting to University of St Andrews members only.\n\n\n\nStep 3: Share the Associated Web Map\n\nOn the ribbon, click Content\nFind “Electric charging stations in Canada” and click the Update sharing icon\nIn the Share window, choose Members of my organization (University of St Andrews) and click Save",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#assignment-submission-requirements",
     "href": "Lab_5.html#assignment-submission-requirements",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Assignment Submission Requirements",
     "text": "Assignment Submission Requirements\n\nScreenshot Documentation\nYou must include a screenshot that shows the entire screen of your computer, including the date and time display, so the marker can validate your work.\nRequirements for screenshot: - Full screen capture - not just the browser window - Date and time visible - ensure your system clock/date is showing - Dashboard fully loaded - showing all elements working - Demonstration of functionality - show the dashboard with: - A province selected - A city selected\n- A connector type selected - Station details displayed - Table populated with filtered results\nHow to capture the required screenshot: 1. Complete the tutorial and have your dashboard working 2. Select filters to demonstrate functionality 3. Ensure your computer’s date/time is visible (system tray on Windows, menu bar on Mac) 4. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your submission\n\n\nScottish Context\nIn your submission, also include a brief reflection (200-300 words) on how this dashboard approach could be applied to Scottish contexts, such as: - Renewable energy monitoring (wind farms, solar installations) - Tourism infrastructure (attractions, accommodation, transport links) - Public transport optimization (bus routes, train connections, ferry services) - Environmental monitoring (air quality, weather stations, flood warnings) - Economic development (business locations, employment centers, investment zones)",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
     "objectID": "Lab_5.html#additional-resources",
     "href": "Lab_5.html#additional-resources",
-    "title": "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial",
+    "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nArcGIS Dashboard Documentation\nTutorial Gallery\nArcGIS Online Help\n\nRemember: Your screenshot must show the full screen with date/time visible and demonstrate the working dashboard functionality for full marks.",
     "crumbs": [
-      "Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial"
+      "Lab No 5: Build an Interactive Dashboard"
     ]
   },
   {
