@@ -1,6 +1,8 @@
 # Lab No 2: Create a Map Lab {.unnumbered}
- 
+
 **Objective:** Add a data layer to a new map and start visualizing patterns
+
+**Estimated time of completion:** 45 Minutes
 
 ## Download and Examine the Data
 
