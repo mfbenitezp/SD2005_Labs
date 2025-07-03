@@ -21,6 +21,7 @@ format:
   pdf:
     documentclass: scrreprt
 
+
 editor: visual
 
 execute:
