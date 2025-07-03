@@ -22,6 +22,11 @@ jobs:
         with:
           r-version: '4.2.0'
 
+      - name: Install TinyTeX
+        run: |
+          Rscript -e 'install.packages("tinytex", repos="https://cloud.r-project.org")'
+          Rscript -e 'tinytex::install_tinytex()'
+
       - name: Install required R packages
         run: |
           Rscript -e 'install.packages(c("rmarkdown", "knitr"), repos="https://cloud.r-project.org")'
