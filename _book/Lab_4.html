@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SD2005 - QUANTITATIVE DATA REPORT - Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Lab_5.html" rel="next">
+<link href="./Lab_3.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lab_4.html">Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">SD2005 - QUANTITATIVE DATA REPORT</a> 
+        <div class="sidebar-tools-main">
+    <a href="./SD2005---QUANTITATIVE-DATA-REPORT.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab No 1: Getting Started with ArcGIS Online</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab No 2: Create a Web Map</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab No 3: Mapping Meaningful Places in Your Community</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lab_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab No 5: Build an Interactive Dashboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#key-learning-outcomes" id="toc-key-learning-outcomes" class="nav-link" data-scroll-target="#key-learning-outcomes">Key Learning Outcomes</a>
+  <ul class="collapse">
+  <li><a href="#why-is-poverty-such-a-critical-issue" id="toc-why-is-poverty-such-a-critical-issue" class="nav-link" data-scroll-target="#why-is-poverty-such-a-critical-issue">Why is poverty such a critical issue?</a></li>
+  </ul></li>
+  <li><a href="#protecting-children-with-un-sustainable-development-goals" id="toc-protecting-children-with-un-sustainable-development-goals" class="nav-link" data-scroll-target="#protecting-children-with-un-sustainable-development-goals">Protecting Children with UN Sustainable Development Goals</a></li>
+  <li><a href="#step-1-visualize-global-poverty" id="toc-step-1-visualize-global-poverty" class="nav-link" data-scroll-target="#step-1-visualize-global-poverty">Step 1: Visualize Global Poverty</a>
+  <ul class="collapse">
+  <li><a href="#task-1.1-understanding-sdg-goal-1" id="toc-task-1.1-understanding-sdg-goal-1" class="nav-link" data-scroll-target="#task-1.1-understanding-sdg-goal-1">Task 1.1: Understanding SDG Goal 1</a></li>
+  <li><a href="#task-1.2-accessing-un-data-portal" id="toc-task-1.2-accessing-un-data-portal" class="nav-link" data-scroll-target="#task-1.2-accessing-un-data-portal">Task 1.2: Accessing UN Data Portal</a></li>
+  <li><a href="#task-1.3-data-preparation" id="toc-task-1.3-data-preparation" class="nav-link" data-scroll-target="#task-1.3-data-preparation">Task 1.3: Data Preparation</a></li>
+  <li><a href="#task-1.4-creating-a-feature-layer-in-arcgis-online" id="toc-task-1.4-creating-a-feature-layer-in-arcgis-online" class="nav-link" data-scroll-target="#task-1.4-creating-a-feature-layer-in-arcgis-online">Task 1.4: Creating a Feature Layer in ArcGIS Online</a></li>
+  <li><a href="#task-1.5-correcting-geocoding-errors" id="toc-task-1.5-correcting-geocoding-errors" class="nav-link" data-scroll-target="#task-1.5-correcting-geocoding-errors">Task 1.5: Correcting Geocoding Errors</a></li>
+  <li><a href="#task-1.6-adding-additional-data-sources" id="toc-task-1.6-adding-additional-data-sources" class="nav-link" data-scroll-target="#task-1.6-adding-additional-data-sources">Task 1.6: Adding Additional Data Sources</a></li>
+  <li><a href="#task-1.7-converting-points-to-polygons" id="toc-task-1.7-converting-points-to-polygons" class="nav-link" data-scroll-target="#task-1.7-converting-points-to-polygons">Task 1.7: Converting Points to Polygons</a></li>
+  <li><a href="#task-1.8-creating-a-choropleth-map" id="toc-task-1.8-creating-a-choropleth-map" class="nav-link" data-scroll-target="#task-1.8-creating-a-choropleth-map">Task 1.8: Creating a Choropleth Map</a></li>
+  <li><a href="#initial-analysis-results" id="toc-initial-analysis-results" class="nav-link" data-scroll-target="#initial-analysis-results">Initial Analysis Results</a></li>
+  </ul></li>
+  <li><a href="#step-2-compare-child-poverty" id="toc-step-2-compare-child-poverty" class="nav-link" data-scroll-target="#step-2-compare-child-poverty">Step 2: Compare Child Poverty</a>
+  <ul class="collapse">
+  <li><a href="#task-2.1-adding-child-labor-data" id="toc-task-2.1-adding-child-labor-data" class="nav-link" data-scroll-target="#task-2.1-adding-child-labor-data">Task 2.1: Adding Child Labor Data</a></li>
+  <li><a href="#task-2.2-joining-child-labor-data-with-poverty-data" id="toc-task-2.2-joining-child-labor-data-with-poverty-data" class="nav-link" data-scroll-target="#task-2.2-joining-child-labor-data-with-poverty-data">Task 2.2: Joining Child Labor Data with Poverty Data</a></li>
+  </ul></li>
+  <li><a href="#step-3-compare-data-to-find-patterns" id="toc-step-3-compare-data-to-find-patterns" class="nav-link" data-scroll-target="#step-3-compare-data-to-find-patterns">Step 3: Compare Data to Find Patterns</a>
+  <ul class="collapse">
+  <li><a href="#task-3.1-creating-a-bivariate-map" id="toc-task-3.1-creating-a-bivariate-map" class="nav-link" data-scroll-target="#task-3.1-creating-a-bivariate-map">Task 3.1: Creating a Bivariate Map</a></li>
+  <li><a href="#task-3.2-improving-data-labels-and-pop-ups" id="toc-task-3.2-improving-data-labels-and-pop-ups" class="nav-link" data-scroll-target="#task-3.2-improving-data-labels-and-pop-ups">Task 3.2: Improving Data Labels and Pop-ups</a></li>
+  <li><a href="#task-3.3-analyzing-the-legend-and-patterns" id="toc-task-3.3-analyzing-the-legend-and-patterns" class="nav-link" data-scroll-target="#task-3.3-analyzing-the-legend-and-patterns">Task 3.3: Analyzing the Legend and Patterns</a></li>
+  </ul></li>
+  <li><a href="#analysis-questions-and-policy-applications" id="toc-analysis-questions-and-policy-applications" class="nav-link" data-scroll-target="#analysis-questions-and-policy-applications">Analysis Questions and Policy Applications</a>
+  <ul class="collapse">
+  <li><a href="#sdg-1-no-poverty-questions" id="toc-sdg-1-no-poverty-questions" class="nav-link" data-scroll-target="#sdg-1-no-poverty-questions">SDG 1: No Poverty Questions</a></li>
+  <li><a href="#questions-pertaining-to-both-indicators" id="toc-questions-pertaining-to-both-indicators" class="nav-link" data-scroll-target="#questions-pertaining-to-both-indicators">Questions Pertaining to Both Indicators</a></li>
+  </ul></li>
+  <li><a href="#next-steps-share-links-to-story-map---optional." id="toc-next-steps-share-links-to-story-map---optional." class="nav-link" data-scroll-target="#next-steps-share-links-to-story-map---optional.">Next Steps: Share Links to Story Map - Optional.</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><em>Tutorial inspired on: <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/examine-global-poverty-using-un-sustainable-development-goals/">ArcGIS Online blog entry</a></em></p>
+<p><strong>Estimated time of completion:</strong> 70 Minutes</p>
+<hr>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Have you ever considered where pockets of poverty exist and who is most affected? Unfortunately, global trends show that children are most impacted by poverty. Around the world <strong>385 million children</strong> live in extreme poverty, and in 2013 the World Bank found that <strong>19.5 percent of children</strong> in 89 countries lived in a household that survived on U.S. $1.90 per day per person or less.</p>
+</section>
+<section id="key-learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="key-learning-outcomes">Key Learning Outcomes</h2>
+<p>By completing this tutorial, you should now be able to:</p>
+<ul>
+<li><strong>Access and download</strong> UN SDG data from official portals</li>
+<li><strong>Prepare and clean</strong> spatial data for analysis</li>
+<li><strong>Create feature layers</strong> in ArcGIS Online through geocoding</li>
+<li><strong>Perform spatial joins</strong> to combine multiple datasets</li>
+<li><strong>Create choropleth maps</strong> to visualize quantitative data</li>
+<li><strong>Develop bivariate maps</strong> to compare multiple indicators</li>
+<li><strong>Configure effective pop-ups</strong> and legends for data communication</li>
+<li><strong>Apply spatial analysis techniques</strong> to real-world policy questions</li>
+</ul>
+<p>These skills are transferable to many other contexts, including local and national policy analysis, environmental monitoring, public health studies, and economic development planning.</p>
+<hr>
+<section id="why-is-poverty-such-a-critical-issue" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-poverty-such-a-critical-issue">Why is poverty such a critical issue?</h3>
+<p>Because it relates to the overall well-being of a person. Those living in poverty may lack access to basic food, housing, and healthcare. Growing up without consistent nutrition, shelter, and safety can have long-lasting developmental impacts on children and can cause lifelong problems.</p>
+<blockquote class="blockquote">
+<p><strong>Scottish Context Example</strong>: In Scotland, child poverty affects approximately 24% of children (around 240,000 children), with particular concentrations in areas like Glasgow, Dundee, and parts of Edinburgh. The Scottish Government has committed to reducing child poverty to less than 10% by 2030 through the Child Poverty (Scotland) Act 2017.</p>
+</blockquote>
+<p>In 2015, the United Nations and world leaders developed a series of goals to improve situations for people, places and environments globally. In total, there are <strong>17 Sustainable Development Goals</strong> that nations are striving to meet by 2035. This activity focuses on <strong>Goal 1: No Poverty</strong> and corresponding indicators that can be used to measure poverty.</p>
+</section>
+</section>
+<section id="protecting-children-with-un-sustainable-development-goals" class="level2">
+<h2 class="anchored" data-anchor-id="protecting-children-with-un-sustainable-development-goals">Protecting Children with UN Sustainable Development Goals</h2>
+<p><img src="images/clipboard-1144684154.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="step-1-visualize-global-poverty" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-visualize-global-poverty">Step 1: Visualize Global Poverty</h2>
+<p>Sustainable Development Goal 1, <strong>“No Poverty”</strong> is achieved when we “End poverty in all its forms everywhere,” and “should be understood as deprivation beyond the lack of income and resources to ensure a sustainable livelihood.”</p>
+<blockquote class="blockquote">
+<p><strong>Key Definition</strong>: Poverty is felt through hunger, malnutrition, limited access to basic services and educational opportunities, social discrimination and exclusion. In order to secure a future of sustainable economic growth, it is essential for countries to promote economic equality.</p>
+</blockquote>
+<section id="task-1.1-understanding-sdg-goal-1" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.1-understanding-sdg-goal-1">Task 1.1: Understanding SDG Goal 1</h3>
+<ol type="1">
+<li><p>Visit the <a href="https://www.sdg.org/">UN Sustainable Development</a> site.</p>
+<p>Most of the data for the Sustainable Development Goals is curated and maintained by the UN Statistics Division. There are also countries that host their own open data portals featured on the data page.</p></li>
+<li><p>Scroll down and find the section called <strong>Sustainable Development Goals</strong>, click the first goal, <strong>No Poverty</strong>.</p></li>
+<li><p><strong>Familiarize yourself</strong> with this goal - take some time to understand <strong>what this goal is about</strong> and <strong>why it is the first goal</strong>.</p>
+<p><img src="images/clipboard-4233339319.png" class="img-fluid"></p></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Scottish Policy Example</strong>: Scotland’s approach to SDG 1 includes the Scottish Child Payment (£25 per week per child under 16), free school meals, and targeted support for families in the most deprived areas. The Scottish Index of Multiple Deprivation (SIMD) is used to identify areas requiring priority intervention.</p>
+</blockquote>
+</section>
+<section id="task-1.2-accessing-un-data-portal" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.2-accessing-un-data-portal">Task 1.2: Accessing UN Data Portal</h3>
+<ol start="4" type="1">
+<li><p>After you get a better understanding about the main facts that you can measure within this goal, now let’s apply the geographical approach to create web maps and apps that help you represent spatial data related to this goal.</p>
+<p>Go to https://unstats.un.org/sdgs/dataportal/database and get the data related to the <strong>1.1.1 indicator</strong>. Which corresponds to <strong>Proportion of population below international poverty line (%) – $2.15 per day</strong>. Once you are in the portal, follow the next options to get the required data.</p></li>
+<li><p>In the <strong>Data Series</strong> type or select the <strong>1.1.1</strong> Indicator, in the <strong>Countries, areas or Regions</strong> section, click on <strong>Countries or Areas</strong>, and for <strong>Period</strong> make sure you selected only the <strong>2017</strong> year. (you should have around 783 observations). Click <strong>Show Results</strong>.</p>
+<p><img src="images/clipboard-983732078.png" class="img-fluid"></p></li>
+</ol>
+<p><strong>Expected Result</strong>: You will see a couple of tabs open up at the bottom corresponding to: - <strong>Proportion of population below international poverty line (%) SI_POV_DAY1</strong> - <strong>Employed population below international poverty line, by sex and age (%) SI_POV_EMP1</strong> indicators</p>
+<p>Expand the <strong>SI_POV_DAY1</strong> tab. At this point you should have a preview of a table that includes countries and 2017 poverty values. Now click <strong>Download XLS</strong>.</p>
+<p><img src="images/clipboard-1441162426.png" class="img-fluid"></p>
+</section>
+<section id="task-1.3-data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.3-data-preparation">Task 1.3: Data Preparation</h3>
+<ol start="6" type="1">
+<li><p><strong>Open the downloaded file</strong> - you will see several countries are duplicated, due to data being collected at different scales (e.g., Sex, Location, Age). <strong>Filter</strong> the data to show only:</p>
+<ul>
+<li><strong>Sex</strong>: BOTHSEX</li>
+<li><strong>Location</strong>: ALLAREA<br>
+</li>
+<li><strong>Age</strong>: ALLAGE</li>
+</ul>
+<p>Now you should have <strong>75 records</strong>. Save the filtered table as a new Excel file (name it <code>1_1_1_indicator_filtered.xlsx</code>).</p></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Important Note</strong>: Data filtering is crucial for accurate spatial analysis. In Scotland, similar filtering would be applied when working with data from the Scottish Government’s statistics portal, ensuring consistency across geographic areas and demographic groups.</p>
+</blockquote>
+</section>
+<section id="task-1.4-creating-a-feature-layer-in-arcgis-online" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.4-creating-a-feature-layer-in-arcgis-online">Task 1.4: Creating a Feature Layer in ArcGIS Online</h3>
+<ol start="7" type="1">
+<li><p>Go to <strong>ArcGIS Online</strong>, sign up with your university credentials and go to <strong>Content</strong>. Now you will upload the filtered Excel file and create a <strong>Feature Layer</strong> with the data you downloaded and filtered.</p></li>
+<li><p>Click <strong>New Item</strong></p>
+<p><img src="images/clipboard-2752107397.png" class="img-fluid"></p></li>
+<li><p><strong>Drag and drop</strong> your file or choose <strong>Device</strong> option and select the filtered Excel file (e.g., <code>1_1_1_indicator_filtered.xlsx</code>)</p></li>
+<li><p>When ArcGIS Online asks <strong>“How would you like to add this file?”</strong> Select the first option: <strong><em>Add and create a hosted feature layer or table</em></strong>. Click <strong>Next</strong>.</p></li>
+<li><p>In the <strong>Field Box</strong>, the 13 columns are selected - no need to do anything here, just click <strong>Next</strong>.</p></li>
+<li><p>In the <strong>Location Settings</strong>, select <strong>Addresses or place names</strong>. Open the <strong>Advanced location settings</strong> and select <strong>World</strong> in the <strong>Region</strong> box. Now in <strong>Location fields</strong>, make sure <strong>Location information is in one field</strong> is selected. Then in front of <strong>Address or Place</strong>, select the Field <strong>GeoAreaName</strong>, click <strong>Next</strong>.</p>
+<blockquote class="blockquote">
+<p><strong>⚠️ Credit Usage Warning</strong>: You will use approximately 3 Credits from your ArcGIS Online Account for this geocoding process.</p>
+</blockquote></li>
+<li><p>Finally, provide a <strong>title</strong>, <strong>tag</strong>, and <strong>summary</strong> of the feature layer you are creating. Click <strong>Save</strong>.</p></li>
+<li><p>ArcGIS Online will host your Excel file, geocode all the rows based on the name of the country (that’s why it uses credits) and then create a feature layer (the spatial data) that you can use to create web maps based on that indicator.</p></li>
+<li><p>If you get a warning/notification, please click <strong>YES</strong>.</p></li>
+</ol>
+<p><img src="images/clipboard-611136890.png" class="img-fluid"></p>
+</section>
+<section id="task-1.5-correcting-geocoding-errors" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.5-correcting-geocoding-errors">Task 1.5: Correcting Geocoding Errors</h3>
+<blockquote class="blockquote">
+<p><strong>Common Issue</strong>: One common problem in geocoding when using names is that you could get locations in places that do not correspond to the intended place. ArcGIS Online provides a way to correct those mislocated places.</p>
+</blockquote>
+<ol start="16" type="1">
+<li><p>Once you have the Map Viewer open, you will notice that <strong>Georgia</strong> has been automatically coded to be in the USA.</p>
+<p><img src="images/clipboard-2775039475.png" class="img-fluid"></p></li>
+<li><p>Using the table at the bottom, locate <strong>Georgia</strong> and select it. You will see on your left a list of all the potential candidates that ArcGIS Online used to geocode Georgia. If you click on the <strong>third option</strong>, you will realize that one is the correct match (the country Georgia, not the US state). Click <strong>Match</strong> and then <strong>Done Reviewing</strong>.</p></li>
+</ol>
+<p><img src="images/clipboard-2720454312.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><strong>Scottish Example</strong>: Similar geocoding issues might occur with place names like “Perth” (which could be matched to Perth, Australia instead of Perth, Scotland) or “Hamilton” (which might be matched to Hamilton, Canada instead of Hamilton, Scotland).</p>
+</blockquote>
+<ol start="18" type="1">
+<li><p>Once your geocoding process has finished, your map should look like this:</p>
+<p><img src="images/clipboard-1362420015.png" class="img-fluid"></p></li>
+</ol>
+<p><strong>Observation</strong>: You will notice that most of the African countries have not reported any data, but here is when we can use and merge other data sources. We can use data reported by the <a href="https://data.worldbank.org/indicator/SI.POV.GAPS?most_recent_value_desc=true&amp;type=shaded&amp;view=map&amp;year=2004">World Bank</a> to merge with the data you have geocoded.</p>
+</section>
+<section id="task-1.6-adding-additional-data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.6-adding-additional-data-sources">Task 1.6: Adding Additional Data Sources</h3>
+<ol start="19" type="1">
+<li><p>Click <strong>Add</strong> and <strong>Search For Layers</strong> to look for a published service. Make sure you have <strong>My Organization</strong> selected, and then type <code>latest_africa_poverty_data</code>, and <strong>add</strong> the layer published by <em>mfbp1_UoStAndrews</em>.</p>
+<p><img src="images/clipboard-995050371.png" class="img-fluid"></p></li>
+</ol>
+<!-- -->
+<ol start="20" type="1">
+<li><p>Click <strong>Details</strong> again to see the table of contents with the two layers you have added to your map or click the back arrow to close the pane. In the <strong>Contents</strong> pane, hover over your <em>latest_africa_poverty_data</em> layer and click the <strong>Perform Analysis</strong> button.</p>
+<p><img src="images/clipboard-3533679184.png" class="img-fluid"></p></li>
+</ol>
+<!-- -->
+<ol start="21" type="1">
+<li><p>Then in <strong>Manage Data</strong>, select <strong>Merge Layers</strong>.</p>
+<p><img src="images/clipboard-774639463.png" class="img-fluid"></p></li>
+</ol>
+<!-- -->
+<ol start="22" type="1">
+<li>Make sure you have selected your poverty data layers and add a clear title (e.g., <em>poverty_data_1_1_1_indicator</em>). <strong>Important</strong>: <strong>Don’t forget to uncheck the “Use current map extent” option</strong>. Click <strong>Run Analysis</strong>.</li>
+</ol>
+<p><img src="images/clipboard-3412545992.png" class="img-fluid"></p>
+<p><strong>Processing Note</strong>: Give ArcGIS Online some time to process your analysis, and you will have a single layer that joins the poverty data for most of the countries.</p>
+<blockquote class="blockquote">
+<p><strong>Technical Tip</strong>: A key aspect you need to consider for future data joins is ensuring how the attributes will be joined. In this case, both poverty values are included as integers and the heading is called “2017”, which has allowed us to have one single column with the values we need to plot a <strong>world poverty map</strong>.</p>
+</blockquote>
+<p><img src="images/clipboard-3819038716.png" class="img-fluid"></p>
+<ol start="23" type="1">
+<li>Click <strong>Save</strong> to save the current web map to your account. Add the title: <strong>“Indicator 1.1.1: Proportion of population below the international poverty line (percent)”</strong></li>
+</ol>
+</section>
+<section id="task-1.7-converting-points-to-polygons" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.7-converting-points-to-polygons">Task 1.7: Converting Points to Polygons</h3>
+<p><strong>Current Issue</strong>: The data appears as points, but to better visualize it, the data should be converted to polygons.</p>
+<ol start="24" type="1">
+<li>On the ribbon <strong>Layers</strong>, click <strong>Add</strong>, then click <strong>Living Atlas Layers</strong>. Search for “<strong><em>world countries</em></strong>” and add one of Esri’s World Countries layers by clicking the plus.</li>
+</ol>
+<p><img src="images/clipboard-1835566217.png" class="img-fluid"></p>
+<p><img src="images/clipboard-3336779490.png" class="img-fluid"></p>
+<ol start="25" type="1">
+<li>Click the back arrow to close the pane. In the <strong>Contents</strong> pane, hover over your <strong>World Countries</strong> layer and click the <strong>Perform Analysis</strong> button.</li>
+</ol>
+<p><img src="images/clipboard-3446375221.png" class="img-fluid"></p>
+<ol start="25" type="1">
+<li>On the <strong>Perform Analysis</strong> pane, expand <strong>Summarize Data</strong>, then click <strong>Join Features</strong>.</li>
+<li>Configure the join as follows:
+<ul>
+<li><strong>Number 1, Choose target layer</strong>: Set to <strong>World Countries</strong></li>
+<li><strong>Choose layer to join to target layer</strong>: Choose the <strong>Indicator 1.1.1 layer</strong></li>
+<li><strong>Select the type(s) of join</strong>: Click <strong>Choose a spatial relationship</strong> and choose <strong>Intersects</strong></li>
+<li><strong>Choose join operation</strong>: Make sure <strong>Join one to one</strong> is selected</li>
+</ul></li>
+</ol>
+<p><img src="images/clipboard-2092863486.png" class="img-fluid"></p>
+<ol start="28" type="1">
+<li>Name the layer <strong>World Poverty</strong>, <strong>uncheck the “Use current map extent” box</strong>, and click <strong>Run Analysis</strong>.</li>
+</ol>
+<p><strong>Result</strong>: When the analysis finishes, the layer will be added to the map. By default, all the countries are shown in the same color. To see the data, you’ll change the symbology to show a choropleth map.</p>
+</section>
+<section id="task-1.8-creating-a-choropleth-map" class="level3">
+<h3 class="anchored" data-anchor-id="task-1.8-creating-a-choropleth-map">Task 1.8: Creating a Choropleth Map</h3>
+<ol start="29" type="1">
+<li><strong>Uncheck all layers</strong> except for <strong>World Poverty</strong>, then hover over the <strong>World Poverty layer</strong> and click the <strong>Change Style</strong> button.</li>
+</ol>
+<p><img src="images/clipboard-4259794882.png" class="img-fluid" width="276"></p>
+<ol start="30" type="1">
+<li>On the <strong>Change Style</strong> pane, expand the <strong>Choose an attribute to show</strong> menu and choose <strong>2017</strong>.</li>
+</ol>
+<p><strong>Understanding the Data</strong>: “2017” is the attribute that shows the latest reported value for any country that has reported data. The countries are symbolized with a default graduated color scheme that shows low values in light yellow and high values in dark blue. The light yellows blend into the basemap, so before analyzing the map, you’ll change the symbology.</p>
+<p><img src="images/clipboard-2863097957.png" class="img-fluid"></p>
+<ol start="31" type="1">
+<li><p>For <strong>Counts and Amounts (Color)</strong> click <strong>Options</strong>, then click <strong>Symbols</strong>. Choose a color ramp that stands out from the basemap. If necessary, click <strong>Invert</strong> to show the higher values in darker colors.</p>
+<p><img src="images/clipboard-393002853.png" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="initial-analysis-results" class="level3">
+<h3 class="anchored" data-anchor-id="initial-analysis-results">Initial Analysis Results</h3>
+<p><strong>Visual Analysis Findings</strong>: From a visual analysis, it appears that: - <strong>Europe, North America, and South America</strong> (partially) have the <strong>lowest levels of poverty</strong> - <strong>Several African countries</strong> report <strong>high levels of poverty</strong> - <strong>Some countries</strong> (such as Libya and Saudi Arabia) <strong>haven’t reported data</strong> for this metric</p>
+<blockquote class="blockquote">
+<p><strong>Scottish Context</strong>: Scotland, as part of the UK, would appear in the low poverty category on this global map, but this masks internal variations. Areas like the Glasgow conurbation, parts of Dundee, and some rural Highland communities experience higher poverty rates that would be visible in a more detailed, national-scale analysis.</p>
+</blockquote>
+<ol start="32" type="1">
+<li>Click <strong>OK</strong>, then <strong>Done</strong> and <strong>save the map</strong>.</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>⚠️ Important Reminder</strong>: Always remember to save your map - ArcGIS Online does not automatically save your work, so constantly remember to save your progress!</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="step-2-compare-child-poverty" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-compare-child-poverty">Step 2: Compare Child Poverty</h2>
+<p>Now that you’ve mapped global poverty, you’ll map reported data for <strong>percentage of children involved in economic activity</strong>. This indicator is measured with the goal of eradicating forced labor and ending modern slavery and use of child soldiers.</p>
+<section id="task-2.1-adding-child-labor-data" class="level3">
+<h3 class="anchored" data-anchor-id="task-2.1-adding-child-labor-data">Task 2.1: Adding Child Labor Data</h3>
+<ol type="1">
+<li><p>On the ribbon, click <strong>Add</strong> and choose <strong>Search for Layers</strong>. (At this point you should know how to do it)</p></li>
+<li><p>Click <strong>My Content</strong> and choose <strong>My Organization</strong>, then search for <strong><em>8.7.1</em></strong></p></li>
+<li><p>Click the <strong>plus</strong> to add the result <strong>Indicator 8.7.1: Proportion of children engaged in economic activity, by sex and age (percent)</strong> to the map.</p>
+<p><img src="images/clipboard-1963985900.png" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="task-2.2-joining-child-labor-data-with-poverty-data" class="level3">
+<h3 class="anchored" data-anchor-id="task-2.2-joining-child-labor-data-with-poverty-data">Task 2.2: Joining Child Labor Data with Poverty Data</h3>
+<ol start="4" type="1">
+<li><p>Hover over the <strong>World Poverty</strong> layer and click <strong>Perform Analysis</strong>.</p></li>
+<li><p>Expand <strong>Summarize Data</strong> and choose <strong>Join Features</strong>. Enter the parameters as follows:</p>
+<ul>
+<li><strong>Choose target layer</strong>: World Poverty</li>
+<li><strong>Choose layer to join to target layer</strong>: Indicator 8.7.1</li>
+<li><strong>Join type</strong>: Spatial relationship – Intersects</li>
+<li><strong>Join operation</strong>: one to one</li>
+<li><strong>Result layer</strong>: <em>Childhood Poverty</em></li>
+</ul></li>
+<li><p><strong>Uncheck</strong> “Use current map extent” and click <strong>Run Analysis</strong>.</p></li>
+<li><p><strong>Turn off</strong> all layers except for <strong>Childhood Poverty</strong>.</p></li>
+<li><p>Hover over the <strong>Childhood Poverty</strong> layer and click <strong>Change Style</strong>.</p></li>
+<li><p>Change the attribute to show to <strong>Value Latest Year</strong>.</p></li>
+</ol>
+<p><strong>Technical Note</strong>: Because you joined the datasets for global poverty and children in the workforce together, there will be many similar attribute names. Later, you’ll edit the names to make them clearer, but for now, remember that any attributes with a ‘1’ appended are from the economic labor layer.</p>
+<p><img src="images/clipboard-1930947350.png" class="img-fluid"></p>
+<p><strong>Observation</strong>: Already, you can see that more countries have reported data for poverty rates. ArcGIS Online offers an easy way to visualize and compare relationships where data is present.</p>
+<ol start="10" type="1">
+<li>Click <strong>Done</strong>.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="step-3-compare-data-to-find-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-compare-data-to-find-patterns">Step 3: Compare Data to Find Patterns</h2>
+<section id="task-3.1-creating-a-bivariate-map" class="level3">
+<h3 class="anchored" data-anchor-id="task-3.1-creating-a-bivariate-map">Task 3.1: Creating a Bivariate Map</h3>
+<ol type="1">
+<li><p>Hover over the <strong>Childhood Poverty</strong> layer and click the <em>ellipses (three dots)</em>. In the <strong>More Options</strong> menu, click <strong>Copy</strong>.</p>
+<p><strong>Result</strong>: An identical layer is added to the map.</p></li>
+<li><p>Turn off the original layer, then open the <strong>Change Style</strong> pane for the <strong>Childhood Poverty - copy</strong>.</p>
+<p><strong>Current State</strong>: The layer currently shows Value Latest Year from Indicator 8.7.1: Children engaged in economic activity. Now you’ll add the Value Latest Year attribute from Indicator 1.1.1: Global poverty for comparison.</p></li>
+<li><p>Under <strong>Choose an attribute to show</strong>, click <strong>Add attribute</strong> and choose <strong>2017</strong>.</p>
+<blockquote class="blockquote">
+<p><strong>Question for Understanding</strong>: Do you remember what that attribute represents and what layer it comes from?</p>
+</blockquote></li>
+<li><p>Under <strong>Select a drawing style</strong>, scroll down to <strong>Relationship</strong> and click <strong>Select</strong>, then click <strong>Options</strong>.</p>
+<p><img src="images/clipboard-1600591645.png" class="img-fluid"></p></li>
+</ol>
+<!-- -->
+<ol start="5" type="1">
+<li>Click <strong>Symbols</strong> and choose the <strong>blue-pink-purple color palette</strong>. Click <strong>OK</strong>, then <strong>Done</strong>.</li>
+</ol>
+<p><strong>Understanding Bivariate Maps</strong>: The relationship symbology style is a way of creating <strong>bivariate maps</strong> that lets you easily compare two topics on a single map because only the countries with data for both indicators are shown.</p>
+</section>
+<section id="task-3.2-improving-data-labels-and-pop-ups" class="level3">
+<h3 class="anchored" data-anchor-id="task-3.2-improving-data-labels-and-pop-ups">Task 3.2: Improving Data Labels and Pop-ups</h3>
+<ol start="6" type="1">
+<li><p>Hover over the <strong>Childhood Poverty - copy</strong> layer and click the three-dots. In the <strong>More Options</strong> menu, click <strong>Rename</strong> and replace the default name with <strong>Global Childhood Poverty</strong>.</p></li>
+<li><p>Click the ellipses again and click <strong>Configure Pop-up</strong>.</p></li>
+<li><p>Under <strong>Pop-up Contents</strong>, click <strong>Configure Attributes</strong>.</p></li>
+<li><p>In the <strong>Configure Attributes</strong> window, <strong>uncheck everything</strong> except for <strong>Country, Value Latest Year, and 2017</strong>.</p>
+<ol start="6" type="1">
+<li><p>In the <strong>Field Alias</strong> column:</p>
+<ul>
+<li>Click <strong>2017</strong> and type <strong>Global Poverty</strong></li>
+<li>Scroll down, click <strong>Value</strong> and type <strong>Engaged in Economic Activity</strong></li>
+</ul>
+<p>In the Configure Pop-up pane, click <strong>OK</strong>.</p>
+<p><img src="images/clipboard-2849139696.png" class="img-fluid"></p></li>
+</ol></li>
+</ol>
+<p><strong>Result</strong>: Now when you click on a country, the pop-up shows only those three attributes with clear, understandable names.</p>
+</section>
+<section id="task-3.3-analyzing-the-legend-and-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="task-3.3-analyzing-the-legend-and-patterns">Task 3.3: Analyzing the Legend and Patterns</h3>
+<ol start="11" type="1">
+<li>At the top of the <strong>Contents</strong> pane, click <strong>Legend</strong>.</li>
+</ol>
+<p><img src="images/clipboard-2553034969.png" class="img-fluid" width="428"></p>
+<p><strong>Understanding the Legend</strong>: The Legend pane shows the symbology for all the layers that are turned on, and your changes will be reflected here. By comparing the legend to the map, you can see the two extremes of the spectrum:</p>
+<ul>
+<li><strong>Countries shaded purple</strong> have a <strong>high poverty rate</strong> and <strong>large proportions of children working</strong> to support themselves or their families</li>
+<li><strong>Countries in light pink</strong> have <strong>low poverty rates</strong> and <strong>small proportions of children at work</strong></li>
+</ul>
+<p><strong>Complex Patterns</strong>: In between there are countries with mixed patterns: - <strong>Countries like Senegal</strong> with relatively <strong>low poverty rates</strong> but <strong>high proportions of children working</strong> - <strong>Countries like India</strong> with <strong>high poverty rates</strong> but <strong>small proportions of children contributing to the economy</strong></p>
+<blockquote class="blockquote">
+<p><strong>Scottish Analysis Example</strong>: If we were to apply this analysis to Scotland at a regional level, we might find that: - <strong>Urban areas like Edinburgh and Aberdeen</strong> might show low poverty but some youth employment in service sectors - <strong>Rural Highland areas</strong> might show different patterns due to agricultural work and seasonal employment - <strong>Post-industrial areas like parts of Glasgow or Dundee</strong> might show higher poverty rates with different youth employment patterns</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="analysis-questions-and-policy-applications" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-questions-and-policy-applications">Analysis Questions and Policy Applications</h2>
+<p>If you toggle between layers in the Contents pane, the legend will help you perform more visual analysis on the countries. If you were looking at ways to base policy on this information, you could use the maps you created to answer the following questions:</p>
+<section id="sdg-1-no-poverty-questions" class="level3">
+<h3 class="anchored" data-anchor-id="sdg-1-no-poverty-questions">SDG 1: No Poverty Questions</h3>
+<ul>
+<li><strong>Which countries have the highest poverty rates?</strong></li>
+<li><strong>Where does it appear that children are protected from labor?</strong></li>
+<li><strong>Where should international efforts to alleviate poverty be targeted?</strong></li>
+<li><strong>Within individual countries, what are some ways of improving the situation for children facing challenges associated with poverty?</strong></li>
+</ul>
+</section>
+<section id="questions-pertaining-to-both-indicators" class="level3">
+<h3 class="anchored" data-anchor-id="questions-pertaining-to-both-indicators">Questions Pertaining to Both Indicators</h3>
+<ul>
+<li><strong>Where do you see overlaps in patterns between the two maps that you have created for each indicator?</strong></li>
+<li><strong>Where are the most affected areas that efforts should be focused toward helping improve the condition for children?</strong></li>
+<li><strong>What sorts of place-based policies could be designed to help improve the conditions for children?</strong></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Scottish Policy Application Example</strong>: Using similar spatial analysis techniques, Scottish policymakers could: - <strong>Target the Scottish Child Payment</strong> to areas with highest concentration of child poverty (using SIMD data) - <strong>Design place-based interventions</strong> for areas like Inverclyde, West Dunbartonshire, or parts of Glasgow where multiple deprivation indicators overlap - <strong>Develop rural-specific policies</strong> for Highland and Island communities where geographic isolation compounds poverty challenges - <strong>Create youth employment programs</strong> in areas where high poverty correlates with limited economic opportunities for young people</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="next-steps-share-links-to-story-map---optional." class="level2">
+<h2 class="anchored" data-anchor-id="next-steps-share-links-to-story-map---optional.">Next Steps: Share Links to Story Map - Optional.</h2>
+<p>You now have three maps showing UN Sustainable Development Goals data. With a little extra work, there are several ways you can share these:</p>
+<ul>
+<li><strong>Embed the maps in a Story Map</strong> using <a href="https://learn.arcgis.com/en/projects/get-started-with-story-maps/">Get Started with Story Maps</a></li>
+<li><strong>Create dashboard applications</strong> to allow interactive exploration of the data</li>
+<li><strong>Export the data</strong> for use in other analytical tools or reports</li>
+<li><strong>Share the web maps</strong> directly with stakeholders or the public</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Scottish Implementation Example</strong>: The Scottish Government could use similar techniques to create: - <strong>Story maps showing progress</strong> toward SDG targets at local authority level - <strong>Interactive dashboards</strong> for community planning partnerships - <strong>Public-facing visualizations</strong> showing how local areas contribute to national SDG commitments - <strong>Policy briefings</strong> that combine spatial analysis with targeted interventions</p>
+</blockquote>
+<hr>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Lab_3.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab No 3: Mapping Meaningful Places in Your Community</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Lab_5.html" class="pagination-link">
+        <span class="nav-page-text">Lab No 5: Build an Interactive Dashboard</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

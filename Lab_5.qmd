@@ -1,4 +1,6 @@
-# Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial {.unnumbered}
+# Lab No 5: Build an Interactive Dashboard  {.unnumbered}
+
+**Estimated time of completion:** 60 Minutes
 
 ## Overview
 

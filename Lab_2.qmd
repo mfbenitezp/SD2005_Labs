@@ -1,4 +1,4 @@
-# Lab No 2: Create a Map Lab {.unnumbered}
+# Lab No 2: Create a Web Map {.unnumbered}
 
 This tutorial is inspired from ArcGIS Online Learning resources available at:
 

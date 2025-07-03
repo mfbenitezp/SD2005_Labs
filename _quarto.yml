@@ -2,9 +2,14 @@ project:
   type: book
 
 book:
-  title: "SD2005 Labs"
+  title: "SD2005 - QUANTITATIVE DATA REPORT"
+  subtitle: "Tecnical Practices to learn the role of GIS in the study of SDGs"
   author: "Fernando Benitez-Paez"
-  date: "7/2/2025"
+  date: "7/3/2025"
+  downloads: [pdf]
+  sidebar:
+    style: "docked"
+    background: light
   chapters:
     - index.qmd
     - intro.qmd
@@ -20,10 +25,11 @@ bibliography: references.bib
 
 format:
   html:
+    respect-user-color-scheme: true
     theme: cosmo
+    code-copy: true
   pdf:
     documentclass: scrreprt
-
 
 editor: visual
 
