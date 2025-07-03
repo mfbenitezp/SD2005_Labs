@@ -12,6 +12,7 @@ book:
     - Lab_1.qmd
     - Lab_2.qmd
     - Lab_3.qmd
+    - Lab_4.qmd
     - references.qmd
 
 bibliography: references.bib
