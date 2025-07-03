@@ -1,6 +1,10 @@
 # Lab No 2: Create a Map Lab {.unnumbered}
 
-**Objective:** Add a data layer to a new map and start visualizing patterns
+This tutorial is inspired from ArcGIS Online Learning resources available at:
+
+<https://learn.arcgis.com/en/projects/create-a-map/>
+
+**Objective:** The idea of this tutorial is you learn how to create a web map using ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
 
 **Estimated time of completion:** 45 Minutes
 
@@ -9,6 +13,8 @@
 First, you will download a .csv file that contains general information about public high schools in Detroit, Michigan.
 
 1.  Download the [DetroitSchoolCharacteristics.csv](https://arcgis.com/sharing/rest/content/items/66d7523c560c4ca894b1acf70a2f8005/data) file to your computer and open it in Microsoft Excel or another spreadsheet program like Google Sheets.
+
+    ![](images/clipboard-1256318476.png)
 
 You will see a table with columns of longitude, latitude, school name, total students eligible for free and reduced meal plans, and race and ethnicity data. This data comes from the National Center for Education Statistics' (NCES) Education Demographic and Geographic Estimate (EDGE) program.
 
@@ -22,15 +28,17 @@ It's hard to visualize where these schools are located or any patterns in the in
 
 Layers are the way geographic data is organized and combined to create maps. For example, a map may consist of a roads layer, a lakes layer, and buildings layer. These layers are also the basis for geographic analysis to aid in decision making. You will create a map layer by adding your .csv file to an empty map.
 
-1.  Sign in to your [ArcGIS organizational account](https://www.arcgis.com/home/signin.html) or into ArcGIS Enterprise using a named user account.
-
-> **Note:** If you don't have an organizational account, [see options for software access](https://learn.arcgis.com/en/become-a-member/).
+1.  Sign in to your [ArcGIS account](https://uostandrews.maps.arcgis.com/) using your university credentials.
 
 2.  On the ribbon, click the **Map** tab.
 
 3.  In Map Viewer, in the Layers pane, click the arrow next to the **Add** button and click **Add layer from file**.
 
+    ![](images/clipboard-1509742054.png)
+
 The Add Layer window appears.
+
+![](images/clipboard-2954190588.png)
 
 4.  Drag the DetroitSchoolCharacteristics.csv file to the Add Layer window.
 
@@ -41,6 +49,8 @@ The Add Layer window appears.
 A list of fields appears. Map layers consist of spatial and tabular information. The table will contain the same columns—also called fields or attributes—as the .csv file. On this page, you can choose which fields from the .csv file you want to include, provide display names, and data type information.
 
 The software automatically detected the fields and produced default display name and data types. This page is an opportunity for you to review that the automatic assignments are accurate.
+
+![](images/clipboard-2158911334.png)
 
 In this example, you will choose to include all the fields, so you won't adjust the check boxes.
 
@@ -64,6 +74,8 @@ The Location settings page appears. Spatial information for the layer will be de
 
 9.  Click **Create and add to map**.
 
+![](images/clipboard-3132353095.png)
+
 The new layer appears on the map. The map displays the locations of the schools listed in the .csv file. Each school is considered a feature in the layer. You have access to the descriptive information, or attributes, by viewing pop-ups for features on the map.
 
 10. On the map, click any circle.
@@ -72,14 +84,21 @@ A pop-up window appears with information about the school from the layer's table
 
 11. Close the pop-up.
 
+    ![](images/clipboard-3299587967.png)
+
 Before you continue, you will save the map.
 
 12. In the Contents pane, click **Save and open** and click **Save as**.
 
+    ![](images/clipboard-4113916423.png)
+
 13. In the Save map window, enter the following:
 
     -   For **Title**, type "Public high schools in Detroit".
+
     -   For **Summary**, type "Map of public high schools and student body race and ethnicity data in Detroit, Michigan".
+
+        ![](images/clipboard-1085109685.png)
 
 14. Click **Save**.
 
@@ -89,11 +108,15 @@ Maps in ArcGIS Online consist of layers. You added the Detroit high schools laye
 
 1.  On the Contents (dark) toolbar, click **Basemap**.
 
+    ![](images/clipboard-1084364526.png)
+
 The Basemap pane appears. The Topographic basemap is selected. This basemap looks good but is better suited for a reference map. You'll choose a more minimally designed basemap so it does not distract from the school data.
 
 2.  In the Basemap pane, click **Light Gray Canvas**. Close the Basemap pane.
 
 > **Note:** You may see different basemaps depending on the configuration of your organization. If the Light Gray Canvas basemap is not available, skip to the next step without changing the basemap.
+
+![](images/clipboard-1641839181.png)
 
 Next, you'll configure the high school layer's symbols so they are sized based on the number of students at each school eligible for free and reduced meal plan programs.
 
@@ -101,9 +124,13 @@ Next, you'll configure the high school layer's symbols so they are sized based o
 
 > **Note:** If the Settings toolbar is unavailable, on the Contents toolbar, click **Layers**. In the Layers pane, click **Detroit high schools** to select the layer.
 
+![](images/clipboard-513900653.png)
+
 The Styles pane appears. Currently, the style is based on the data's location only. You'll configure the symbols to convey both location and one of the data's attributes.
 
 4.  In the Styles pane, click the **Field** button.
+
+    ![](images/clipboard-1156307207.png)
 
 You will choose to style the map by the number of students at each high school who are eligible for free and reduced price meal (FRPM).
 
@@ -111,23 +138,35 @@ You will choose to style the map by the number of students at each high school w
 
 5.  On the Select fields menu, choose **Total of free lunch and reduced-price lunch eligible** and click **Add**.
 
+![](images/clipboard-1391853616.png)
+
 The options under Pick a style update to reflect choices that are suitable for the Total of free lunch and reduced price lunch eligible field. **Counts and Amounts (size)** is selected and the map updates to reflect this style. This style reveals some new patterns in the data. The larger the circle, the more students are eligible for FRPM at the school.
 
 6.  On the **Counts and Amounts (Size)** card, click **Style options**.
 
+    ![](images/clipboard-2540244152.png)
+
 7.  In the Counts and Amounts (size) pane, for **Symbol style**, click the current symbol.
+
+    ![](images/clipboard-483019388.png)
 
 The Symbol style window appears. You'll adjust the symbol's properties so circles can be seen even when they are overlapping.
 
 8.  Set **Fill transparency** to 25. Set **Outline transparency** to 0.
 
+    ![](images/clipboard-2836802962.png)
+
 The symbols on the map update. It is now easier to see overlapping circles.
 
 9.  In the Symbol style window, for **Fill color**, click the current color. In the Select color window, for **\#**, type **0070FF** and press Enter.
 
+    ![](images/clipboard-1456565185.png)
+
 The color of the map symbols changes to blue.
 
 10. Click **Done** in the Select color window, the Style options pane, and the Styles pane.
+
+    ![](images/clipboard-1048463262.png)
 
 The map shows the number of students at each high school who are eligible for FRPM programs. The schools with more students who are eligible for FRPM programs are represented by larger circles. Schools represented with smaller circles have fewer students who are eligible for FRPM programs.
 
@@ -145,13 +184,19 @@ The Pop-ups pane appears and a sample pop-up appears on the map. The pop-up's ti
 
 3.  In the Pop-ups pane, click **Title**. Erase the text in the box.
 
+    ![](images/clipboard-1916526302.png)
+
 The title text disappears from the sample pop-up. You'll replace the list of fields with a sentence that includes the relevant information.
 
 4.  Next to **Fields list**, click the **Options** button. Click **Delete**.
 
+    ![](images/clipboard-3782047839.png)
+
 5.  Click **Add content** and click **Text**.
 
 6.  In the text editing window, type **{**. In the menu that appears, scroll almost to the bottom and click **School name**.
+
+    ![](images/clipboard-4127750767.png)
 
 The School_name field was one of the fields in the .csv file you used to create the feature layer. By setting the dynamic text to this field, the pop-up that displays for each school point will display the corresponding School_name field.
 
@@ -163,13 +208,19 @@ You can add fields by typing their names inside of curly brackets or by choosing
 
 9.  Use the **Bold** button on the toolbar to add bold formatting to **{School_name}**, **{Total_elementary_secondary_stud}**, and **{Total_of_free_lunch_and_reduced}**.
 
+    ![](images/clipboard-347892411.png)
+
 10. Click **OK**.
 
 The preview pop-up replaces the field names with the attribute values of one of the features.
 
+![](images/clipboard-3182088464.png)
+
 All the fields still exist in the data table, but they don't display in the pop-up. You can modify the contents of the pop-up at any time. You can still see all the attributes by showing the table.
 
 11. In the Layers pane, next to **Detroit high schools**, click the **Options** button. Click **Show table**.
+
+    ![](images/clipboard-2579748984.png)
 
 The layer's table appears below the map.
 
@@ -193,6 +244,8 @@ Next, you will make a copy of the layer.
 
 3.  For the **Students FRPM eligible** layer, click the **Options** button and click **Duplicate**.
 
+    ![](images/clipboard-528934866.png)
+
 4.  Rename the copied layer to be **Race and ethnicity data**.
 
 5.  Next to **Students FRPM eligible**, click the **Visibility** button to hide the layer on the map.
@@ -201,23 +254,37 @@ Next, you will style the Race and ethnicity data layer with race and ethnicity a
 
 6.  Ensure that the **Race and ethnicity data** layer is selected in the Layers pane. In the Styles pane, remove the **Total FRPM eligible** attribute.
 
+    ![](images/clipboard-1774801037.png)
+
 7.  Click the **Field** button.
 
 8.  In the Add fields window, check the following fields:
 
     -   All students - American Indian/Alaska Native
+
     -   All students - Asian
+
     -   All Students - Black or African American
+
     -   All Students - Native Hawai'ian or Other Pacific Islander
+
     -   All Students - Hispanic
+
     -   All Students - Two or More Races
+
     -   All Students - White
+
+        ![](images/clipboard-1639153168.png)
 
 9.  Click **Add**.
 
 10. Under **Pick a style**, click the **Charts and Size** style.
 
+    ![](images/clipboard-830043279.png)
+
 The layer style updates.
+
+![](images/clipboard-2259718611.png)
 
 The map now shows pie charts of the student body's race and ethnicity categories. The sizes of the pie charts represent the number of students at the schools.
 
@@ -230,6 +297,8 @@ Your map now tells a story about the locations and some socioeconomic attributes
 By saving your map, you also created a corresponding item page that contains information, actions, options, and settings for the map.
 
 1.  On the Contents toolbar, click **Map properties**. In the Map Properties pane, click **Item details**.
+
+    ![](images/clipboard-4270939302.png)
 
 Your map's item page opens in a new browser tab. The item details are missing important attribution and descriptive information that you will fill in before you share the map. For example, you must give credit to the data providers.
 
