@@ -1,4 +1,4 @@
-# Lab No 3: Mapping Meaningful Places in Your Community 
+# Lab No 3: Mapping Meaningful Places in Your Community {.unnumbered}
 
 ## Overview
 
@@ -7,6 +7,8 @@ In this lab, you will learn to identify and map meaningful places in your commun
 ## Learning Objectives
 
 By the end of this lab, you will be able to: - Design a research project with clear objectives and methodology - Create digital surveys using ArcGIS Survey123 - Collect and analyze spatial data about community places - Visualize data patterns using heat maps and other analytical tools - Draw conclusions about community identity and important places
+
+**Estimated time of completion:** 45 Minutes
 
 ------------------------------------------------------------------------
 

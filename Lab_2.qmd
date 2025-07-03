@@ -4,7 +4,9 @@ This tutorial is inspired from ArcGIS Online Learning resources available at:
 
 <https://learn.arcgis.com/en/projects/create-a-map/>
 
-**Objective:** The idea of this tutorial is you learn how to create a web map using ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
+## **Overview:**
+
+The idea of this tutorial is you learn how to create a web map using ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
 
 **Estimated time of completion:** 45 Minutes
 

@@ -1,14 +1,12 @@
-# Practice No 4: Examine Global Poverty Using UN Sustainable Development Goals
+# Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals {.unnumbered}
 
-## SD2005 -- Week 7 & 8 - Spatial Data for SDGs
+*Tutorial inspired on: [ArcGIS Online blog entry](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/examine-global-poverty-using-un-sustainable-development-goals/)*
 
-**Dr Fernando Benitez-Paez**
-
-*Tutorial based on: [ArcGIS Online blog entry](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/examine-global-poverty-using-un-sustainable-development-goals/)*
+**Estimated time of completion:** 70 Minutes
 
 ------------------------------------------------------------------------
 
-## Introduction
+## Overview
 
 Have you ever considered where pockets of poverty exist and who is most affected? Unfortunately, global trends show that children are most impacted by poverty. Around the world **385 million children** live in extreme poverty, and in 2013 the World Bank found that **19.5 percent of children** in 89 countries lived in a household that survived on U.S. \$1.90 per day per person or less.
 
@@ -16,14 +14,14 @@ Have you ever considered where pockets of poverty exist and who is most affected
 
 By completing this tutorial, you should now be able to:
 
-1.  **Access and download** UN SDG data from official portals
-2.  **Prepare and clean** spatial data for analysis
-3.  **Create feature layers** in ArcGIS Online through geocoding
-4.  **Perform spatial joins** to combine multiple datasets
-5.  **Create choropleth maps** to visualize quantitative data
-6.  **Develop bivariate maps** to compare multiple indicators
-7.  **Configure effective pop-ups** and legends for data communication
-8.  **Apply spatial analysis techniques** to real-world policy questions
+-   **Access and download** UN SDG data from official portals
+-   **Prepare and clean** spatial data for analysis
+-   **Create feature layers** in ArcGIS Online through geocoding
+-   **Perform spatial joins** to combine multiple datasets
+-   **Create choropleth maps** to visualize quantitative data
+-   **Develop bivariate maps** to compare multiple indicators
+-   **Configure effective pop-ups** and legends for data communication
+-   **Apply spatial analysis techniques** to real-world policy questions
 
 These skills are transferable to many other contexts, including local and national policy analysis, environmental monitoring, public health studies, and economic development planning.
 

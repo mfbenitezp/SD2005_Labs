@@ -1,0 +1,664 @@
+# Lab No 5: Build an Interactive Dashboard - ArcGIS Tutorial {.unnumbered}
+
+## Overview
+
+In this tutorial, you will configure a web map and use it to create an interactive dashboard for finding electric vehicle charging stations. This tutorial demonstrates how to create dashboards that can be applied to various geographic contexts, including examples relevant to Scotland such as monitoring renewable energy infrastructure, analyzing tourism patterns, or tracking public transport usage.
+
+## Learning Objectives
+
+By the end of this tutorial, you will be able to: - Configure web map pop-ups for dashboard use - Create and customize dashboard elements (headers, indicators, tables, and details) - Implement interactive selectors for data filtering - Configure actions to connect dashboard elements - Share dashboards within your organization
+
+## Part 1: Configure a Web Map
+
+### Step 1: Access the Base Map
+
+1.  Open the [Electric charging stations in Canada](https://www.arcgis.com/apps/mapviewer/index.html?webmap=10adc88fc65745828f708c89c472ca39) web map
+2.  Click **Sign In** and sign in with your ArcGIS Online account
+
+A map appears showing charging stations for electric vehicles across Canada. This type of infrastructure mapping is equally relevant for Scotland, where you might map: - **Electric vehicle charging points** across Scottish cities like Edinburgh, Glasgow, and Aberdeen - **Renewable energy installations** such as wind farms in the Highlands or solar installations in the Borders - **Public transport hubs** including bus stations, train stations, and ferry terminals
+
+![](images/clipboard-4262401672.png)
+
+### Step 2: Save Your Copy of the Map
+
+1.  If necessary, on the Contents (dark) toolbar, at the bottom, click the **Expand** button
+
+    ![](images/clipboard-1325463545.png)
+
+2.  Click **Save and open** and choose **Save as**
+
+    ![](images/clipboard-608780073.png)
+
+3.  In the Save map window, for **Title**, add your name or initials to the end of the existing text
+
+> **Important**: You cannot create two layers in an ArcGIS organization with the same name. Adding your initials ensures that other students can also complete this tutorial. For example, if your name is John Smith, you might title it "Electric charging stations in Canada - JS"
+
+![](images/clipboard-78236888.png)
+
+4.  Click **Save**
+
+### Step 3: Explore the Available Layers
+
+1.  On the Contents toolbar, click **Layers** to open the Layers pane
+
+![](images/clipboard-2585415306.png)
+
+Three layers are available: - **Electric Charging Stations**: Blue dots representing charging locations with comprehensive attribute data - **OpenStreetMap Amenities for North America**: Context layer showing nearby facilities - **Provinces and Territories of Canada**: Boundary layer for spatial filtering
+
+2.  Zoom in on the map until more symbols appear to see the OpenStreetMap amenities layer
+
+![](images/clipboard-2848451513.png)
+
+The amenities layer provides crucial context - since vehicle charging takes time, proximity to restaurants, shops, or libraries makes stations more attractive. In a Scottish context, this could include: - **Proximity to tourist attractions** (castles, distilleries, hiking trails) - **Access to amenities** (shops, cafes, accommodation) - **Integration with public transport** (bus stops, railway stations)
+
+### Step 4: Configure Pop-ups
+
+1.  In the Layers pane, click the **Electric Charging Stations** layer to select it
+2.  Expand the Settings (light) toolbar and click **Pop-ups**
+
+![](images/clipboard-526724833.png)
+
+A sample pop-up appears over the map showing all available fields, many of which may be empty.
+
+![](images/clipboard-1925024008.png)
+
+3.  In the Pop-ups pane, click **Title** and confirm that the field is blank
+
+    ![](images/clipboard-627804342.png)
+
+4.  Click **Fields list** and click **Select fields**
+
+5.  In the Select fields window, click **Deselect all** to clear all fields
+
+6.  Click the **Station Name** field to select it
+
+    ![](images/clipboard-4041155890.png)
+
+    ![](images/clipboard-54267073.png)
+
+7.  Click **Search fields** and type "EV Connectors", then select the **EV Connectors** field
+
+    ![](images/clipboard-1719891320.png)
+
+8.  Search for and add the following fields:
+
+    -   **Street Address**
+    -   **Station Phone**
+    -   **EV Pricing**
+    -   **Access**
+    -   **Access Days Time**
+    -   **Cards Accepted**
+    -   **Date Last Confirmed**
+
+9.  Click **Done**
+
+    ![](images/clipboard-2772646219.png)
+
+10. Close the Pop-ups pane
+
+> **Scottish Context Example**: If creating a similar dashboard for Scotland, you might include fields such as: - **Accessibility information** (wheelchair access, disabled parking) - **Pricing in GBP** (including contactless payment options) - **Network provider** (ChargePlace Scotland, Polar, etc.) - **Connection to renewable energy** (wind or solar powered)
+
+------------------------------------------------------------------------
+
+## Part 2: Create a Dashboard from the Web Map
+
+### Step 1: Set Default View and Create Dashboard
+
+1.  Click the **Default map view** button to return to the default map view
+
+    ![](images/clipboard-1797039023.png)
+
+2.  On the Contents toolbar, click **Save and open** and click **Save**
+
+3.  On the Contents toolbar, click **Create app** and click **Dashboards**
+
+    ![](images/clipboard-2850555895.png)
+
+4.  In the Create new dashboard window, type:
+
+    -   **Title**: Vehicle charging stations
+    -   **Tags**: electric vehicles (press Enter)
+    -   **Summary**: Delete existing text and type "This dashboard allows you to find electric vehicle charging stations near you."
+
+5.  Click **Create dashboard**
+
+The new dashboard appears with your configured web map taking up the full space.
+
+------------------------------------------------------------------------
+
+## Part 3: Configure Dashboard Information Elements
+
+### Step 1: Add a Header
+
+1.  At the bottom of the dashboard toolbar, click the **Expand** button
+
+2.  On the toolbar, click the **View** button to open the View pane
+
+    ![](images/clipboard-1636857904.png)
+
+3.  Click the **Header** tab and click **Add header**
+
+    ![](images/clipboard-4293664555.png)
+
+4.  For **Title**, type "Electric vehicle charging stations"
+
+    ![](images/clipboard-3416950395.png)
+
+5.  Expand the **Menu links** section and turn off **Sign out**
+
+    ![](images/clipboard-2112683187.png)
+
+6.  Click **Done**
+
+    ![](images/clipboard-2568509930.png)
+
+### Step 2: Add an Indicator for Operational Stations
+
+1.  On the toolbar, click **Add element**
+
+    ![](images/clipboard-3753053626.png)
+
+2.  Below the map, click the **Add** button and click **Indicator**
+
+    ![](images/clipboard-1950925922.png)
+
+3.  In the Select a layer window, click **Electric Charging Stations**
+
+    ![](images/clipboard-1732714117.png)
+
+    A preview of the indicator appears.
+
+    ![](images/clipboard-467865052.png)
+
+    By default, an indicator’s value is the count of features in the data source. In this case, the value is the total number of operational stations across Canada. Since this layer receives updates daily, the preview may show a different number than the images in this tutorial.
+
+    The indicator has no context to explain the meaning of the number. You'll add labels to explain its meaning.
+
+4.  Click the **Indicator** tab
+
+5.  For **Bottom text**, type "Operational stations"
+
+    ![](images/clipboard-3954221807.png)
+
+6.  Click **Add icon**
+
+7.  Expand **Miscellaneous** and click the check mark in a circle icon
+
+    ![](images/clipboard-1498591286.png)
+
+8.  Click **OK**
+
+9.  Ensure **Position** is set to **Left**
+
+10. Click the **Fill color**. For **Hex**, type `005ce6` and press Enter
+
+11. Expand **Value formatting** and turn off **Unit prefix**
+
+    The preview now shows the exact number of stations instead of a rounded number.
+
+    ![](images/clipboard-2060024681.png)
+
+    Later, you will connect the indicator element to others on the dashboard, so the number can change based on filters that the user applies. For now, you'll give the indicator element a meaningful name so it is easier for you to identify it later when you configure actions.
+
+12. Click the **General** tab
+
+13. For **Name field**, type "Operational stations indicator"
+
+14. Click **Done**
+
+> **Scottish Application**: For a Scottish renewable energy dashboard, you might create indicators showing: - **Active wind turbines** in the Highlands - **Solar installations** generating power - **Hydroelectric facilities** operational - **Carbon offset** achieved through renewable sources
+
+### Step 3: Add a Table
+
+1.  On the toolbar, click **Add element**
+
+2.  Point to the indicator element and click the **Add** button on the left side
+
+3.  Click **Table**
+
+    ![](images/clipboard-373334305.png)
+
+4.  In the Select a layer window, click **Electric Charging Stations**
+
+5.  For **Table type**, choose **Features**
+
+6.  For **Value fields**, click **Add field** and choose **Station_Name**
+
+    ![](images/clipboard-3502868436.png)
+
+    The **Station Name** field appears in the **Value fields** list and as the first column in the preview table.
+
+    ![](images/clipboard-542693389.png)
+
+    The **Value fields** section determines the columns of the table, with each row representing an individual feature.
+
+7.  Add four more fields:
+
+    -   **Street_Address**
+    -   **City**
+    -   **ZIP**
+    -   **Facility_Type**
+
+8.  Click the **Table** tab and turn on **Row striping**
+
+    ![](images/clipboard-337822249.png)
+
+9.  Click the **Header** tab
+
+10. In the **Label override** section, remove underscores from labels (e.g., "Station Name", "Street Address", "Facility Type")
+
+11. Change **Text color** to `#ffffff` and **Background color** to `#004da8`
+
+    The table's header changes to a dark blue color with white text.
+
+    ![](images/clipboard-658430.png)
+
+    The table’s visual area is now configured. Next, you will name the table so it is easier to identify later when you set up actions.
+
+12. Click the **General** tab and set **Name** to "Station table"
+
+13. Expand the **No selection** section and click **Edit** next to Label
+
+14. Click **Format** and choose **Heading 3**
+
+    ![](images/clipboard-1023346554.png)
+
+15. Type "Select a province to start viewing stations"
+
+16. Click **Done**
+
+    ![](images/clipboard-2457235248.png)
+
+### Step 4: Add a Details Element
+
+1.  On the toolbar, click **Add element**
+
+2.  Click the **Add** button on the left of the dashboard and click **Details**
+
+    ![](images/clipboard-3575815158.png)
+
+3.  Choose **Electric Charging Stations**
+
+4.  Click the **General** tab and set **Name** to "Station details"
+
+5.  For **Title**, click **Edit**
+
+6.  Click **Format**, choose **Heading 2**, and type "Station details"
+
+    ![](images/clipboard-2611293746.png)
+
+    The title appears on the preview.
+
+    ![](images/clipboard-1570830570.png)
+
+7.  Expand **No selection** section, click **Edit** next to Label
+
+8.  Click **Format**, choose **Heading 3**, and type "Select a station to view details"
+
+9.  Click **Done**
+
+10. Drag the right edge of the details pane until it takes up about 25% of the dashboard width
+
+    ![](images/clipboard-3272343894.png)
+
+    The dashboard is now configured with a map, a header, an indicator, a table, and a details element. Next, you'll give users the ability to filter the data on the dashboard
+
+------------------------------------------------------------------------
+
+## Part 4: Configure Dashboard Selectors
+
+### Step 1: Add a Province Selector
+
+1.  In the View pane, click the **Header** tab
+
+2.  Click **Add selector** and choose **Category selector**
+
+    ![](images/clipboard-81236902.png)
+
+3.  For **Categories from**, choose **Features**
+
+4.  Select **Provinces and Territories of Canada**
+
+    ![](images/clipboard-3984646187.png)
+
+5.  For **Line item template**, click **Add field** and choose **PRENAME**
+
+    ![](images/clipboard-2809799950.png)
+
+    **PRENAME** is short for province English name. The preview updates to show a province name.
+
+    ![](images/clipboard-3780457974.png)
+
+6.  Click the **Selector** tab
+
+7.  For **Label**, type "Select a province"
+
+8.  Click **Add icon**, expand **Hub** section, choose **Boundaries** icon, and click **OK**
+
+    ![](images/clipboard-1401210613.png)
+
+9.  Turn on **Show search**
+
+10. Click the preview.
+
+    The list of provinces appears. At the top is a search bar that allows you to search the list with text.
+
+    ![](images/clipboard-269494781.png)
+
+    You'll add an item to this list that allows users to select no province or territory.
+
+11. Turn on **None option** and set **Label for none** to "No province selected"
+
+    ![](images/clipboard-2259019526.png)
+
+12. Expand **General** section and set **Name** to "Province selector"
+
+13. Click **Done**
+
+    The province selector appears on the dashboard's header, above the map.
+
+    ![](images/clipboard-1617512470.png)
+
+### Step 2: Add a City Selector
+
+1.  Click **Add selector** and choose **Category selector**
+
+2.  For **Categories from**, choose **Grouped values**
+
+    ![](images/clipboard-2188399476.png)
+
+3.  Choose **Electric Charging Stations**
+
+4.  For **Category field**, choose **City**
+
+    The **City** field is also added to the **Sort by** section. This will sort the cities alphabetically in the selector to make them easier to find.
+
+    ![](images/clipboard-2892653331.png)
+
+    **Maximum categories** is set to 50, which means that only the first 50 cities will appear in the selector. There are more than 50 cities and towns in most provinces, so you will increase this limit.
+
+5.  For **Maximum categories**, type `350`
+
+6.  Click the **Selector** tab
+
+7.  For **Label**, type "Select a city"
+
+    ![](images/clipboard-1204752891.png)
+
+8.  Click **Add icon**, expand **Hub** section, choose **City** icon, and click **OK**
+
+    ![](images/clipboard-757330613.png)
+
+9.  For **Selection**, choose **Multiple**
+
+10. Set **Placeholder text** to "No city selected"
+
+    ![](images/clipboard-1748634503.png)
+
+11. Turn on **Show search** and **Show reset and select all**
+
+12. Click the preview to expand the list of cities.
+
+    ![](images/clipboard-3722558449.png)
+
+    **Reset** and **Select all** buttons appear below the list. These tools can help users interact with longer lists more easily.
+
+13. Expand **General** section and set **Name** to "City selector"
+
+14. Click **Done**
+
+    The new selector appears on the dashboard's header.
+
+    ![](images/clipboard-623309963.png)
+
+### Step 3: Add a Connector Selector
+
+1.  Click **Add selector** and choose **Category selector**
+
+2.  For **Categories from**, choose **Grouped values**
+
+3.  Choose **Electric Charging Stations**
+
+4.  For **Category field**, choose **EV_Connector_Types**
+
+    ![](images/clipboard-2686364948.png)
+
+5.  Click the **Selector** tab
+
+6.  For **Label**, type "Select connector type"
+
+7.  Click **Add icon**, expand **Points of interest** section, choose **fueling station** icon, and click **OK**
+
+    ![](images/clipboard-361239056.png)
+
+8.  For **Selection**, choose **Multiple**
+
+9.  Set **Placeholder text** to "No connector selected"
+
+10. Turn on **Show search** and **Show reset and select all**
+
+    ![](images/clipboard-775932313.png)
+
+11. Expand **General** section and set **Name** to "Connector selector"
+
+12. Click **Done**
+
+    ![](images/clipboard-4135033565.png)
+
+    All three of the selectors are now configured. However, they can't yet be used to filter data on the dashboard. Next, you'll configure actions to connect all of the dashboard's elements so users can tailor the dashboard to their needs.
+
+> **Scottish Context Example**: For a Scottish tourism dashboard, selectors might include: - **Council areas** (Highland, Fife, Glasgow City, etc.) - **Attraction types** (Castles, Distilleries, Museums, Natural sites) - **Accessibility features** (Wheelchair accessible, Family-friendly, Dog-friendly) - **Seasonal availability** (Year-round, Summer only, Winter sports)
+
+------------------------------------------------------------------------
+
+## Part 5: Configure Actions
+
+### Step 1: Configure Province Selector Actions
+
+1.  In the View pane, Header tab, point to **Province selector**
+
+2.  Click the options button and click **Configure**
+
+    ![](images/clipboard-3141719027.png)
+
+3.  Click the **Actions** tab
+
+    You can configure a **Filter**, **Flash**, **Show pop-up**, **Pan**, or **Zoom** action to occur when a new province is selected.
+
+    ![](images/clipboard-2518558219.png)
+
+    The first action that you'll configure is a filter action. When users select a province in the province selector, it will filter the city selector to only show cities within that province.
+
+4.  Expand the **Filter** section
+
+5.  Turn on **City selector** and set:
+
+    -   **Source field**: Province Postal Abbreviation
+
+    -   **Target field**: State
+
+        ![](images/clipboard-2378849863.png)
+
+6.  Turn on filter actions for **Electric Charging Stations**, **Operational stations indicator**, and **Station table**
+
+7.  For each, set **Source field** to **Province Postal Abbreviation** and **Target field** to **State**
+
+    ![](images/clipboard-1594874116.png)
+
+8.  For **Station table**, check **Render only when filtered**
+
+    ![](images/clipboard-171060216.png)
+
+    You'll add one more action to the province selector, to make the map zoom to the selected province.
+
+9.  Expand **Zoom** section and turn on **Electric charging stations in Canada**
+
+    ![](images/clipboard-1111865314.png)
+
+10. Click **Done**
+
+    The dashboard looks the same as before, except that the table has been replaced by a message.
+
+    ![](images/clipboard-3009378515.png)
+
+    You'll test that the actions you configured are working as expected.
+
+### Step 2: Test Province Selector
+
+1.  Click **Select a province** and choose **Prince Edward Island**
+
+2.  Observe how the map zooms, table populates, and indicator updates
+
+3.  Click **Select a city** to see only relevant cities listed
+
+    ![](images/clipboard-2436844930.png)
+
+### Step 3: Configure City and Connector Selector Actions
+
+1.  Configure **City selector**:
+    -   Point to City selector, click options, and **Configure**
+
+    -   Click **Actions** tab, expand **Filter** section
+
+    -   Turn on **Connector selector**, **Electric Charging Stations**, **Operational stations indicator**, and **Station table**
+
+    -   Click **Done**
+
+        ![](images/clipboard-3819754252.png)
+2.  Configure **Connector selector**:
+    -   Point to Connector selector, click options, and **Configure**
+
+    -   Click **Actions** tab, expand **Filter** section
+
+    -   Turn on **Electric Charging Stations**, **Operational stations indicator**, and **Station table**
+
+        ![](images/clipboard-846216519.png)
+
+        You don't need to define matching fields this time because all of the connected elements are based on the same layer: **Electric charging stations in Canada**.
+
+    -   Click **Done**
+
+    -   In the **Layout** pane, point to **Connector selector**, click the options button, and click **Configure**.
+
+    -   Click the **Actions** tab and expand the **Filter** section.
+
+    -   Turn on **Electric Charging Stations**, **Operational stations indicator**, and **Station table**.
+
+        ![](images/clipboard-157302630.png)
+
+    -   Click **Done**.
+
+        You'll test that the actions behave as expected together.
+
+    -   If necessary, on the header, click **Select a province** and choose **Prince Edward Island**.
+
+    -   Click **Select a city** and choose **Charlottetown**.
+
+        The map, table, and indicator all update to show fewer stations.
+
+        ![](images/clipboard-3899504388.png)
+
+    -   On the header, click **Select connector type**.
+
+        ![](images/clipboard-2831630786.png)
+
+    -   The list has fewer options than before.
+
+    -   In the connector selector, click **TESLA**.
+
+        The map, table, and indicator all update to show fewer stations.
+
+### Step 4: Configure Table Actions
+
+The last actions you will configure are on the table. The table only populates once a province is selected on the header. Similarly, you will ensure that the details element only populates when a station is selected in the table. Otherwise, viewers will see details for stations that are probably not relevant to them. When there is no selection on the table, the message you configured earlier will display.
+
+1.  In the View pane, click the **Body** tab
+
+2.  Point to **Station table**, click options, and **Configure**
+
+    ![](images/clipboard-982404944.png)
+
+3.  Click **Actions** tab, expand **Filter** section
+
+4.  Turn on **Station details** and check **Render only when filtered**
+
+    ![](images/clipboard-3325561385.png)
+
+5.  Expand **Flash** section and turn on **Electric charging stations in Canada**
+
+6.  Expand **Zoom** section and turn on **Electric charging stations in Canada**
+
+7.  Click **Done**
+
+    On the dashboard, click any row in the table.
+
+    ![](images/clipboard-3555868867.png)
+
+### Step 5: Test Complete Functionality
+
+1.  Select **Prince Edward Island** from province selector
+2.  Select **Charlottetown** from city selector
+3.  Select **TESLA** from connector selector
+4.  Click any row in the table to see details populate and map zoom/flash
+
+------------------------------------------------------------------------
+
+## Part 6: Share the Dashboard
+
+### Step 1: Save and Access Dashboard Settings
+
+1.  On the dashboard toolbar, click **Save** and click **Save**
+
+    ![](images/clipboard-2362295933.png)
+
+2.  Next to the dashboard title, click the menu button and click **Dashboard item details**
+
+    ![](images/clipboard-3877250626.png)
+
+3.  Click **Open Dashboard** to test in a new browser tab
+
+    ![](images/clipboard-3047308118.png)
+
+4.  Test the dashboard functionality (e.g., find J1772 charging stations in Thunder Bay, Ontario)
+
+    ![](images/clipboard-1041661331.png)
+
+### Step 2: Share the Dashboard
+
+1.  Return to the item page and click **Share**
+2.  **Important**: In the Share window, choose **Members of my organization (University of St Andrews)** and click **Save**
+
+> **Note**: This differs from the original tutorial which shared publicly. We're restricting to University of St Andrews members only.
+
+### Step 3: Share the Associated Web Map
+
+1.  On the ribbon, click **Content**
+2.  Find "Electric charging stations in Canada" and click the **Update sharing** icon
+3.  In the Share window, choose **Members of my organization (University of St Andrews)** and click **Save**
+
+------------------------------------------------------------------------
+
+## Assignment Submission Requirements
+
+### Screenshot Documentation
+
+**You must include a screenshot that shows the entire screen of your computer, including the date and time display, so the marker can validate your work.**
+
+**Requirements for screenshot:** - **Full screen capture** - not just the browser window - **Date and time visible** - ensure your system clock/date is showing - **Dashboard fully loaded** - showing all elements working - **Demonstration of functionality** - show the dashboard with: - A province selected - A city selected\
+- A connector type selected - Station details displayed - Table populated with filtered results
+
+**How to capture the required screenshot:** 1. Complete the tutorial and have your dashboard working 2. Select filters to demonstrate functionality 3. Ensure your computer's date/time is visible (system tray on Windows, menu bar on Mac) 4. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your submission
+
+### Scottish Context
+
+In your submission, also include a brief reflection (200-300 words) on how this dashboard approach could be applied to Scottish contexts, such as: - **Renewable energy monitoring** (wind farms, solar installations) - **Tourism infrastructure** (attractions, accommodation, transport links) - **Public transport optimization** (bus routes, train connections, ferry services) - **Environmental monitoring** (air quality, weather stations, flood warnings) - **Economic development** (business locations, employment centers, investment zones)
+
+------------------------------------------------------------------------
+
+## Additional Resources
+
+-   [ArcGIS Dashboard Documentation](https://doc.arcgis.com/en/dashboards/)
+-   [Tutorial Gallery](https://learn.arcgis.com/en/gallery/)
+-   [ArcGIS Online Help](https://doc.arcgis.com/en/arcgis-online/)
+
+**Remember**: Your screenshot must show the full screen with date/time visible and demonstrate the working dashboard functionality for full marks.
