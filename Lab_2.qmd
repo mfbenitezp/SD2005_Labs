@@ -1,14 +1,12 @@
-# Lab No 2: Create a Web Map {.unnumbered}
+# Lab No 2: Using external data  {.unnumbered}
 
-This tutorial is inspired from ArcGIS Online Learning resources available at:
+## **Overview** {.unnumbered}
 
-<https://learn.arcgis.com/en/projects/create-a-map/>
-
-## **Overview:**
-
-The idea of this tutorial is you learn how to create a web map using ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
+In this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
 
 **Estimated time of completion:** 45 Minutes
+
+------------------------------------------------------------------------
 
 ## Download and Examine the Data
 
@@ -58,7 +56,17 @@ In this example, you will choose to include all the fields, so you won't adjust 
 
 **Display name** sets a nickname or shortened name of the field name that is more readily understandable to others. Field names cannot include spaces or numbers, so sometimes you may want these in the display name. Setting Display name allows you to provide meaningful names without changing the Field name text.
 
-**Type** describes the data you will store in the field: - **Date**—Date and time. - **Double**—Numbers with decimal places. - **Integer**—Whole numbers from -2,147,483,648 to 2,147,483,647 (long integer). - **Big Integer**—Whole numbers between -(2\^53) and 2\^53. - **String**—Any sequence of characters. The default length is 256 characters.
+**Type** describes the data you will store in the field:
+
+-   **Date**—Date and time.
+
+-   **Double**—Numbers with decimal places.
+
+-   **Integer**—Whole numbers from -2,147,483,648 to 2,147,483,647 (long integer).
+
+-   **Big Integer**—Whole numbers between -(2\^53) and 2\^53.
+
+-   **String**—Any sequence of characters. The default length is 256 characters.
 
 You will accept all the default settings and continue.
 
@@ -310,16 +318,28 @@ Your map's item page opens in a new browser tab. The item details are missing im
 
 4.  Close the item page's tab.
 
-## Submit Your Work
+## Final Steps:
 
-To demonstrate completion of this lab, take a screenshot that includes your entire computer screen showing your completed map. Ensure that the date and time are visible on your screen (either in the system taskbar or by opening the system clock). This screenshot will allow the instructor to validate that you have successfully completed the mapping exercise.
+Well Done! You have now completed all the steps for this lab, where you (in theory) created your **second Web Map** using **ArcGIS Online**. Before moving on, make sure to:
 
-Submit your screenshot through the designated course submission portal.
+1.  **Take a screenshot** of your final web map, ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-## What's Next?
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK** ( see the Data sources sections for a comprehensive list of data sources).
 
-You have created a web map with a .csv file of school location and demographic data. Now that you have the data mapped, you have more ideas for how to share and explore potential after-school program needs in your city.
+In the original lab, you have created a web map with a .csv file of school location and demographic data. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
-You can create a web app to display your map data in an interactive way so viewers can explore the data without editing the map. There are many ways you can use your web map to visualize data, understand problems, determine informed solutions, and discover what else is possible.
+-   Use again **ArcGIS Online** using your university credentials. **Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.**
 
-You can find more tutorials in the [tutorial gallery](https://learn.arcgis.com/en/gallery/).
+-   Apply the same techniques learned in this lab (e.g. adding external data (excel), symbolising data, filtering, configuring pop-ups, etc).
+
+-   And create a web map with a **clear purpose** relevant to a real-world issue in Scotland or the UK.
+
+This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
+
+------------------------------------------------------------------------
+
+This tutorial is inspired from ArcGIS Online Learning resources available at:
+
+<https://learn.arcgis.com/en/projects/create-a-map/>
+
+## 

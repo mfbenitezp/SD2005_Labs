@@ -1,20 +1,18 @@
 # Lab No 1: Getting Started with ArcGIS Online {.unnumbered}
 
-This tutorial is inspired from ArcGIS Online Learning resources available at <https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/>
-
-## Mapping Census Data for Emergency Planning
+## Overview
 
 By the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes
 
-### **Background**
+**Estimated time of completion:** 45 Minutes
+
+## Mapping Census Data for Emergency Planning
 
 In this lab, you will create a web map to identify areas that may need additional evacuation assistance during emergencies. You will work with census data to identify households with limited vehicle access, which is crucial information for emergency planning and resource allocation.
 
-**Estimated time of completion:** 45 Minutes
-
 ------------------------------------------------------------------------
 
-## **Part 1: Begin a Map**
+## **Part 1: Start with a Map**
 
 ### Step 1: Access ArcGIS Online
 
@@ -176,13 +174,13 @@ The new basemap shows labels and contextual information over the census data.
 
 3.  In the **Filter pane**, click **Add new**
 
-4.  Under **Condition**, click the first box and choose **==County==**
+4.  Under **Condition**, click the first box and choose **County**
 
     ![](images/clipboard-668989916.png)
 
 5.  Leave the operator as **is**
 
-6.  For the third box, click the drop-down arrow, type **==Harris County==** and select it
+6.  For the third box, click the drop-down arrow, type **Harris County** and select it
 
     ![](images/clipboard-3483512619.png)
 
@@ -196,13 +194,15 @@ The new basemap shows labels and contextual information over the census data.
 
 ### Step 1: Examine the Attribute Table
 
-1.  For the layer, click the **Options** button and choose **Show table**![](images/clipboard-2618926047.png)
+1.  For the layer, click the **Options** button and choose **Show table**
+
+    ![](images/clipboard-2618926047.png)
 
     The layer's attribute table appears. The attribute table is a way of viewing all of the attributes that exist for each feature. Each row in the table represents a feature (in this case, a census tract area). The columns, or fields, provide information about the census tract features, such as the **County** attribute that you used to filter the data earlier.
 
     The top of the table indicates that there are 1,122 census tracts in Harris County.
 
-2.  Scroll right to find the **==Percent of households with no vehicle available==** column
+2.  Scroll right to find the **Percent of households with no vehicle available** column
 
     ![](images/clipboard-1271130688.png)
 
@@ -248,41 +248,45 @@ The new basemap shows labels and contextual information over the census data.
 
 1.  On the **Contents toolbar**, click **Save and open** and choose **Save as**
 
-2.  For **Title**, type: **==Census tracts in Houston with low vehicle access==**
+2.  For **Title**, type: **Census tracts in Houston with low vehicle access**
 
 3.  For **Tags**, add the following (press Enter after each):
 
-    -   **==Hurricanes==**
-    -   **==Evacuation Assistance==**
-    -   **==Houston==**
+    -   **Hurricanes**
+    -   **Evacuation Assistance**
+    -   **Houston**
 
-4.  For **Summary**, type: **==This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.==**
+4.  For **Summary**, type: **This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.**
+
+5.  Click **Save**
 
 The map is saved. It now appears in your account's content. You can access your content by clicking the options button next to the map's name and choosing **Content**. For now, you'll set the sharing permissions.
 
-By default, your content is private and only visible to you and your organization's administrator. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content's audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization as you can access your content. For this tutorial, you've created a public information map and you want it to be available to everyone, so you'll share it publicly.
-
-1.  Click **Save**
-
-### Step 2: Submission Requirements
-
-**IMPORTANT:** Instead of sharing your map publicly, you must provide descriptions of your completed work.
-
-**Take a screenshot that includes:** - Your complete computer screen - The ArcGIS Online map you created - The system date and time visible (usually in the taskbar/menu bar) - All relevant map elements (legend, layers panel, styled data)
-
-1.  Ensure your map displays all required elements: - Properly filtered census data - Appropriate styling with color scheme - basemap - Applied effects highlighting top areas - Descriptive layer name.
-
-2.  Take a full-screen screenshot showing:
-
-    -   Your completed map
-
-    -   Current date and time from your system
-
-    -   ArcGIS Online interface with your map title visible
-
-3.  The date-time stamp allows the marker to validate when the work was completed
+**By default, your content is private and only visible to you and your organization's administrator**. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content's audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization ( e.g The University of St Andrews) as you can access your content.
 
 ------------------------------------------------------------------------
+
+## Final Steps:
+
+Well Done! You have now completed all the steps for this lab, where you (in theory) created your **first Web Map** using **ArcGIS Online**. Before moving on, make sure to:
+
+1.  **Take a screenshot** of your final web map, ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
+
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK (**See the Data sources sections for a comprehensive list of data sources**)**.
+
+In the original lab, you created a web map using **census data for emergency planning in the U.S.** For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
+
+-   Use again **ArcGIS Online** using your university credentials. **Meet and work with your classmate to define which account want to use. You must only report one independent analysis results.**
+
+-   Apply the same techniques learned in this lab (e.g. adding layers, symbolising data, filtering, configuring pop-ups, etc).
+
+-   And create a web map with a **clear purpose** relevant to a real-world issue in Scotland or the UK.
+
+This additional task is an opportunity to deepen your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
+
+------------------------------------------------------------------------
+
+This tutorial is inspired from ArcGIS Online Learning resources available at <https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/>
 
 ## **Additional Resources**
 
@@ -291,13 +295,3 @@ By default, your content is private and only visible to you and your organizatio
 -   [Topographic](https://arcgis.com/home/item.html?id=67372ff42cd145319639a99152b15bc3) map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community
 
 -   [Human Geography Map](https://arcgis.com/home/item.html?id=3582b744bba84668b52a16b0b6942544) sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community
-
-To extend your learning with ArcGIS Online: - Create interactive apps from web maps - Learn advanced styling techniques - Explore spatial analysis tools - Access the ArcGIS tutorial gallery for more exercises
-
--   To learn how to transform your web map into an interactive app, check out the tutorial [Create an app](https://learn.arcgis.com/en/projects/create-an-app/).
-
--   To learn useful tips and tricks for web maps, check out the series [Common skills for working with data in ArcGIS Online](https://learn.arcgis.com/en/paths/common-skills-for-working-with-data-arcgis-online/).
-
--   To learn about performing spatial analysis, check out the series [Perform analysis in Map Viewer](https://learn.arcgis.com/en/paths/data-analysis/).
-
--   To learn more advanced techniques for styling your map, check out the series [Cartographic creations with web maps](https://learn.arcgis.com/en/paths/cartographic-creations-with-web-maps/).

@@ -1,14 +1,16 @@
-# Lab No 5: Build an Interactive Dashboard  {.unnumbered}
-
-**Estimated time of completion:** 60 Minutes
+# Lab No 5: Build an Interactive Dashboard {.unnumbered}
 
 ## Overview
 
 In this tutorial, you will configure a web map and use it to create an interactive dashboard for finding electric vehicle charging stations. This tutorial demonstrates how to create dashboards that can be applied to various geographic contexts, including examples relevant to Scotland such as monitoring renewable energy infrastructure, analyzing tourism patterns, or tracking public transport usage.
 
+**Estimated time of completion:** 60 Minutes
+
 ## Learning Objectives
 
 By the end of this tutorial, you will be able to: - Configure web map pop-ups for dashboard use - Create and customize dashboard elements (headers, indicators, tables, and details) - Implement interactive selectors for data filtering - Configure actions to connect dashboard elements - Share dashboards within your organization
+
+------------------------------------------------------------------------
 
 ## Part 1: Configure a Web Map
 
@@ -640,27 +642,44 @@ The last actions you will configure are on the table. The table only populates o
 
 ------------------------------------------------------------------------
 
-## Assignment Submission Requirements
+## Final Steps:
 
-### Screenshot Documentation
+Well Done! You have now completed all the steps for this lab. Before moving on, make sure to:
 
-**You must include a screenshot that shows the entire screen of your computer, including the date and time display, so the marker can validate your work.**
+1.  **Take one screenshot** of the final map. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook). **Dashboard fully loaded** - showing all elements working - **Demonstration of functionality** - show the dashboard with: - A province selected - A city selected - A connector type selected - Station details displayed - Table populated with filtered results.
 
-**Requirements for screenshot:** - **Full screen capture** - not just the browser window - **Date and time visible** - ensure your system clock/date is showing - **Dashboard fully loaded** - showing all elements working - **Demonstration of functionality** - show the dashboard with: - A province selected - A city selected\
-- A connector type selected - Station details displayed - Table populated with filtered results
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK**.
 
-**How to capture the required screenshot:** 1. Complete the tutorial and have your dashboard working 2. Select filters to demonstrate functionality 3. Ensure your computer's date/time is visible (system tray on Windows, menu bar on Mac) 4. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your submission
+In the original lab, you have created a operational dashboard. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
-### Scottish Context
+-   Use again **ArcGIS Online Dashboards** using your university credentials. **Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.**
 
-In your submission, also include a brief reflection (200-300 words) on how this dashboard approach could be applied to Scottish contexts, such as: - **Renewable energy monitoring** (wind farms, solar installations) - **Tourism infrastructure** (attractions, accommodation, transport links) - **Public transport optimization** (bus routes, train connections, ferry services) - **Environmental monitoring** (air quality, weather stations, flood warnings) - **Economic development** (business locations, employment centers, investment zones)
+-   Apply the same techniques learned in this lab., and create another operational dashboard app, to represent the thematic of your preference.
+
+-   Include the screenshot of the new dashboard created with a **clear purpose** relevant to a real-world issue in Scotland or the UK. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report. As you did for the first screenshot, make sure you the **dashboard is fully loaded** - showing all elements working - **demonstrate the functionality** - show the dashboard with: - List section, items details displayed - table populated with filtered results. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your report (see the instructions in the handbook)
+
+This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
+
+### Scottish Context Examples:
+
+Here are some examples of potential operational dashboards you could create for the Scottish contexts:
+
+\- **Renewable energy monitoring** (wind farms, solar installations)
+
+\- **Tourism infrastructure** (attractions, accommodation, transport links)
+
+\- **Public transport optimization** (bus routes, train connections, ferry services)
+
+\- **Environmental monitoring** (air quality, weather stations, flood warnings)
+
+\- **Economic development** (business locations, employment centers, investment zones)
 
 ------------------------------------------------------------------------
+
+Tutorial inspired from <https://learn.arcgis.com/en/projects/build-an-interactive-dashboard/>
 
 ## Additional Resources
 
 -   [ArcGIS Dashboard Documentation](https://doc.arcgis.com/en/dashboards/)
 -   [Tutorial Gallery](https://learn.arcgis.com/en/gallery/)
 -   [ArcGIS Online Help](https://doc.arcgis.com/en/arcgis-online/)
-
-**Remember**: Your screenshot must show the full screen with date/time visible and demonstrate the working dashboard functionality for full marks.

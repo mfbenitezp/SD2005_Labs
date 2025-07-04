@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SD2005 - QUANTITATIVE DATA REPORT - Lab No 2: Create a Web Map</title>
+<title>SD2005 - From Sustaible Development to Human Security - Lab No 2: Using external data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lab_2.html">Lab No 2: Create a Web Map</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lab_2.html">Lab No 2: Using external data</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -89,9 +89,9 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">SD2005 - QUANTITATIVE DATA REPORT</a> 
+      <a href="./">SD2005 - From Sustaible Development to Human Security</a> 
         <div class="sidebar-tools-main">
-    <a href="./SD2005---QUANTITATIVE-DATA-REPORT.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <a href="./SD2005---From-Sustaible-Development-to-Human-Security.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
       </div>
@@ -105,19 +105,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">About this site</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -129,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lab_2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab No 2: Create a Web Map</span></a>
+ <span class="menu-text">Lab No 2: Using external data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -141,13 +135,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lab_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals</span></a>
+ <span class="menu-text">Lab No 4: Examine Global Poverty Using UN SDGs</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lab_5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab No 5: Build an Interactive Dashboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./DataSources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Sources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -166,15 +166,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><strong>Overview:</strong></a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><strong>Overview</strong></a></li>
   <li><a href="#download-and-examine-the-data" id="toc-download-and-examine-the-data" class="nav-link" data-scroll-target="#download-and-examine-the-data">Download and Examine the Data</a></li>
   <li><a href="#create-a-map-layer" id="toc-create-a-map-layer" class="nav-link" data-scroll-target="#create-a-map-layer">Create a Map Layer</a></li>
   <li><a href="#change-the-basemap-and-layer-style" id="toc-change-the-basemap-and-layer-style" class="nav-link" data-scroll-target="#change-the-basemap-and-layer-style">Change the Basemap and Layer Style</a></li>
   <li><a href="#configure-pop-ups-and-view-a-table" id="toc-configure-pop-ups-and-view-a-table" class="nav-link" data-scroll-target="#configure-pop-ups-and-view-a-table">Configure Pop-ups and View a Table</a></li>
   <li><a href="#style-the-layer-in-another-way" id="toc-style-the-layer-in-another-way" class="nav-link" data-scroll-target="#style-the-layer-in-another-way">Style the Layer in Another Way</a></li>
   <li><a href="#update-the-item-details" id="toc-update-the-item-details" class="nav-link" data-scroll-target="#update-the-item-details">Update the Item Details</a></li>
-  <li><a href="#submit-your-work" id="toc-submit-your-work" class="nav-link" data-scroll-target="#submit-your-work">Submit Your Work</a></li>
-  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next">What’s Next?</a></li>
+  <li><a href="#final-steps" id="toc-final-steps" class="nav-link" data-scroll-target="#final-steps">Final Steps:</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
@@ -183,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab No 2: Create a Web Map</h1>
+<h1 class="title">Lab No 2: Using external data</h1>
 </div>
 
 
@@ -198,12 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This tutorial is inspired from ArcGIS Online Learning resources available at:</p>
-<p><a href="https://learn.arcgis.com/en/projects/create-a-map/" class="uri">https://learn.arcgis.com/en/projects/create-a-map/</a></p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview"><strong>Overview:</strong></h2>
-<p>The idea of this tutorial is you learn how to create a web map using ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.</p>
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview"><strong>Overview</strong></h2>
+<p>In this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.</p>
 <p><strong>Estimated time of completion:</strong> 45 Minutes</p>
+<hr>
 </section>
 <section id="download-and-examine-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="download-and-examine-the-data">Download and Examine the Data</h2>
@@ -246,7 +245,14 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/clipboard-2158911334.png" class="img-fluid"></p>
 <p>In this example, you will choose to include all the fields, so you won’t adjust the check boxes.</p>
 <p><strong>Display name</strong> sets a nickname or shortened name of the field name that is more readily understandable to others. Field names cannot include spaces or numbers, so sometimes you may want these in the display name. Setting Display name allows you to provide meaningful names without changing the Field name text.</p>
-<p><strong>Type</strong> describes the data you will store in the field: - <strong>Date</strong>—Date and time. - <strong>Double</strong>—Numbers with decimal places. - <strong>Integer</strong>—Whole numbers from -2,147,483,648 to 2,147,483,647 (long integer). - <strong>Big Integer</strong>—Whole numbers between -(2^53) and 2^53. - <strong>String</strong>—Any sequence of characters. The default length is 256 characters.</p>
+<p><strong>Type</strong> describes the data you will store in the field:</p>
+<ul>
+<li><p><strong>Date</strong>—Date and time.</p></li>
+<li><p><strong>Double</strong>—Numbers with decimal places.</p></li>
+<li><p><strong>Integer</strong>—Whole numbers from -2,147,483,648 to 2,147,483,647 (long integer).</p></li>
+<li><p><strong>Big Integer</strong>—Whole numbers between -(2^53) and 2^53.</p></li>
+<li><p><strong>String</strong>—Any sequence of characters. The default length is 256 characters.</p></li>
+</ul>
 <p>You will accept all the default settings and continue.</p>
 <ol start="6" type="1">
 <li>Click <strong>Next</strong>.</li>
@@ -451,16 +457,26 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Close the item page’s tab.</p></li>
 </ol>
 </section>
-<section id="submit-your-work" class="level2">
-<h2 class="anchored" data-anchor-id="submit-your-work">Submit Your Work</h2>
-<p>To demonstrate completion of this lab, take a screenshot that includes your entire computer screen showing your completed map. Ensure that the date and time are visible on your screen (either in the system taskbar or by opening the system clock). This screenshot will allow the instructor to validate that you have successfully completed the mapping exercise.</p>
-<p>Submit your screenshot through the designated course submission portal.</p>
+<section id="final-steps" class="level2">
+<h2 class="anchored" data-anchor-id="final-steps">Final Steps:</h2>
+<p>Well Done! You have now completed all the steps for this lab, where you (in theory) created your <strong>second Web Map</strong> using <strong>ArcGIS Online</strong>. Before moving on, make sure to:</p>
+<ol type="1">
+<li><p><strong>Take a screenshot</strong> of your final web map, ensuring your <strong>full screen is visible</strong>, including the <strong>date and time</strong>. This screenshot will be required for your report ( see all the instructions in the handbook)</p></li>
+<li><p><strong>For the Part B of this lab in your report. Replicate the process independently</strong> by applying the same skills you practised in this lab, but using <strong>spatial data from Scotland or the UK</strong> ( see the Data sources sections for a comprehensive list of data sources).</p></li>
+</ol>
+<p>In the original lab, you have created a web map with a .csv file of school location and demographic data. For your <strong>independent spatial analysis</strong>, you can choose a different theme and dataset (e.g.&nbsp;healthcare access, education, environmental risk), as long as you also:</p>
+<ul>
+<li><p>Use again <strong>ArcGIS Online</strong> using your university credentials. <strong>Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.</strong></p></li>
+<li><p>Apply the same techniques learned in this lab (e.g.&nbsp;adding external data (excel), symbolising data, filtering, configuring pop-ups, etc).</p></li>
+<li><p>And create a web map with a <strong>clear purpose</strong> relevant to a real-world issue in Scotland or the UK.</p></li>
+</ul>
+<p>This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.</p>
+<hr>
+<p>This tutorial is inspired from ArcGIS Online Learning resources available at:</p>
+<p><a href="https://learn.arcgis.com/en/projects/create-a-map/" class="uri">https://learn.arcgis.com/en/projects/create-a-map/</a></p>
 </section>
-<section id="whats-next" class="level2">
-<h2 class="anchored" data-anchor-id="whats-next">What’s Next?</h2>
-<p>You have created a web map with a .csv file of school location and demographic data. Now that you have the data mapped, you have more ideas for how to share and explore potential after-school program needs in your city.</p>
-<p>You can create a web app to display your map data in an interactive way so viewers can explore the data without editing the map. There are many ways you can use your web map to visualize data, understand problems, determine informed solutions, and discover what else is possible.</p>
-<p>You can find more tutorials in the <a href="https://learn.arcgis.com/en/gallery/">tutorial gallery</a>.</p>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
 </section>

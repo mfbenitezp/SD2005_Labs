@@ -1,9 +1,35 @@
 # Introduction {.unnumbered}
 
-This is a book created from markdown and executable code.
+## Why Spatial Data Matters for the SDGs
 
-See @knuth84 for additional discussion of literate programming.
+Spatial data is **essential for advancing the Sustainable Development Goals (SDGs)** because it provides a crucial geographic lens through which global challenges can be better understood, monitored, and addressed. From poverty and food insecurity to urban resilience and climate change, the spatial dimension of sustainable development helps identify **where** interventions are most urgently needed, **how** different indicators interrelate across space and time, and **what** progress is being made at various scales—local, national, and global.
 
-```{r}
-1 + 1
-```
+**Geospatial** information allows us to move beyond abstract statistics and instead interact with real-world patterns—**making data visible, tangible, and actionable**. For instance, **web dashboards** powered by geospatial data enable stakeholders to track SDG indicators in near real-time, providing dynamic visualizations that combine charts, maps, and open datasets. These tools support data-driven decision-making by offering interactive interfaces for understanding spatial disparities and highlighting areas that require targeted policy or humanitarian response.
+
+**Geospatial** data is not just a complement to SDG monitoring—it is key. Access to **open data sources**, such as those published by national governments, the United Nations, and development agencies, has democratised the availability of high-quality spatial information. Students, researchers, NGOs, and policymakers alike can now explore and analyse global issues from a geospatial perspective. This access empowers users not only to consume information but also to **create spatial narratives**, develop **analytical tools**, and contribute meaningfully to SDG implementation.
+
+At the centre of this framework lies **Geographic Information Systems (GIS)**—and increasingly, **Cloud GIS platforms** like *ArcGIS Online*. Providing the infrastructure to visualize, manipulate, analyse, and share spatial data seamlessly across devices and locations. Whether you are mapping deforestation hotspots, analysing access to clean water, or visualizing urban inequality, **Cloud GIS fosters collaboration, accessibility, and spatial intelligence at scale**.
+
+## Module Structure related to the use of Spatial Data 
+
+This module offers a sequence of lectures and labs designed to build your spatial data literacy and technical competencies in direct relation to the SDGs:
+
+**Lecture 16: Spatial Data for SDGs** Introduction to the importance of spatial data in sustainable development, focusing on key concepts and case studies that illustrate spatial inequalities and resource distribution.
+
+**Lecture 17: Global Fundamental Geospatial Data Themes** Exploration of core geospatial data themes as recognised by the UN-GGIM (e.g., land cover, population, transport networks), and how these serve as the spatial foundation for SDG monitoring.
+
+**Lecture 18: Where to Find Spatial Data for SDG Analysis** A guided overview of trusted spatial data sources including open repositories (e.g., UNData, World Bank GeoPortal, Copernicus), national geospatial platforms, and crowd-sourced data.
+
+**Lecture 19: Collecting Spatial Data with Geospatial Technologies** Learn how to gather primary spatial data using tools such as Survey123, Field Maps, and mobile data collection methods. Emphasis is placed on participatory mapping and local knowledge.
+
+**Lecture 20: Authoring Web Maps to Understand SDG Progress** Practical lab in which students create and customise web maps using ArcGIS Online, applying symbolisation, layer filtering, and pop-up configuration to communicate geographic stories.
+
+**Lecture 21: Building Interactive Applications to Monitor SDG Indicators** Learn how to build web apps and dashboards that visualise real-time spatial data. Explore storytelling techniques and UX design for public engagement and policy communication.
+
+## Learning Outcomes
+
+By completing this part of the module, you will:
+
+-   You will have the chance to better understand spatial data science concepts and principles in the context of sustainable development goals (SDGs) and learn how to acquire spatial data from multiple sources to address sustainability challenges.
+
+-   Learn how to link spatial data to create tools for a data-driven approach to spatially represent many global challenges, including poverty, hunger, inequality, and climate change.

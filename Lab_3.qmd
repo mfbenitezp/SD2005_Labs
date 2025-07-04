@@ -4,6 +4,8 @@
 
 In this lab, you will learn to identify and map meaningful places in your community using ArcGIS Survey123. This project involves designing a research study, collecting data through surveys, and analyzing the results to understand what places contribute to your community's identity and resilience.
 
+**Estimated time of completion:** 40 Minutes
+
 ## Learning Objectives
 
 By the end of this lab, you will be able to: - Design a research project with clear objectives and methodology - Create digital surveys using ArcGIS Survey123 - Collect and analyze spatial data about community places - Visualize data patterns using heat maps and other analytical tools - Draw conclusions about community identity and important places
@@ -22,7 +24,7 @@ Before collecting any data, you need to establish a clear research question that
 
 **Examples:** - What places in my community have social, economic, and political value and add to my community's identity? - What places in my community contribute to its identity?
 
-**Scottish Context Examples:** - What places in Edinburgh contribute most to the city's cultural identity beyond the obvious tourist attractions? - How do community spaces in Glasgow neighborhoods support local resilience and social cohesion? - What locations in the Scottish Highlands are most valued by local residents for their cultural and economic importance?
+**Scottish Context:** - What places in Edinburgh contribute most to the city's cultural identity beyond the obvious tourist attractions? - How do community spaces in Glasgow neighborhoods support local resilience and social cohesion? - What locations in the Scottish Highlands are most valued by local residents for their cultural and economic importance?
 
 ### Step 2: Plan Your Data Collection
 
@@ -36,7 +38,7 @@ Now that you have your research question, consider what kinds of data you need t
 
 Different types of questions collect different types of data (numbers, text, dates, rating scales, images). Planning your data types in advance will make analysis easier later.
 
-### **Task:** Write 5-8 survey questions, keeping in mind your research question and the types of data you want to collect about each location.
+### **Task:** Write 5 survey questions, keeping in mind your research question and the types of data you want to collect about each location.
 
 **Sample Survey Questions Table:**
 
@@ -51,15 +53,15 @@ Different types of questions collect different types of data (numbers, text, dat
 | What kinds of challenges might this place face? | Climate threats and adaptability, Funding challenges, Land use change and development, None | Multiple select |
 | Upload a photo of this location |  | Image |
 
-**Scottish Context Examples:** - For "What kind of place is this?" you might add: Village hall, Distillery, Castle/Historic site, Farmers market, Pub, Community sports club, Gaelic cultural center - For challenges: "Highland depopulation," "Tourism pressure," "Language preservation needs," "Weather-related access issues"
+**Scottish Context:** For "What kind of place is this?" you might add: Village hall, Distillery, Castle/Historic site, Farmers market, Pub, Community sports club, Gaelic cultural center - For challenges: "Highland depopulation," "Tourism pressure," "Language preservation needs," "Weather-related access issues"
 
 ### Step 4: Determine Sample Size
 
 Consider how many responses you need to answer your research question effectively. Also consider potential data bias - does your sample represent the population you're trying to understand?
 
-### **Task:** - Decide how many data points you need to collect and from how many different people - Set a goal as a class for how many data points you need to collect and how many people you should survey
+### **Task:** Decide how many data points you need to collect and from how many different people - Set a goal as a class for how many data points you need to collect and how many people you should survey
 
-**Important Note:** Be aware of data bias. If you only survey your classmates, your data will tell you what's important to people your age, but may not represent the broader community.
+**Note:** Be aware of data bias. If you only survey your classmates, your data will tell you what's important to people your age, but may not represent the broader community.
 
 ------------------------------------------------------------------------
 
@@ -253,34 +255,32 @@ Consider how many responses you need to answer your research question effectivel
 
 Return to your original research question and consider whether your data adequately answers it.
 
-**Questions to Consider:** - Does your data answer your research question? - What places in your community appear to have the most social, economic, or political value? - What contributes to your community's identity based on your findings? - Are there gaps in your data that need to be addressed?
+**Questions to Consider:** Does your data answer your research question? - What places in your community appear to have the most social, economic, or political value? - What contributes to your community's identity based on your findings? - Are there gaps in your data that need to be addressed?
 
 ### Step 16: Consider Data Limitations
 
 Reflect on potential limitations in your data: - Who was surveyed and who was not? - What biases might exist in your sample? - What additional data might strengthen your conclusions?
 
-**Scottish Context Considerations:** - Does your data represent different Scottish communities (urban/rural, Highland/Lowland)? - Are there cultural or linguistic factors that might affect responses? - How might seasonal variations affect the importance of certain places?
+**Scottish Context:** - Does your data represent different Scottish communities (urban/rural, Highland/Lowland)? - Are there cultural or linguistic factors that might affect responses? - How might seasonal variations affect the importance of certain places?
 
 ------------------------------------------------------------------------
 
-## Part 6: Submit Your Work
+## Final Steps:
 
-### Step 17: Document Your Results
+Well Done! You have now completed all the steps for this lab. Before moving on, make sure to:
 
-Instead of sharing your map online, you will submit a comprehensive screenshot for assessment.
+1.  **Take one screenshot** of the map you created when you analyse the data collected. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-**Task:** Take a screenshot that includes your entire computer screen showing: 1. Your completed survey results and analysis 2. The date and time display from your computer 3. Your ArcGIS Survey123 interface with your data
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK**.
 
-**Requirements for Screenshot:** - Must show the complete screen (not just the browser window) - Date and time must be clearly visible in the system tray/menu bar - Your survey data and analysis should be displayed - Image should be clear and readable
+In the original lab, you have created a survey with the support of your classmates. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
-**File Naming:** Save your screenshot as "YourLastName_MeaningfulPlaces\_\[Date\].png"
+-   Use again **ArcGIS Online** using your university credentials. **Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.**
 
-### Step 18: Written Reflection
+-   Apply the same techniques learned in this lab. This lab demonstrates the complete process of spatial data collection and analysis, from research design through data interpretation. The skills you've learned can be applied to any research question involving spatial data and community analysis. Consider how similar methodologies might be used to study other aspects of community life, cultural heritage, or environmental issues in Scottish contexts.
 
-Along with your screenshot, provide a brief written reflection (300-500 words) addressing: - Your research question and methodology - Key findings from your data analysis - Limitations of your study - How your findings relate to community identity and resilience - Specific examples relevant to Scottish communities if applicable
+-   Include the screenshot of the web map created using the data collected in this new survey with a **clear purpose** relevant to a real-world issue in Scotland or the UK.
+
+This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
 
 ------------------------------------------------------------------------
-
-## Conclusion
-
-This lab demonstrates the complete process of spatial data collection and analysis, from research design through data interpretation. The skills you've learned can be applied to any research question involving spatial data and community analysis. Consider how similar methodologies might be used to study other aspects of community life, cultural heritage, or environmental issues in Scottish contexts.

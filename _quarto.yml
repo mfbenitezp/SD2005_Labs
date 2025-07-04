@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "SD2005 - QUANTITATIVE DATA REPORT"
-  subtitle: "Tecnical Practices to learn the role of GIS in the study of SDGs"
+  title: "SD2005 - From Sustaible Development to Human Security"
+  subtitle: "Techincal Practices required for the Quantitave Data Report"
   author: "Fernando Benitez-Paez"
   date: "7/3/2025"
   downloads: [pdf]
@@ -13,12 +13,12 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
     - Lab_1.qmd
     - Lab_2.qmd
     - Lab_3.qmd
     - Lab_4.qmd
     - Lab_5.qmd
+    - DataSources.qmd
     - references.qmd
 
 bibliography: references.bib

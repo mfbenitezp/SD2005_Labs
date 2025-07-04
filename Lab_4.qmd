@@ -1,18 +1,14 @@
-# Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals {.unnumbered}
-
-*Tutorial inspired on: [ArcGIS Online blog entry](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/examine-global-poverty-using-un-sustainable-development-goals/)*
-
-**Estimated time of completion:** 70 Minutes
-
-------------------------------------------------------------------------
+# Lab No 4: Examine Global Poverty Using UN SDGs {.unnumbered}
 
 ## Overview
 
 Have you ever considered where pockets of poverty exist and who is most affected? Unfortunately, global trends show that children are most impacted by poverty. Around the world **385 million children** live in extreme poverty, and in 2013 the World Bank found that **19.5 percent of children** in 89 countries lived in a household that survived on U.S. \$1.90 per day per person or less.
 
-## Key Learning Outcomes
+**Estimated time of completion:** 70 Minutes
 
-By completing this tutorial, you should now be able to:
+## Learning Outcomes
+
+By completing this tutorial, you should be able to:
 
 -   **Access and download** UN SDG data from official portals
 -   **Prepare and clean** spatial data for analysis
@@ -27,11 +23,11 @@ These skills are transferable to many other contexts, including local and nation
 
 ------------------------------------------------------------------------
 
-### Why is poverty such a critical issue?
+## Why is poverty such a critical issue?
 
 Because it relates to the overall well-being of a person. Those living in poverty may lack access to basic food, housing, and healthcare. Growing up without consistent nutrition, shelter, and safety can have long-lasting developmental impacts on children and can cause lifelong problems.
 
-> **Scottish Context Example**: In Scotland, child poverty affects approximately 24% of children (around 240,000 children), with particular concentrations in areas like Glasgow, Dundee, and parts of Edinburgh. The Scottish Government has committed to reducing child poverty to less than 10% by 2030 through the Child Poverty (Scotland) Act 2017.
+> **Scottish Context**: In Scotland, child poverty affects approximately 24% of children (around 240,000 children), with particular concentrations in areas like Glasgow, Dundee, and parts of Edinburgh. The Scottish Government has committed to reducing child poverty to less than 10% by 2030 through the Child Poverty (Scotland) Act 2017.
 
 In 2015, the United Nations and world leaders developed a series of goals to improve situations for people, places and environments globally. In total, there are **17 Sustainable Development Goals** that nations are striving to meet by 2035. This activity focuses on **Goal 1: No Poverty** and corresponding indicators that can be used to measure poverty.
 
@@ -65,7 +61,7 @@ Sustainable Development Goal 1, **"No Poverty"** is achieved when we "End povert
 
 4.  After you get a better understanding about the main facts that you can measure within this goal, now let's apply the geographical approach to create web maps and apps that help you represent spatial data related to this goal.
 
-    Go to https://unstats.un.org/sdgs/dataportal/database and get the data related to the **1.1.1 indicator**. Which corresponds to **Proportion of population below international poverty line (%) -- \$2.15 per day**. Once you are in the portal, follow the next options to get the required data.
+    Go to <https://unstats.un.org/sdgs/dataportal/database> and get the data related to the **1.1.1 indicator**. Which corresponds to **Proportion of population below international poverty line (%) --\> \$2.15 per day**. Once you are in the portal, follow the next options to get the required data.
 
 5.  In the **Data Series** type or select the **1.1.1** Indicator, in the **Countries, areas or Regions** section, click on **Countries or Areas**, and for **Period** make sure you selected only the **2017** year. (you should have around 783 observations). Click **Show Results**.
 
@@ -82,7 +78,7 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 6.  **Open the downloaded file** - you will see several countries are duplicated, due to data being collected at different scales (e.g., Sex, Location, Age). **Filter** the data to show only:
 
     -   **Sex**: BOTHSEX
-    -   **Location**: ALLAREA\
+    -   **Location**: ALLAREA
     -   **Age**: ALLAGE
 
     Now you should have **75 records**. Save the filtered table as a new Excel file (name it `1_1_1_indicator_filtered.xlsx`).
@@ -326,40 +322,65 @@ Now that you've mapped global poverty, you'll map reported data for **percentage
 
 **Complex Patterns**: In between there are countries with mixed patterns: - **Countries like Senegal** with relatively **low poverty rates** but **high proportions of children working** - **Countries like India** with **high poverty rates** but **small proportions of children contributing to the economy**
 
-> **Scottish Analysis Example**: If we were to apply this analysis to Scotland at a regional level, we might find that: - **Urban areas like Edinburgh and Aberdeen** might show low poverty but some youth employment in service sectors - **Rural Highland areas** might show different patterns due to agricultural work and seasonal employment - **Post-industrial areas like parts of Glasgow or Dundee** might show higher poverty rates with different youth employment patterns
+> **Scottish Example**: If we were to apply this analysis to Scotland at a regional level, we might find that: - **Urban areas like Edinburgh and Aberdeen** might show low poverty but some youth employment in service sectors - **Rural Highland areas** might show different patterns due to agricultural work and seasonal employment - **Post-industrial areas like parts of Glasgow or Dundee** might show higher poverty rates with different youth employment patterns
 
 ------------------------------------------------------------------------
 
-## Analysis Questions and Policy Applications
+## Questions and Policy Applications
 
-If you toggle between layers in the Contents pane, the legend will help you perform more visual analysis on the countries. If you were looking at ways to base policy on this information, you could use the maps you created to answer the following questions:
+If you toggle between layers in the Contents pane, the legend will help you perform more visual analysis on the countries. If you were looking at ways to base policy on this information, you could use the maps you created to answer the following questions (Make sure you add the response to the following questions to your data report):
 
-### SDG 1: No Poverty Questions
+### SDG 1: No-Poverty Questions
 
 -   **Which countries have the highest poverty rates?**
 -   **Where does it appear that children are protected from labor?**
 -   **Where should international efforts to alleviate poverty be targeted?**
 -   **Within individual countries, what are some ways of improving the situation for children facing challenges associated with poverty?**
 
-### Questions Pertaining to Both Indicators
+### Questions related to Both Indicators
 
 -   **Where do you see overlaps in patterns between the two maps that you have created for each indicator?**
 -   **Where are the most affected areas that efforts should be focused toward helping improve the condition for children?**
 -   **What sorts of place-based policies could be designed to help improve the conditions for children?**
 
-> **Scottish Policy Application Example**: Using similar spatial analysis techniques, Scottish policymakers could: - **Target the Scottish Child Payment** to areas with highest concentration of child poverty (using SIMD data) - **Design place-based interventions** for areas like Inverclyde, West Dunbartonshire, or parts of Glasgow where multiple deprivation indicators overlap - **Develop rural-specific policies** for Highland and Island communities where geographic isolation compounds poverty challenges - **Create youth employment programs** in areas where high poverty correlates with limited economic opportunities for young people
+> **Scottish Policy Examples**: Using similar spatial analysis techniques, Scottish policymakers in theory could:
+>
+> \- **Target the Scottish Child Payment** to areas with highest concentration of child poverty (using SIMD data)
+>
+> \- **Design place-based interventions** for areas like Inverclyde, West Dunbartonshire, or parts of Glasgow where multiple deprivation indicators overlap
+>
+> \- **Develop rural-specific policies** for Highland and Island communities where geographic isolation compounds poverty challenges
+>
+> \- **Create youth employment programs** in areas where high poverty correlates with limited economic opportunities for young people
 
 ------------------------------------------------------------------------
 
-## Next Steps: Share Links to Story Map - Optional.
+## Step 5: Share Maps to a Story Map (Optional step)
 
-You now have three maps showing UN Sustainable Development Goals data. With a little extra work, there are several ways you can share these:
+You now have three maps showing UN Sustainable Development Goals data. With a little extra work, you can share to a general audience the maps you have created in a way that everyone can understand.
 
--   **Embed the maps in a Story Map** using [Get Started with Story Maps](https://learn.arcgis.com/en/projects/get-started-with-story-maps/)
--   **Create dashboard applications** to allow interactive exploration of the data
--   **Export the data** for use in other analytical tools or reports
--   **Share the web maps** directly with stakeholders or the public
-
-> **Scottish Implementation Example**: The Scottish Government could use similar techniques to create: - **Story maps showing progress** toward SDG targets at local authority level - **Interactive dashboards** for community planning partnerships - **Public-facing visualizations** showing how local areas contribute to national SDG commitments - **Policy briefings** that combine spatial analysis with targeted interventions
+-   **Embed the maps in a Story Map** using [Get Started with Story Maps](https://learn.arcgis.com/en/projects/get-started-with-story-maps/) Go to this link and replicate the steps to create a story map using the maps you have created in this lab. This step is optional.
 
 ------------------------------------------------------------------------
+
+## Final Steps:
+
+Well Done! You have now completed all the steps for this lab. Before moving on, make sure to:
+
+1.  **Take one screenshot** of the final map. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
+
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK**.
+
+In the original lab, you have created a set of maps showing UN Sustainable Development Goals data related to poverty. More importantly you learned **how to create a relationship map,** a method that help you to present two different indicators. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
+
+-   Use again **ArcGIS Online** using your university credentials. **Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.**
+
+-   Apply the same techniques learned in this lab., and create another relationship map.
+
+-   Include the screenshot of the new relationship web map created with a **clear purpose** relevant to a real-world issue in Scotland or the UK. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report
+
+This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
+
+------------------------------------------------------------------------
+
+*Tutorial inspired on: [ArcGIS Online blog entry](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/examine-global-poverty-using-un-sustainable-development-goals/)*

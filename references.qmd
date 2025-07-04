@@ -1,4 +1,19 @@
 # References {.unnumbered}
 
-::: {#refs}
-:::
+<div>
+
+<https://www.sdg.org/>
+
+<https://statistics.ukdataservice.ac.uk/organization/national-records-of-scotland>
+
+<https://www.spatialdata.gov.scot>
+
+<https://ggim.un.org/meetings/GGIM-committee/11th-Session/documents/The_Geospatial_SDGs_Roadmap_WGGI_IAEG_SDGs_20210804.pdf>
+
+<https://www.esri.com/about/newsroom/arcuser/eo4sdg>
+
+<https://www.arcgis.com/apps/solutions/index.html?gallery=true&sortField=relevance&sortOrder=desc#home>
+
+<https://sids.sdg.org/>
+
+</div>
