@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab No 1: Getting Started with ArcGIS Online – SD2005 - QUANTITATIVE DATA REPORT</title>
+<title>Lab No 1: Getting Started with ArcGIS Online – SD2005 - From Sustaible Development to Human Security</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Lab_2.html" rel="next">
-<link href="./summary.html" rel="prev">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -97,9 +97,9 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">SD2005 - QUANTITATIVE DATA REPORT</a> 
+      <a href="./">SD2005 - From Sustaible Development to Human Security</a> 
         <div class="sidebar-tools-main">
-    <a href="./SD2005---QUANTITATIVE-DATA-REPORT.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <a href="./SD2005---From-Sustaible-Development-to-Human-Security.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
       </div>
@@ -113,19 +113,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">About this site</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -137,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lab_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab No 2: Create a Web Map</span></a>
+ <span class="menu-text">Lab No 2: Using external data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -149,13 +143,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lab_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals</span></a>
+ <span class="menu-text">Lab No 4: Examine Global Poverty Using UN SDGs</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lab_5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab No 5: Build an Interactive Dashboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./DataSources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Sources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -174,11 +174,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#mapping-census-data-for-emergency-planning" id="toc-mapping-census-data-for-emergency-planning" class="nav-link active" data-scroll-target="#mapping-census-data-for-emergency-planning">Mapping Census Data for Emergency Planning</a>
-  <ul class="collapse">
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><strong>Background</strong></a></li>
-  </ul></li>
-  <li><a href="#part-1-begin-a-map" id="toc-part-1-begin-a-map" class="nav-link" data-scroll-target="#part-1-begin-a-map"><strong>Part 1: Begin a Map</strong></a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#mapping-census-data-for-emergency-planning" id="toc-mapping-census-data-for-emergency-planning" class="nav-link" data-scroll-target="#mapping-census-data-for-emergency-planning">Mapping Census Data for Emergency Planning</a></li>
+  <li><a href="#part-1-start-with-a-map" id="toc-part-1-start-with-a-map" class="nav-link" data-scroll-target="#part-1-start-with-a-map"><strong>Part 1: Start with a Map</strong></a>
   <ul class="collapse">
   <li><a href="#step-1-access-arcgis-online" id="toc-step-1-access-arcgis-online" class="nav-link" data-scroll-target="#step-1-access-arcgis-online">Step 1: Access ArcGIS Online</a></li>
   <li><a href="#step-2-navigate-to-your-area-of-interest" id="toc-step-2-navigate-to-your-area-of-interest" class="nav-link" data-scroll-target="#step-2-navigate-to-your-area-of-interest">Step 2: Navigate to Your Area of Interest</a></li>
@@ -206,8 +204,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#part-7-final-documentation-and-submission" id="toc-part-7-final-documentation-and-submission" class="nav-link" data-scroll-target="#part-7-final-documentation-and-submission"><strong>Part 7: Final Documentation and Submission</strong></a>
   <ul class="collapse">
   <li><a href="#step-1-save-your-map" id="toc-step-1-save-your-map" class="nav-link" data-scroll-target="#step-1-save-your-map">Step 1: Save Your Map</a></li>
-  <li><a href="#step-2-submission-requirements" id="toc-step-2-submission-requirements" class="nav-link" data-scroll-target="#step-2-submission-requirements">Step 2: Submission Requirements</a></li>
   </ul></li>
+  <li><a href="#final-steps" id="toc-final-steps" class="nav-link" data-scroll-target="#final-steps">Final Steps:</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><strong>Additional Resources</strong></a></li>
   </ul>
 </nav>
@@ -234,19 +232,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This tutorial is inspired from ArcGIS Online Learning resources available at <a href="https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/" class="uri">https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/</a></p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>By the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes</p>
+<p><strong>Estimated time of completion:</strong> 45 Minutes</p>
+</section>
 <section id="mapping-census-data-for-emergency-planning" class="level2">
 <h2 class="anchored" data-anchor-id="mapping-census-data-for-emergency-planning">Mapping Census Data for Emergency Planning</h2>
-<p>By the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes</p>
-<section id="background" class="level3">
-<h3 class="anchored" data-anchor-id="background"><strong>Background</strong></h3>
 <p>In this lab, you will create a web map to identify areas that may need additional evacuation assistance during emergencies. You will work with census data to identify households with limited vehicle access, which is crucial information for emergency planning and resource allocation.</p>
-<p><strong>Estimated time of completion:</strong> 45 Minutes</p>
 <hr>
 </section>
-</section>
-<section id="part-1-begin-a-map" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-begin-a-map"><strong>Part 1: Begin a Map</strong></h2>
+<section id="part-1-start-with-a-map" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-start-with-a-map"><strong>Part 1: Start with a Map</strong></h2>
 <section id="step-1-access-arcgis-online" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-access-arcgis-online">Step 1: Access ArcGIS Online</h3>
 <ol type="1">
@@ -365,10 +362,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>In the <strong>Settings pane</strong>, click <strong>Filter</strong></p>
 <p><img src="images/clipboard-3041167384.png" class="img-fluid"></p></li>
 <li><p>In the <strong>Filter pane</strong>, click <strong>Add new</strong></p></li>
-<li><p>Under <strong>Condition</strong>, click the first box and choose <strong>==County==</strong></p>
+<li><p>Under <strong>Condition</strong>, click the first box and choose <strong>County</strong></p>
 <p><img src="images/clipboard-668989916.png" class="img-fluid"></p></li>
 <li><p>Leave the operator as <strong>is</strong></p></li>
-<li><p>For the third box, click the drop-down arrow, type <strong>==Harris County==</strong> and select it</p>
+<li><p>For the third box, click the drop-down arrow, type <strong>Harris County</strong> and select it</p>
 <p><img src="images/clipboard-3483512619.png" class="img-fluid"></p></li>
 <li><p>Click <strong>Save</strong> to apply the filter</p>
 <p><img src="images/clipboard-2203001877.png" class="img-fluid"></p></li>
@@ -381,10 +378,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-1-examine-the-attribute-table" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-examine-the-attribute-table">Step 1: Examine the Attribute Table</h3>
 <ol type="1">
-<li><p>For the layer, click the <strong>Options</strong> button and choose <strong>Show table</strong><img src="images/clipboard-2618926047.png" class="img-fluid"></p>
+<li><p>For the layer, click the <strong>Options</strong> button and choose <strong>Show table</strong></p>
+<p><img src="images/clipboard-2618926047.png" class="img-fluid"></p>
 <p>The layer’s attribute table appears. The attribute table is a way of viewing all of the attributes that exist for each feature. Each row in the table represents a feature (in this case, a census tract area). The columns, or fields, provide information about the census tract features, such as the <strong>County</strong> attribute that you used to filter the data earlier.</p>
 <p>The top of the table indicates that there are 1,122 census tracts in Harris County.</p></li>
-<li><p>Scroll right to find the <strong>==Percent of households with no vehicle available==</strong> column</p>
+<li><p>Scroll right to find the <strong>Percent of households with no vehicle available</strong> column</p>
 <p><img src="images/clipboard-1271130688.png" class="img-fluid"></p>
 <p>The table is sorted so that the <strong>Percent of households with no vehicle available</strong> field shows tracts in order of highest to lowest values. The highest value is 48.9 percent.</p></li>
 <li><p>Click the <strong>Menu</strong> button for this column and choose <strong>Sort descending</strong></p></li>
@@ -417,37 +415,37 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="step-1-save-your-map">Step 1: Save Your Map</h3>
 <ol type="1">
 <li><p>On the <strong>Contents toolbar</strong>, click <strong>Save and open</strong> and choose <strong>Save as</strong></p></li>
-<li><p>For <strong>Title</strong>, type: <strong>==Census tracts in Houston with low vehicle access==</strong></p></li>
+<li><p>For <strong>Title</strong>, type: <strong>Census tracts in Houston with low vehicle access</strong></p></li>
 <li><p>For <strong>Tags</strong>, add the following (press Enter after each):</p>
 <ul>
-<li><strong>==Hurricanes==</strong></li>
-<li><strong>==Evacuation Assistance==</strong></li>
-<li><strong>==Houston==</strong></li>
+<li><strong>Hurricanes</strong></li>
+<li><strong>Evacuation Assistance</strong></li>
+<li><strong>Houston</strong></li>
 </ul></li>
-<li><p>For <strong>Summary</strong>, type: <strong>==This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.==</strong></p></li>
+<li><p>For <strong>Summary</strong>, type: <strong>This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.</strong></p></li>
+<li><p>Click <strong>Save</strong></p></li>
 </ol>
 <p>The map is saved. It now appears in your account’s content. You can access your content by clicking the options button next to the map’s name and choosing <strong>Content</strong>. For now, you’ll set the sharing permissions.</p>
-<p>By default, your content is private and only visible to you and your organization’s administrator. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content’s audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization as you can access your content. For this tutorial, you’ve created a public information map and you want it to be available to everyone, so you’ll share it publicly.</p>
-<ol type="1">
-<li>Click <strong>Save</strong></li>
-</ol>
-</section>
-<section id="step-2-submission-requirements" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-submission-requirements">Step 2: Submission Requirements</h3>
-<p><strong>IMPORTANT:</strong> Instead of sharing your map publicly, you must provide descriptions of your completed work.</p>
-<p><strong>Take a screenshot that includes:</strong> - Your complete computer screen - The ArcGIS Online map you created - The system date and time visible (usually in the taskbar/menu bar) - All relevant map elements (legend, layers panel, styled data)</p>
-<ol type="1">
-<li><p>Ensure your map displays all required elements: - Properly filtered census data - Appropriate styling with color scheme - basemap - Applied effects highlighting top areas - Descriptive layer name.</p></li>
-<li><p>Take a full-screen screenshot showing:</p>
-<ul>
-<li><p>Your completed map</p></li>
-<li><p>Current date and time from your system</p></li>
-<li><p>ArcGIS Online interface with your map title visible</p></li>
-</ul></li>
-<li><p>The date-time stamp allows the marker to validate when the work was completed</p></li>
-</ol>
+<p><strong>By default, your content is private and only visible to you and your organization’s administrator</strong>. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content’s audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization ( e.g The University of St Andrews) as you can access your content.</p>
 <hr>
 </section>
+</section>
+<section id="final-steps" class="level2">
+<h2 class="anchored" data-anchor-id="final-steps">Final Steps:</h2>
+<p>Well Done! You have now completed all the steps for this lab, where you (in theory) created your <strong>first Web Map</strong> using <strong>ArcGIS Online</strong>. Before moving on, make sure to:</p>
+<ol type="1">
+<li><p><strong>Take a screenshot</strong> of your final web map, ensuring your <strong>full screen is visible</strong>, including the <strong>date and time</strong>. This screenshot will be required for your report ( see all the instructions in the handbook)</p></li>
+<li><p><strong>For the Part B of this lab in your report. Replicate the process independently</strong> by applying the same skills you practised in this lab, but using <strong>spatial data from Scotland or the UK (</strong>See the Data sources sections for a comprehensive list of data sources<strong>)</strong>.</p></li>
+</ol>
+<p>In the original lab, you created a web map using <strong>census data for emergency planning in the U.S.</strong> For your <strong>independent spatial analysis</strong>, you can choose a different theme and dataset (e.g.&nbsp;healthcare access, education, environmental risk), as long as you also:</p>
+<ul>
+<li><p>Use again <strong>ArcGIS Online</strong> using your university credentials. <strong>Meet and work with your classmate to define which account want to use. You must only report one independent analysis results.</strong></p></li>
+<li><p>Apply the same techniques learned in this lab (e.g.&nbsp;adding layers, symbolising data, filtering, configuring pop-ups, etc).</p></li>
+<li><p>And create a web map with a <strong>clear purpose</strong> relevant to a real-world issue in Scotland or the UK.</p></li>
+</ul>
+<p>This additional task is an opportunity to deepen your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.</p>
+<hr>
+<p>This tutorial is inspired from ArcGIS Online Learning resources available at <a href="https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/" class="uri">https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/</a></p>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources"><strong>Additional Resources</strong></h2>
@@ -455,13 +453,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://www.arcgis.com/home/item.html?id=9a9e43ec1603446880c50d4ed1df2207">ACS Vehicle Availability Variables - Boundaries data</a> is from the American Community Survey.</p></li>
 <li><p><a href="https://arcgis.com/home/item.html?id=67372ff42cd145319639a99152b15bc3">Topographic</a> map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community</p></li>
 <li><p><a href="https://arcgis.com/home/item.html?id=3582b744bba84668b52a16b0b6942544">Human Geography Map</a> sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community</p></li>
-</ul>
-<p>To extend your learning with ArcGIS Online: - Create interactive apps from web maps - Learn advanced styling techniques - Explore spatial analysis tools - Access the ArcGIS tutorial gallery for more exercises</p>
-<ul>
-<li><p>To learn how to transform your web map into an interactive app, check out the tutorial <a href="https://learn.arcgis.com/en/projects/create-an-app/">Create an app</a>.</p></li>
-<li><p>To learn useful tips and tricks for web maps, check out the series <a href="https://learn.arcgis.com/en/paths/common-skills-for-working-with-data-arcgis-online/">Common skills for working with data in ArcGIS Online</a>.</p></li>
-<li><p>To learn about performing spatial analysis, check out the series <a href="https://learn.arcgis.com/en/paths/data-analysis/">Perform analysis in Map Viewer</a>.</p></li>
-<li><p>To learn more advanced techniques for styling your map, check out the series <a href="https://learn.arcgis.com/en/paths/cartographic-creations-with-web-maps/">Cartographic creations with web maps</a>.</p></li>
 </ul>
 
 
@@ -869,13 +860,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Summary</span>
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Lab_2.html" class="pagination-link" aria-label="Lab No 2: Create a Web Map">
-        <span class="nav-page-text">Lab No 2: Create a Web Map</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Lab_2.html" class="pagination-link" aria-label="Lab No 2: Using external data">
+        <span class="nav-page-text">Lab No 2: Using external data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
