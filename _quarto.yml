@@ -2,14 +2,22 @@ project:
   type: book
 
 book:
-  title: "SD2005 - From Sustaible Development to Human Security"
+  title: "SD2005 - From Sustenaible Development to Human Security"
   subtitle: "Techincal Practices required for the Quantitave Data Report"
   author: "Fernando Benitez-Paez"
   date: "7/3/2025"
+  favicon: "images/StA.png"
   downloads: [pdf]
   sidebar:
-    style: "docked"
+    style: "floating"
+  navbar:
     background: light
+    search: true
+    right:
+      - text: "Home"
+        href: index.qmd
+      - intro.qmd
+      - DataSources.qmd
   chapters:
     - index.qmd
     - intro.qmd
@@ -26,8 +34,10 @@ bibliography: references.bib
 format:
   html:
     respect-user-color-scheme: true
-    theme: cosmo
-    code-copy: true
+    theme:
+      light: cosmo
+      dark:
+        - theme-dark.scss
   pdf:
     documentclass: scrreprt
 

@@ -16,7 +16,7 @@ In this lab, you will create a web map to identify areas that may need additiona
 
 ### Step 1: Access ArcGIS Online
 
-1.  Sign in to [ArcGIS](https://www.arcgis.com/home/signin.html)[Online](https://uostandrews.maps.arcgis.com/), using your University Credentials.
+1.  Sign in to [ArcGIS](https://www.arcgis.com/home/signin.html)[Online](https://uostandrews.maps.arcgis.com/), using your University Credentials. (see [here](index.qmd) to learn how to log in into ArcGIS)
 
 2.  On the ribbon, click the **Map** tab
 
@@ -286,8 +286,6 @@ This additional task is an opportunity to deepen your technical skills, explore 
 
 ------------------------------------------------------------------------
 
-This tutorial is inspired from ArcGIS Online Learning resources available at <https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/>
-
 ## **Additional Resources**
 
 -   [ACS Vehicle Availability Variables - Boundaries data](https://www.arcgis.com/home/item.html?id=9a9e43ec1603446880c50d4ed1df2207) is from the American Community Survey.
@@ -295,3 +293,5 @@ This tutorial is inspired from ArcGIS Online Learning resources available at <ht
 -   [Topographic](https://arcgis.com/home/item.html?id=67372ff42cd145319639a99152b15bc3) map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community
 
 -   [Human Geography Map](https://arcgis.com/home/item.html?id=3582b744bba84668b52a16b0b6942544) sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community
+
+This tutorial is inspired from ArcGIS Online Learning resources available at <https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/>

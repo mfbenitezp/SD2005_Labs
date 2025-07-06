@@ -4,7 +4,7 @@
 
 In this lab, you will learn to identify and map meaningful places in your community using ArcGIS Survey123. This project involves designing a research study, collecting data through surveys, and analyzing the results to understand what places contribute to your community's identity and resilience.
 
-**Estimated time of completion:** 40 Minutes
+**Estimated time of completion:** 60 Minutes
 
 ## Learning Objectives
 

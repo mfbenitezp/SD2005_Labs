@@ -101,7 +101,7 @@ ESRI’s curated collection of geographic information, including UK-specific con
 
 ------------------------------------------------------------------------
 
-## 13. [ArcGIS Living Atlas (UK content)](https://livingatlas.arcgis.com/en/home/)
+## 13. [ArcGIS Living Atlas (UK content)](https://livingatlas.arcgis.com/en/browse/#d=2&rgnCode=GB)
 
 ESRI’s curated collection of geographic information, including UK-specific content.
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SD2005 - From Sustaible Development to Human Security - Lab No 2: Using external data</title>
+<title>SD2005 - From Sustenaible Development to Human Security - Lab No 2: Using external data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,21 +32,24 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <link href="./Lab_3.html" rel="next">
 <link href="./Lab_1.html" rel="prev">
+<link href="./images/StA.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -65,10 +68,43 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SD2005 - From Sustenaible Development to Human Security</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./intro.html" rel="" target="">
+ <span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./DataSources.html" rel="" target="">
+ <span class="menu-text">Data Sources</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+    <a href="./SD2005—From-Sustenaible-Development-to-Human-Security.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -84,17 +120,9 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">SD2005 - From Sustaible Development to Human Security</a> 
-        <div class="sidebar-tools-main">
-    <a href="./SD2005---From-Sustaible-Development-to-Human-Security.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
-</div>
-    </div>
-      </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -174,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#style-the-layer-in-another-way" id="toc-style-the-layer-in-another-way" class="nav-link" data-scroll-target="#style-the-layer-in-another-way">Style the Layer in Another Way</a></li>
   <li><a href="#update-the-item-details" id="toc-update-the-item-details" class="nav-link" data-scroll-target="#update-the-item-details">Update the Item Details</a></li>
   <li><a href="#final-steps" id="toc-final-steps" class="nav-link" data-scroll-target="#final-steps">Final Steps:</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#adding-other-data-types" id="toc-adding-other-data-types" class="nav-link" data-scroll-target="#adding-other-data-types">Adding other data types</a></li>
   </ul>
 </nav>
     </div>
@@ -200,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview"><strong>Overview</strong></h2>
-<p>In this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.</p>
+<p>In this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online. Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.</p>
 <p><strong>Estimated time of completion:</strong> 45 Minutes</p>
 <hr>
 </section>
@@ -472,11 +500,21 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.</p>
 <hr>
+</section>
+<section id="adding-other-data-types" class="level2">
+<h2 class="anchored" data-anchor-id="adding-other-data-types">Adding other data types</h2>
+<p>There are several maybe hundreds of spatial data types, and often you will find data in formats that you even would not know about it, fortunately ArcGIS Online and other Cloud-GIS platform are supporting connections to most of the spatial data formats. Here are some resources to help you understand how to connect and manage data from not the usual <code>.shapefile</code> or <code>.csv</code> formats.</p>
+<ol type="1">
+<li><a href="https://youtu.be/B-6AoeYQnmk?si=JHdLU_ct09GE_3Qy">ArcGIS Online: Managing Data</a></li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B-6AoeYQnmk?si=6YGdHPl5gUwhiAk1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<ol start="2" type="1">
+<li><a href="https://doc.arcgis.com/en/arcgis-online/manage-data/add-items.htm">Add Items in ArcGIS Online</a></li>
+</ol>
+<hr>
 <p>This tutorial is inspired from ArcGIS Online Learning resources available at:</p>
 <p><a href="https://learn.arcgis.com/en/projects/create-a-map/" class="uri">https://learn.arcgis.com/en/projects/create-a-map/</a></p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
 
 
 </section>
@@ -502,6 +540,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

@@ -1,8 +1,8 @@
-# Lab No 2: Using external data  {.unnumbered}
+# Lab No 2: Using external data {.unnumbered}
 
 ## **Overview** {.unnumbered}
 
-In this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online, Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
+In this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online. Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.
 
 **Estimated time of completion:** 45 Minutes
 
@@ -338,8 +338,20 @@ This additional task is an opportunity to improve your technical skills, explore
 
 ------------------------------------------------------------------------
 
+## Adding other data types
+
+There are several maybe hundreds of spatial data types, and often you will find data in formats that you even would not know about it, fortunately ArcGIS Online and other Cloud-GIS platform are supporting connections to most of the spatial data formats. Here are some resources to help you understand how to connect and manage data from not the usual `.shapefile` or `.csv` formats.
+
+1.  [ArcGIS Online: Managing Data](https://youtu.be/B-6AoeYQnmk?si=JHdLU_ct09GE_3Qy)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B-6AoeYQnmk?si=6YGdHPl5gUwhiAk1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+2.  [Add Items in ArcGIS Online](https://doc.arcgis.com/en/arcgis-online/manage-data/add-items.htm)
+
+------------------------------------------------------------------------
+
 This tutorial is inspired from ArcGIS Online Learning resources available at:
 
 <https://learn.arcgis.com/en/projects/create-a-map/>
-
-## 
