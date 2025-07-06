@@ -10,4 +10,6 @@ As part of your coursework, you have to complete the labs included here, in pair
 
 All students enrolled in SD2005 have access to the University's ArcGIS Online **Organisational Account** using their University credentials. To get started, please log in at: 👉 [https://uostandrews.maps.arcgis.com](https://uostandrews.maps.arcgis.com/)
 
+::: {.content-visible when-format="html"}
 ![SigIn to ArcGIS Online St Andrews](images/SigIn_AGOL_StAndrews.mp4)
+:::

@@ -7,18 +7,32 @@
     "text": "About this site\nThis book has been developed as part of the module SD2005 – From Sustainable Development to Human Security at the School of Geography and Sustainable Development, University of St Andrews. It includes a set of five practical labs designed to introduce students to essential skills in geographic information systems (GIS), using ArcGIS Online—one of the most widely adopted Cloud-based GIS platforms in both academia and industry.\nThe SD2005 module includes a variaty of lectures from different types of topics, but also includes two weeks and six lectures related to the use of spatial data to the study and monitoring of the SGDs. The labs included here have been tailored to complement the module’s lecture content on spatial data, sustainable development, and the Sustainable Development Goals (SDGs)\nThe material and instrucctions here are an adapted version of several turorials from Esri’s Learn ArcGIS resources. Through these hands-on exercises, you will gain practical experience working with spatial data—learning how to create interactive web maps, manage geospatial datasets, conduct spatial analysis, and build simple web applications to communicate geographic insights.\nAs part of your coursework, you have to complete the labs included here, in pairs and submit a technical report in PDF (get all the instructions to create this data report in the module handbook available in Moodle). This report must demonstrate your understanding and application of GIS concepts, including screenshots and descriptions of the maps or apps you create. You are encouraged to begin working on the labs from the very first week, as the technical components may require time and independent effort outside of scheduled lectures.\nAll students enrolled in SD2005 have access to the University’s ArcGIS Online Organisational Account using their University credentials. To get started, please log in at: 👉 https://uostandrews.maps.arcgis.com\n\n\nVideo\nSigIn to ArcGIS Online St Andrews"
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
+    "objectID": "intro.html#why-spatial-data-matters-for-the-sdgs",
+    "href": "intro.html#why-spatial-data-matters-for-the-sdgs",
     "title": "Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "section": "Why Spatial Data Matters for the SDGs",
+    "text": "Why Spatial Data Matters for the SDGs\nSpatial data is essential for advancing the Sustainable Development Goals (SDGs) because it provides a crucial geographic lens through which global challenges can be better understood, monitored, and addressed. From poverty and food insecurity to urban resilience and climate change, the spatial dimension of sustainable development helps identify where interventions are most urgently needed, how different indicators interrelate across space and time, and what progress is being made at various scales—local, national, and global.\nGeospatial information allows us to move beyond abstract statistics and instead interact with real-world patterns—making data visible, tangible, and actionable. For instance, web dashboards powered by geospatial data enable stakeholders to track SDG indicators in near real-time, providing dynamic visualizations that combine charts, maps, and open datasets. These tools support data-driven decision-making by offering interactive interfaces for understanding spatial disparities and highlighting areas that require targeted policy or humanitarian response.\nGeospatial data is not just a complement to SDG monitoring—it is key. Access to open data sources, such as those published by national governments, the United Nations, and development agencies, has democratised the availability of high-quality spatial information. Students, researchers, NGOs, and policymakers alike can now explore and analyse global issues from a geospatial perspective. This access empowers users not only to consume information but also to create spatial narratives, develop analytical tools, and contribute meaningfully to SDG implementation.\nAt the centre of this framework lies Geographic Information Systems (GIS)—and increasingly, Cloud GIS platforms like ArcGIS Online. Providing the infrastructure to visualize, manipulate, analyse, and share spatial data seamlessly across devices and locations. Whether you are mapping deforestation hotspots, analysing access to clean water, or visualizing urban inequality, Cloud GIS fosters collaboration, accessibility, and spatial intelligence at scale."
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+    "objectID": "intro.html#module-structure-related-to-the-use-of-spatial-data",
+    "href": "intro.html#module-structure-related-to-the-use-of-spatial-data",
+    "title": "Introduction",
+    "section": "Module Structure related to the use of Spatial Data",
+    "text": "Module Structure related to the use of Spatial Data\nThis module offers a sequence of lectures and labs designed to build your spatial data literacy and technical competencies in direct relation to the SDGs:\nLecture 16: Spatial Data for SDGs Introduction to the importance of spatial data in sustainable development, focusing on key concepts and case studies that illustrate spatial inequalities and resource distribution.\nLecture 17: Global Fundamental Geospatial Data Themes Exploration of core geospatial data themes as recognised by the UN-GGIM (e.g., land cover, population, transport networks), and how these serve as the spatial foundation for SDG monitoring.\nLecture 18: Where to Find Spatial Data for SDG Analysis A guided overview of trusted spatial data sources including open repositories (e.g., UNData, World Bank GeoPortal, Copernicus), national geospatial platforms, and crowd-sourced data.\nLecture 19: Collecting Spatial Data with Geospatial Technologies Learn how to gather primary spatial data using tools such as Survey123, Field Maps, and mobile data collection methods. Emphasis is placed on participatory mapping and local knowledge.\nLecture 20: Authoring Web Maps to Understand SDG Progress Practical lab in which students create and customise web maps using ArcGIS Online, applying symbolisation, layer filtering, and pop-up configuration to communicate geographic stories.\nLecture 21: Building Interactive Applications to Monitor SDG Indicators Learn how to build web apps and dashboards that visualise real-time spatial data. Explore storytelling techniques and UX design for public engagement and policy communication."
+  },
+  {
+    "objectID": "intro.html#learning-outcomes",
+    "href": "intro.html#learning-outcomes",
+    "title": "Introduction",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy completing this part of the module, you will:\n\nYou will have the chance to better understand spatial data science concepts and principles in the context of sustainable development goals (SDGs) and learn how to acquire spatial data from multiple sources to address sustainability challenges.\nLearn how to link spatial data to create tools for a data-driven approach to spatially represent many global challenges, including poverty, hunger, inequality, and climate change."
+  },
+  {
+    "objectID": "Lab_1.html#overview",
+    "href": "Lab_1.html#overview",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
+    "section": "Overview",
+    "text": "Overview\nBy the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes\nEstimated time of completion: 45 Minutes"
   },
   {
     "objectID": "Lab_1.html#mapping-census-data-for-emergency-planning",
@@ -28,11 +42,11 @@
     "text": "Mapping Census Data for Emergency Planning\nIn this lab, you will create a web map to identify areas that may need additional evacuation assistance during emergencies. You will work with census data to identify households with limited vehicle access, which is crucial information for emergency planning and resource allocation."
   },
   {
-    "objectID": "Lab_1.html#part-1-begin-a-map",
-    "href": "Lab_1.html#part-1-begin-a-map",
+    "objectID": "Lab_1.html#part-1-start-with-a-map",
+    "href": "Lab_1.html#part-1-start-with-a-map",
     "title": "Lab No 1: Getting Started with ArcGIS Online",
-    "section": "Part 1: Begin a Map",
-    "text": "Part 1: Begin a Map\n\nStep 1: Access ArcGIS Online\n\nSign in to ArcGISOnline, using your University Credentials.\nOn the ribbon, click the Map tab\n\n\nA default web map appears. Your map’s appearance varies based on your account or organizational settings and your browser window size. It may show the United States, the world, or another extent.\n\nThe only layer on the map is the basemap, which provides geographic context such as water bodies and political boundaries. The default basemap is Topographic, but your map may have a different basemap depending on your organization’s settings.\nOn either side of the map are the toolbars: - Contents (dark) toolbar: Allows you to manage and view map contents - Settings (light) toolbar: Provides tools and options for configuring and interacting with map layers - Layers pane: Lists the data you add to the map\n\n\nStep 2: Navigate to Your Area of Interest\n\nOn the map, at the bottom corner, click the Search button\n\nIn the search box, type Houston and choose Houston, TX, USA from the list of suggested locations\n\n\nClose the Search result window when the map zooms to your location"
+    "section": "Part 1: Start with a Map",
+    "text": "Part 1: Start with a Map\n\nStep 1: Access ArcGIS Online\n\nSign in to ArcGISOnline, using your University Credentials. (see here to learn how to log in into ArcGIS)\nOn the ribbon, click the Map tab\n\n\nA default web map appears. Your map’s appearance varies based on your account or organizational settings and your browser window size. It may show the United States, the world, or another extent.\n\nThe only layer on the map is the basemap, which provides geographic context such as water bodies and political boundaries. The default basemap is Topographic, but your map may have a different basemap depending on your organization’s settings.\nOn either side of the map are the toolbars: - Contents (dark) toolbar: Allows you to manage and view map contents - Settings (light) toolbar: Provides tools and options for configuring and interacting with map layers - Layers pane: Lists the data you add to the map\n\n\nStep 2: Navigate to Your Area of Interest\n\nOn the map, at the bottom corner, click the Search button\n\nIn the search box, type Houston and choose Houston, TX, USA from the list of suggested locations\n\n\nClose the Search result window when the map zooms to your location"
   },
   {
     "objectID": "Lab_1.html#part-2-add-a-layer",
@@ -77,11 +91,25 @@
     "text": "Part 7: Final Documentation and Submission\n\nStep 1: Save Your Map\n\nOn the Contents toolbar, click Save and open and choose Save as\nFor Title, type: Census tracts in Houston with low vehicle access\nFor Tags, add the following (press Enter after each):\n\nHurricanes\nEvacuation Assistance\nHouston\n\nFor Summary, type: This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.\nClick Save\n\nThe map is saved. It now appears in your account’s content. You can access your content by clicking the options button next to the map’s name and choosing Content. For now, you’ll set the sharing permissions.\nBy default, your content is private and only visible to you and your organization’s administrator. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content’s audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization ( e.g The University of St Andrews) as you can access your content."
   },
   {
+    "objectID": "Lab_1.html#final-steps",
+    "href": "Lab_1.html#final-steps",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
+    "section": "Final Steps:",
+    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab, where you (in theory) created your first Web Map using ArcGIS Online. Before moving on, make sure to:\n\nTake a screenshot of your final web map, ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK (See the Data sources sections for a comprehensive list of data sources).\n\nIn the original lab, you created a web map using census data for emergency planning in the U.S. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use. You must only report one independent analysis results.\nApply the same techniques learned in this lab (e.g. adding layers, symbolising data, filtering, configuring pop-ups, etc).\nAnd create a web map with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to deepen your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts."
+  },
+  {
     "objectID": "Lab_1.html#additional-resources",
     "href": "Lab_1.html#additional-resources",
     "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nACS Vehicle Availability Variables - Boundaries data is from the American Community Survey.\nTopographic map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community\nHuman Geography Map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community\n\nThis tutorial is inspired from ArcGIS Online Learning resources available at https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/"
+  },
+  {
+    "objectID": "Lab_2.html#overview",
+    "href": "Lab_2.html#overview",
+    "title": "Lab No 2: Using external data",
+    "section": "Overview",
+    "text": "Overview\nIn this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online. Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.\nEstimated time of completion: 45 Minutes"
   },
   {
     "objectID": "Lab_2.html#download-and-examine-the-data",
@@ -126,32 +154,18 @@
     "text": "Update the Item Details\nYour map now tells a story about the locations and some socioeconomic attributes of public high schools. For example, the school with the largest number of students eligible for FRPM programs is Western International High School in southwest Detroit. Many of the schools have a high percentage of students who identify as Black or African American. In southwest Detroit, there are more schools with higher percentages of Hispanic or Latino students.\nBy saving your map, you also created a corresponding item page that contains information, actions, options, and settings for the map.\n\nOn the Contents toolbar, click Map properties. In the Map Properties pane, click Item details.\n\n\nYour map’s item page opens in a new browser tab. The item details are missing important attribution and descriptive information that you will fill in before you share the map. For example, you must give credit to the data providers.\n\nScroll to the bottom of the page. Next to Credits (Attribution), click Edit.\nType National Center for Education Statistics’ (NCES) Education Demographic and Geographic Estimates (EDGE). Click Save.\nClose the item page’s tab."
   },
   {
-    "objectID": "Lab_2.html#submit-your-work",
-    "href": "Lab_2.html#submit-your-work",
-    "title": "Lab No 2: Create a Web Map",
-    "section": "Submit Your Work",
-    "text": "Submit Your Work\nTo demonstrate completion of this lab, take a screenshot that includes your entire computer screen showing your completed map. Ensure that the date and time are visible on your screen (either in the system taskbar or by opening the system clock). This screenshot will allow the instructor to validate that you have successfully completed the mapping exercise.\nSubmit your screenshot through the designated course submission portal."
-  },
-  {
-    "objectID": "Lab_2.html#whats-next",
-    "href": "Lab_2.html#whats-next",
+    "objectID": "Lab_2.html#final-steps",
+    "href": "Lab_2.html#final-steps",
     "title": "Lab No 2: Using external data",
-    "section": "What’s Next?",
-    "text": "What’s Next?\nYou have created a web map with a .csv file of school location and demographic data. Now that you have the data mapped, you have more ideas for how to share and explore potential after-school program needs in your city.\nYou can create a web app to display your map data in an interactive way so viewers can explore the data without editing the map. There are many ways you can use your web map to visualize data, understand problems, determine informed solutions, and discover what else is possible.\nYou can find more tutorials in the tutorial gallery.\n\nThis tutorial is inspired from ArcGIS Online Learning resources available at:\nhttps://learn.arcgis.com/en/projects/create-a-map/"
+    "section": "Final Steps:",
+    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab, where you (in theory) created your second Web Map using ArcGIS Online. Before moving on, make sure to:\n\nTake a screenshot of your final web map, ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK ( see the Data sources sections for a comprehensive list of data sources).\n\nIn the original lab, you have created a web map with a .csv file of school location and demographic data. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab (e.g. adding external data (excel), symbolising data, filtering, configuring pop-ups, etc).\nAnd create a web map with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts."
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "https://www.sdg.org/\nhttps://statistics.ukdataservice.ac.uk/organization/national-records-of-scotland\nhttps://www.spatialdata.gov.scot\nhttps://ggim.un.org/meetings/GGIM-committee/11th-Session/documents/The_Geospatial_SDGs_Roadmap_WGGI_IAEG_SDGs_20210804.pdf\nhttps://www.esri.com/about/newsroom/arcuser/eo4sdg\nhttps://www.arcgis.com/apps/solutions/index.html?gallery=true&sortField=relevance&sortOrder=desc#home\nhttps://sids.sdg.org/"
-  },
-  {
-    "objectID": "Lab_2.html#overview",
-    "href": "Lab_2.html#overview",
+    "objectID": "Lab_2.html#adding-other-data-types",
+    "href": "Lab_2.html#adding-other-data-types",
     "title": "Lab No 2: Using external data",
-    "section": "Overview",
-    "text": "Overview\nIn this lab you will create your second Web map using ArcGIS Online. Now you are familiar with the platform, the idea of this tutorial is you learn how to create another web map using external data in ArcGIS Online. Add a data layer to a new map and start visualizing patterns. You will see how to add new data from external sources, format your charts, and then be able to filter and structure your map to only read and illustrate what you need.\nEstimated time of completion: 45 Minutes"
+    "section": "Adding other data types",
+    "text": "Adding other data types\nThere are several maybe hundreds of spatial data types, and often you will find data in formats that you even would not know about it, fortunately ArcGIS Online and other Cloud-GIS platform are supporting connections to most of the spatial data formats. Here are some resources to help you understand how to connect and manage data from not the usual .shapefile or .csv formats.\n\nArcGIS Online: Managing Data\n\n\n\n\n\n\nAdd Items in ArcGIS Online\n\n\nThis tutorial is inspired from ArcGIS Online Learning resources available at:\nhttps://learn.arcgis.com/en/projects/create-a-map/"
   },
   {
     "objectID": "Lab_3.html#overview",
@@ -203,18 +217,11 @@
     "text": "Part 5: Draw Conclusions\n\nStep 15: Evaluate Your Research Question\nReturn to your original research question and consider whether your data adequately answers it.\nQuestions to Consider: Does your data answer your research question? - What places in your community appear to have the most social, economic, or political value? - What contributes to your community’s identity based on your findings? - Are there gaps in your data that need to be addressed?\n\n\nStep 16: Consider Data Limitations\nReflect on potential limitations in your data: - Who was surveyed and who was not? - What biases might exist in your sample? - What additional data might strengthen your conclusions?\nScottish Context: - Does your data represent different Scottish communities (urban/rural, Highland/Lowland)? - Are there cultural or linguistic factors that might affect responses? - How might seasonal variations affect the importance of certain places?"
   },
   {
-    "objectID": "Lab_3.html#part-6-submit-your-work",
-    "href": "Lab_3.html#part-6-submit-your-work",
+    "objectID": "Lab_3.html#final-steps",
+    "href": "Lab_3.html#final-steps",
     "title": "Lab No 3: Mapping Meaningful Places in Your Community",
-    "section": "Part 6: Submit Your Work",
-    "text": "Part 6: Submit Your Work\n\nStep 17: Document Your Results\nInstead of sharing your map online, you will submit a comprehensive screenshot for assessment.\nTask: Take a screenshot that includes your entire computer screen showing: 1. Your completed survey results and analysis 2. The date and time display from your computer 3. Your ArcGIS Survey123 interface with your data\nRequirements for Screenshot: - Must show the complete screen (not just the browser window) - Date and time must be clearly visible in the system tray/menu bar - Your survey data and analysis should be displayed - Image should be clear and readable\nFile Naming: Save your screenshot as “YourLastName_MeaningfulPlaces_[Date].png”\n\n\nStep 18: Written Reflection\nAlong with your screenshot, provide a brief written reflection (300-500 words) addressing: - Your research question and methodology - Key findings from your data analysis - Limitations of your study - How your findings relate to community identity and resilience - Specific examples relevant to Scottish communities if applicable"
-  },
-  {
-    "objectID": "Lab_3.html#conclusion",
-    "href": "Lab_3.html#conclusion",
-    "title": "Lab No 3: Mapping Meaningful Places in Your Community",
-    "section": "Conclusion",
-    "text": "Conclusion\nThis lab demonstrates the complete process of spatial data collection and analysis, from research design through data interpretation. The skills you’ve learned can be applied to any research question involving spatial data and community analysis. Consider how similar methodologies might be used to study other aspects of community life, cultural heritage, or environmental issues in Scottish contexts."
+    "section": "Final Steps:",
+    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab. Before moving on, make sure to:\n\nTake one screenshot of the map you created when you analyse the data collected. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK.\n\nIn the original lab, you have created a survey with the support of your classmates. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab. This lab demonstrates the complete process of spatial data collection and analysis, from research design through data interpretation. The skills you’ve learned can be applied to any research question involving spatial data and community analysis. Consider how similar methodologies might be used to study other aspects of community life, cultural heritage, or environmental issues in Scottish contexts.\nInclude the screenshot of the web map created using the data collected in this new survey with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts."
   },
   {
     "objectID": "Lab_4.html#overview",
@@ -224,11 +231,18 @@
     "text": "Overview\nHave you ever considered where pockets of poverty exist and who is most affected? Unfortunately, global trends show that children are most impacted by poverty. Around the world 385 million children live in extreme poverty, and in 2013 the World Bank found that 19.5 percent of children in 89 countries lived in a household that survived on U.S. $1.90 per day per person or less.\nEstimated time of completion: 70 Minutes"
   },
   {
-    "objectID": "Lab_4.html#key-learning-outcomes",
-    "href": "Lab_4.html#key-learning-outcomes",
-    "title": "Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals",
-    "section": "Key Learning Outcomes",
-    "text": "Key Learning Outcomes\nBy completing this tutorial, you should now be able to:\n\nAccess and download UN SDG data from official portals\nPrepare and clean spatial data for analysis\nCreate feature layers in ArcGIS Online through geocoding\nPerform spatial joins to combine multiple datasets\nCreate choropleth maps to visualize quantitative data\nDevelop bivariate maps to compare multiple indicators\nConfigure effective pop-ups and legends for data communication\nApply spatial analysis techniques to real-world policy questions\n\nThese skills are transferable to many other contexts, including local and national policy analysis, environmental monitoring, public health studies, and economic development planning.\n\n\nWhy is poverty such a critical issue?\nBecause it relates to the overall well-being of a person. Those living in poverty may lack access to basic food, housing, and healthcare. Growing up without consistent nutrition, shelter, and safety can have long-lasting developmental impacts on children and can cause lifelong problems.\n\nScottish Context Example: In Scotland, child poverty affects approximately 24% of children (around 240,000 children), with particular concentrations in areas like Glasgow, Dundee, and parts of Edinburgh. The Scottish Government has committed to reducing child poverty to less than 10% by 2030 through the Child Poverty (Scotland) Act 2017.\n\nIn 2015, the United Nations and world leaders developed a series of goals to improve situations for people, places and environments globally. In total, there are 17 Sustainable Development Goals that nations are striving to meet by 2035. This activity focuses on Goal 1: No Poverty and corresponding indicators that can be used to measure poverty."
+    "objectID": "Lab_4.html#learning-outcomes",
+    "href": "Lab_4.html#learning-outcomes",
+    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy completing this tutorial, you should be able to:\n\nAccess and download UN SDG data from official portals\nPrepare and clean spatial data for analysis\nCreate feature layers in ArcGIS Online through geocoding\nPerform spatial joins to combine multiple datasets\nCreate choropleth maps to visualize quantitative data\nDevelop bivariate maps to compare multiple indicators\nConfigure effective pop-ups and legends for data communication\nApply spatial analysis techniques to real-world policy questions\n\nThese skills are transferable to many other contexts, including local and national policy analysis, environmental monitoring, public health studies, and economic development planning."
+  },
+  {
+    "objectID": "Lab_4.html#why-is-poverty-such-a-critical-issue",
+    "href": "Lab_4.html#why-is-poverty-such-a-critical-issue",
+    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
+    "section": "Why is poverty such a critical issue?",
+    "text": "Why is poverty such a critical issue?\nBecause it relates to the overall well-being of a person. Those living in poverty may lack access to basic food, housing, and healthcare. Growing up without consistent nutrition, shelter, and safety can have long-lasting developmental impacts on children and can cause lifelong problems.\n\nScottish Context: In Scotland, child poverty affects approximately 24% of children (around 240,000 children), with particular concentrations in areas like Glasgow, Dundee, and parts of Edinburgh. The Scottish Government has committed to reducing child poverty to less than 10% by 2030 through the Child Poverty (Scotland) Act 2017.\n\nIn 2015, the United Nations and world leaders developed a series of goals to improve situations for people, places and environments globally. In total, there are 17 Sustainable Development Goals that nations are striving to meet by 2035. This activity focuses on Goal 1: No Poverty and corresponding indicators that can be used to measure poverty."
   },
   {
     "objectID": "Lab_4.html#protecting-children-with-un-sustainable-development-goals",
@@ -259,18 +273,25 @@
     "text": "Step 3: Compare Data to Find Patterns\n\nTask 3.1: Creating a Bivariate Map\n\nHover over the Childhood Poverty layer and click the ellipses (three dots). In the More Options menu, click Copy.\nResult: An identical layer is added to the map.\nTurn off the original layer, then open the Change Style pane for the Childhood Poverty - copy.\nCurrent State: The layer currently shows Value Latest Year from Indicator 8.7.1: Children engaged in economic activity. Now you’ll add the Value Latest Year attribute from Indicator 1.1.1: Global poverty for comparison.\nUnder Choose an attribute to show, click Add attribute and choose 2017.\n\nQuestion for Understanding: Do you remember what that attribute represents and what layer it comes from?\n\nUnder Select a drawing style, scroll down to Relationship and click Select, then click Options.\n\n\n\n\nClick Symbols and choose the blue-pink-purple color palette. Click OK, then Done.\n\nUnderstanding Bivariate Maps: The relationship symbology style is a way of creating bivariate maps that lets you easily compare two topics on a single map because only the countries with data for both indicators are shown.\n\n\nTask 3.2: Improving Data Labels and Pop-ups\n\nHover over the Childhood Poverty - copy layer and click the three-dots. In the More Options menu, click Rename and replace the default name with Global Childhood Poverty.\nClick the ellipses again and click Configure Pop-up.\nUnder Pop-up Contents, click Configure Attributes.\nIn the Configure Attributes window, uncheck everything except for Country, Value Latest Year, and 2017.\n\nIn the Field Alias column:\n\nClick 2017 and type Global Poverty\nScroll down, click Value and type Engaged in Economic Activity\n\nIn the Configure Pop-up pane, click OK.\n\n\n\nResult: Now when you click on a country, the pop-up shows only those three attributes with clear, understandable names.\n\n\nTask 3.3: Analyzing the Legend and Patterns\n\nAt the top of the Contents pane, click Legend.\n\n\nUnderstanding the Legend: The Legend pane shows the symbology for all the layers that are turned on, and your changes will be reflected here. By comparing the legend to the map, you can see the two extremes of the spectrum:\n\nCountries shaded purple have a high poverty rate and large proportions of children working to support themselves or their families\nCountries in light pink have low poverty rates and small proportions of children at work\n\nComplex Patterns: In between there are countries with mixed patterns: - Countries like Senegal with relatively low poverty rates but high proportions of children working - Countries like India with high poverty rates but small proportions of children contributing to the economy\n\nScottish Example: If we were to apply this analysis to Scotland at a regional level, we might find that: - Urban areas like Edinburgh and Aberdeen might show low poverty but some youth employment in service sectors - Rural Highland areas might show different patterns due to agricultural work and seasonal employment - Post-industrial areas like parts of Glasgow or Dundee might show higher poverty rates with different youth employment patterns"
   },
   {
-    "objectID": "Lab_4.html#analysis-questions-and-policy-applications",
-    "href": "Lab_4.html#analysis-questions-and-policy-applications",
-    "title": "Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals",
-    "section": "Analysis Questions and Policy Applications",
-    "text": "Analysis Questions and Policy Applications\nIf you toggle between layers in the Contents pane, the legend will help you perform more visual analysis on the countries. If you were looking at ways to base policy on this information, you could use the maps you created to answer the following questions:\n\nSDG 1: No Poverty Questions\n\nWhich countries have the highest poverty rates?\nWhere does it appear that children are protected from labor?\nWhere should international efforts to alleviate poverty be targeted?\nWithin individual countries, what are some ways of improving the situation for children facing challenges associated with poverty?\n\n\n\nQuestions Pertaining to Both Indicators\n\nWhere do you see overlaps in patterns between the two maps that you have created for each indicator?\nWhere are the most affected areas that efforts should be focused toward helping improve the condition for children?\nWhat sorts of place-based policies could be designed to help improve the conditions for children?\n\n\nScottish Policy Application Example: Using similar spatial analysis techniques, Scottish policymakers could: - Target the Scottish Child Payment to areas with highest concentration of child poverty (using SIMD data) - Design place-based interventions for areas like Inverclyde, West Dunbartonshire, or parts of Glasgow where multiple deprivation indicators overlap - Develop rural-specific policies for Highland and Island communities where geographic isolation compounds poverty challenges - Create youth employment programs in areas where high poverty correlates with limited economic opportunities for young people"
+    "objectID": "Lab_4.html#questions-and-policy-applications",
+    "href": "Lab_4.html#questions-and-policy-applications",
+    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
+    "section": "Questions and Policy Applications",
+    "text": "Questions and Policy Applications\nIf you toggle between layers in the Contents pane, the legend will help you perform more visual analysis on the countries. If you were looking at ways to base policy on this information, you could use the maps you created to answer the following questions (Make sure you add the response to the following questions to your data report):\n\nSDG 1: No-Poverty Questions\n\nWhich countries have the highest poverty rates?\nWhere does it appear that children are protected from labor?\nWhere should international efforts to alleviate poverty be targeted?\nWithin individual countries, what are some ways of improving the situation for children facing challenges associated with poverty?\n\n\n\nQuestions related to Both Indicators\n\nWhere do you see overlaps in patterns between the two maps that you have created for each indicator?\nWhere are the most affected areas that efforts should be focused toward helping improve the condition for children?\nWhat sorts of place-based policies could be designed to help improve the conditions for children?\n\n\nScottish Policy Examples: Using similar spatial analysis techniques, Scottish policymakers in theory could:\n- Target the Scottish Child Payment to areas with highest concentration of child poverty (using SIMD data)\n- Design place-based interventions for areas like Inverclyde, West Dunbartonshire, or parts of Glasgow where multiple deprivation indicators overlap\n- Develop rural-specific policies for Highland and Island communities where geographic isolation compounds poverty challenges\n- Create youth employment programs in areas where high poverty correlates with limited economic opportunities for young people"
   },
   {
-    "objectID": "Lab_4.html#next-steps-share-links-to-story-map---optional.",
-    "href": "Lab_4.html#next-steps-share-links-to-story-map---optional.",
-    "title": "Lab No 4: Examine Global Poverty Using UN Sustainable Development Goals",
-    "section": "Next Steps: Share Links to Story Map - Optional.",
-    "text": "Next Steps: Share Links to Story Map - Optional.\nYou now have three maps showing UN Sustainable Development Goals data. With a little extra work, there are several ways you can share these:\n\nEmbed the maps in a Story Map using Get Started with Story Maps\nCreate dashboard applications to allow interactive exploration of the data\nExport the data for use in other analytical tools or reports\nShare the web maps directly with stakeholders or the public\n\n\nScottish Implementation Example: The Scottish Government could use similar techniques to create: - Story maps showing progress toward SDG targets at local authority level - Interactive dashboards for community planning partnerships - Public-facing visualizations showing how local areas contribute to national SDG commitments - Policy briefings that combine spatial analysis with targeted interventions"
+    "objectID": "Lab_4.html#step-5-share-maps-to-a-story-map-optional-step",
+    "href": "Lab_4.html#step-5-share-maps-to-a-story-map-optional-step",
+    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
+    "section": "Step 5: Share Maps to a Story Map (Optional step)",
+    "text": "Step 5: Share Maps to a Story Map (Optional step)\nYou now have three maps showing UN Sustainable Development Goals data. With a little extra work, you can share to a general audience the maps you have created in a way that everyone can understand.\n\nEmbed the maps in a Story Map using Get Started with Story Maps Go to this link and replicate the steps to create a story map using the maps you have created in this lab. This step is optional."
+  },
+  {
+    "objectID": "Lab_4.html#final-steps",
+    "href": "Lab_4.html#final-steps",
+    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
+    "section": "Final Steps:",
+    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab. Before moving on, make sure to:\n\nTake one screenshot of the final map. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK.\n\nIn the original lab, you have created a set of maps showing UN Sustainable Development Goals data related to poverty. More importantly you learned how to create a relationship map, a method that help you to present two different indicators. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab., and create another relationship map.\nInclude the screenshot of the new relationship web map created with a clear purpose relevant to a real-world issue in Scotland or the UK. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.\n\nTutorial inspired on: ArcGIS Online blog entry"
   },
   {
     "objectID": "Lab_5.html#overview",
@@ -329,11 +350,11 @@
     "text": "Part 6: Share the Dashboard\n\nStep 1: Save and Access Dashboard Settings\n\nOn the dashboard toolbar, click Save and click Save\n\nNext to the dashboard title, click the menu button and click Dashboard item details\n\nClick Open Dashboard to test in a new browser tab\n\nTest the dashboard functionality (e.g., find J1772 charging stations in Thunder Bay, Ontario)\n\n\n\n\nStep 2: Share the Dashboard\n\nReturn to the item page and click Share\nImportant: In the Share window, choose Members of my organization (University of St Andrews) and click Save\n\n\nNote: This differs from the original tutorial which shared publicly. We’re restricting to University of St Andrews members only.\n\n\n\nStep 3: Share the Associated Web Map\n\nOn the ribbon, click Content\nFind “Electric charging stations in Canada” and click the Update sharing icon\nIn the Share window, choose Members of my organization (University of St Andrews) and click Save"
   },
   {
-    "objectID": "Lab_5.html#assignment-submission-requirements",
-    "href": "Lab_5.html#assignment-submission-requirements",
+    "objectID": "Lab_5.html#final-steps",
+    "href": "Lab_5.html#final-steps",
     "title": "Lab No 5: Build an Interactive Dashboard",
-    "section": "Assignment Submission Requirements",
-    "text": "Assignment Submission Requirements\n\nScreenshot Documentation\nYou must include a screenshot that shows the entire screen of your computer, including the date and time display, so the marker can validate your work.\nRequirements for screenshot: - Full screen capture - not just the browser window - Date and time visible - ensure your system clock/date is showing - Dashboard fully loaded - showing all elements working - Demonstration of functionality - show the dashboard with: - A province selected - A city selected\n- A connector type selected - Station details displayed - Table populated with filtered results\nHow to capture the required screenshot: 1. Complete the tutorial and have your dashboard working 2. Select filters to demonstrate functionality 3. Ensure your computer’s date/time is visible (system tray on Windows, menu bar on Mac) 4. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your submission\n\n\nScottish Context\nIn your submission, also include a brief reflection (200-300 words) on how this dashboard approach could be applied to Scottish contexts, such as: - Renewable energy monitoring (wind farms, solar installations) - Tourism infrastructure (attractions, accommodation, transport links) - Public transport optimization (bus routes, train connections, ferry services) - Environmental monitoring (air quality, weather stations, flood warnings) - Economic development (business locations, employment centers, investment zones)"
+    "section": "Final Steps:",
+    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab. Before moving on, make sure to:\n\nTake one screenshot of the final map. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook). Dashboard fully loaded - showing all elements working - Demonstration of functionality - show the dashboard with: - A province selected - A city selected - A connector type selected - Station details displayed - Table populated with filtered results.\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK.\n\nIn the original lab, you have created a operational dashboard. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online Dashboards using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab., and create another operational dashboard app, to represent the thematic of your preference.\nInclude the screenshot of the new dashboard created with a clear purpose relevant to a real-world issue in Scotland or the UK. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report. As you did for the first screenshot, make sure you the dashboard is fully loaded - showing all elements working - demonstrate the functionality - show the dashboard with: - List section, items details displayed - table populated with filtered results. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your report (see the instructions in the handbook)\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.\n\nScottish Context Examples:\nHere are some examples of potential operational dashboards you could create for the Scottish contexts:\n- Renewable energy monitoring (wind farms, solar installations)\n- Tourism infrastructure (attractions, accommodation, transport links)\n- Public transport optimization (bus routes, train connections, ferry services)\n- Environmental monitoring (air quality, weather stations, flood warnings)\n- Economic development (business locations, employment centers, investment zones)\n\nTutorial inspired from https://learn.arcgis.com/en/projects/build-an-interactive-dashboard/"
   },
   {
     "objectID": "Lab_5.html#additional-resources",
@@ -341,34 +362,6 @@
     "title": "Lab No 5: Build an Interactive Dashboard",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nArcGIS Dashboard Documentation\nTutorial Gallery\nArcGIS Online Help"
-  },
-  {
-    "objectID": "intro.html#why-spatial-data-matters-for-the-sdgs",
-    "href": "intro.html#why-spatial-data-matters-for-the-sdgs",
-    "title": "Introduction",
-    "section": "Why Spatial Data Matters for the SDGs",
-    "text": "Why Spatial Data Matters for the SDGs\nSpatial data is essential for advancing the Sustainable Development Goals (SDGs) because it provides a crucial geographic lens through which global challenges can be better understood, monitored, and addressed. From poverty and food insecurity to urban resilience and climate change, the spatial dimension of sustainable development helps identify where interventions are most urgently needed, how different indicators interrelate across space and time, and what progress is being made at various scales—local, national, and global.\nGeospatial information allows us to move beyond abstract statistics and instead interact with real-world patterns—making data visible, tangible, and actionable. For instance, web dashboards powered by geospatial data enable stakeholders to track SDG indicators in near real-time, providing dynamic visualizations that combine charts, maps, and open datasets. These tools support data-driven decision-making by offering interactive interfaces for understanding spatial disparities and highlighting areas that require targeted policy or humanitarian response.\nGeospatial data is not just a complement to SDG monitoring—it is key. Access to open data sources, such as those published by national governments, the United Nations, and development agencies, has democratised the availability of high-quality spatial information. Students, researchers, NGOs, and policymakers alike can now explore and analyse global issues from a geospatial perspective. This access empowers users not only to consume information but also to create spatial narratives, develop analytical tools, and contribute meaningfully to SDG implementation.\nAt the centre of this framework lies Geographic Information Systems (GIS)—and increasingly, Cloud GIS platforms like ArcGIS Online. Providing the infrastructure to visualize, manipulate, analyse, and share spatial data seamlessly across devices and locations. Whether you are mapping deforestation hotspots, analysing access to clean water, or visualizing urban inequality, Cloud GIS fosters collaboration, accessibility, and spatial intelligence at scale."
-  },
-  {
-    "objectID": "intro.html#module-structure-related-to-the-use-of-spatial-data",
-    "href": "intro.html#module-structure-related-to-the-use-of-spatial-data",
-    "title": "Introduction",
-    "section": "Module Structure related to the use of Spatial Data",
-    "text": "Module Structure related to the use of Spatial Data\nThis module offers a sequence of lectures and labs designed to build your spatial data literacy and technical competencies in direct relation to the SDGs:\nLecture 16: Spatial Data for SDGs Introduction to the importance of spatial data in sustainable development, focusing on key concepts and case studies that illustrate spatial inequalities and resource distribution.\nLecture 17: Global Fundamental Geospatial Data Themes Exploration of core geospatial data themes as recognised by the UN-GGIM (e.g., land cover, population, transport networks), and how these serve as the spatial foundation for SDG monitoring.\nLecture 18: Where to Find Spatial Data for SDG Analysis A guided overview of trusted spatial data sources including open repositories (e.g., UNData, World Bank GeoPortal, Copernicus), national geospatial platforms, and crowd-sourced data.\nLecture 19: Collecting Spatial Data with Geospatial Technologies Learn how to gather primary spatial data using tools such as Survey123, Field Maps, and mobile data collection methods. Emphasis is placed on participatory mapping and local knowledge.\nLecture 20: Authoring Web Maps to Understand SDG Progress Practical lab in which students create and customise web maps using ArcGIS Online, applying symbolisation, layer filtering, and pop-up configuration to communicate geographic stories.\nLecture 21: Building Interactive Applications to Monitor SDG Indicators Learn how to build web apps and dashboards that visualise real-time spatial data. Explore storytelling techniques and UX design for public engagement and policy communication."
-  },
-  {
-    "objectID": "intro.html#learning-outcomes",
-    "href": "intro.html#learning-outcomes",
-    "title": "Introduction",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy completing this part of the module, you will:\n\nYou will have the chance to better understand spatial data science concepts and principles in the context of sustainable development goals (SDGs) and learn how to acquire spatial data from multiple sources to address sustainability challenges.\nLearn how to link spatial data to create tools for a data-driven approach to spatially represent many global challenges, including poverty, hunger, inequality, and climate change."
-  },
-  {
-    "objectID": "Lab_1.html#part-1-start-with-a-map",
-    "href": "Lab_1.html#part-1-start-with-a-map",
-    "title": "Lab No 1: Getting Started with ArcGIS Online",
-    "section": "Part 1: Start with a Map",
-    "text": "Part 1: Start with a Map\n\nStep 1: Access ArcGIS Online\n\nSign in to ArcGISOnline, using your University Credentials. (see here to learn how to log in into ArcGIS)\nOn the ribbon, click the Map tab\n\n\nA default web map appears. Your map’s appearance varies based on your account or organizational settings and your browser window size. It may show the United States, the world, or another extent.\n\nThe only layer on the map is the basemap, which provides geographic context such as water bodies and political boundaries. The default basemap is Topographic, but your map may have a different basemap depending on your organization’s settings.\nOn either side of the map are the toolbars: - Contents (dark) toolbar: Allows you to manage and view map contents - Settings (light) toolbar: Provides tools and options for configuring and interacting with map layers - Layers pane: Lists the data you add to the map\n\n\nStep 2: Navigate to Your Area of Interest\n\nOn the map, at the bottom corner, click the Search button\n\nIn the search box, type Houston and choose Houston, TX, USA from the list of suggested locations\n\n\nClose the Search result window when the map zooms to your location"
   },
   {
     "objectID": "DataSources.html#scottish-spatial-data-infrastructure-ssdi",
@@ -434,27 +427,6 @@
     "text": "9. OpenStreetMap (Geofabrik UK Extracts)\nExtracts from OpenStreetMap for Great Britain, including Scotland.\nData Available: - Buildings, highways, land use, points of interest - Routable and editable map data - Formats: .osm.pbf, shapefiles (via tools like osmconvert or QGIS plugins)"
   },
   {
-    "objectID": "DataSources.html#edinburgh-datashare-geosciences",
-    "href": "DataSources.html#edinburgh-datashare-geosciences",
-    "title": "Data Sources",
-    "section": "10. Edinburgh DataShare – GeoSciences",
-    "text": "10. Edinburgh DataShare – GeoSciences\nA geospatial data repository from the University of Edinburgh with open datasets.\nData Available: - Local and global environmental data - Terrain and elevation - Land cover and vegetation indexes - Datasets relevant for climate change, ecology, and earth observation"
-  },
-  {
-    "objectID": "DataSources.html#arcgis-living-atlas-uk-content",
-    "href": "DataSources.html#arcgis-living-atlas-uk-content",
-    "title": "Data Sources",
-    "section": "12. ArcGIS Living Atlas (UK content)",
-    "text": "12. ArcGIS Living Atlas (UK content)\nESRI’s curated collection of geographic information, including UK-specific content.\nData Available: - Demographics, base maps, boundaries - Real-time environmental data - Accessible directly from ArcGIS Online for instant use"
-  },
-  {
-    "objectID": "DataSources.html#tips",
-    "href": "DataSources.html#tips",
-    "title": "Data Sources",
-    "section": "Tips",
-    "text": "Tips\n\nMany of these platforms offer WMS or ArcGIS REST endpoints, which can be added directly to your ArcGIS Online web map.\nMake sure to always cite the data source in your apps or reports.\nFor reproducibility, record the download date and dataset version.\nUse filtering and geoprocessing tools in ArcGIS Online to tailor data to your study area."
-  },
-  {
     "objectID": "DataSources.html#edinburgh-geoportal",
     "href": "DataSources.html#edinburgh-geoportal",
     "title": "Data Sources",
@@ -467,6 +439,13 @@
     "title": "Data Sources",
     "section": "11. Glasgow GeoPortal",
     "text": "11. Glasgow GeoPortal\nA geospatial data repository from Glasgow with open datasets.\nData Available: - Local and global environmental data - Terrain and elevation - Land cover and vegetation indexes - Datasets relevant for climate change, ecology, and earth observation"
+  },
+  {
+    "objectID": "DataSources.html#arcgis-living-atlas-uk-content",
+    "href": "DataSources.html#arcgis-living-atlas-uk-content",
+    "title": "Data Sources",
+    "section": "12. ArcGIS Living Atlas (UK content)",
+    "text": "12. ArcGIS Living Atlas (UK content)\nESRI’s curated collection of geographic information, including UK-specific content.\nData Available: - Demographics, base maps, boundaries - Real-time environmental data - Accessible directly from ArcGIS Online for instant use"
   },
   {
     "objectID": "DataSources.html#arcgis-living-atlas-uk-content-1",
@@ -490,80 +469,10 @@
     "text": "Tips for students\n\nMany of these platforms offer shapefiles, WMS or ArcGIS REST endpoints, which can be added directly to your ArcGIS Online web map.\nMake sure to always cite the data source in your apps or reports.\nFor reproducibility, record the download date and dataset version.\nUse filtering and geoprocessing tools in ArcGIS Online to tailor data to your study area."
   },
   {
-    "objectID": "Lab_1.html#final-steps",
-    "href": "Lab_1.html#final-steps",
-    "title": "Lab No 1: Getting Started with ArcGIS Online",
-    "section": "Final Steps:",
-    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab, where you (in theory) created your first Web Map using ArcGIS Online. Before moving on, make sure to:\n\nTake a screenshot of your final web map, ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK (See the Data sources sections for a comprehensive list of data sources).\n\nIn the original lab, you created a web map using census data for emergency planning in the U.S. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use. You must only report one independent analysis results.\nApply the same techniques learned in this lab (e.g. adding layers, symbolising data, filtering, configuring pop-ups, etc).\nAnd create a web map with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to deepen your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts."
-  },
-  {
-    "objectID": "Lab_2.html#final-steps",
-    "href": "Lab_2.html#final-steps",
-    "title": "Lab No 2: Using external data",
-    "section": "Final Steps:",
-    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab, where you (in theory) created your second Web Map using ArcGIS Online. Before moving on, make sure to:\n\nTake a screenshot of your final web map, ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK ( see the Data sources sections for a comprehensive list of data sources).\n\nIn the original lab, you have created a web map with a .csv file of school location and demographic data. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab (e.g. adding external data (excel), symbolising data, filtering, configuring pop-ups, etc).\nAnd create a web map with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts."
-  },
-  {
-    "objectID": "Lab_3.html#final-steps",
-    "href": "Lab_3.html#final-steps",
-    "title": "Lab No 3: Mapping Meaningful Places in Your Community",
-    "section": "Final Steps:",
-    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab. Before moving on, make sure to:\n\nTake one screenshot of the map you created when you analyse the data collected. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK.\n\nIn the original lab, you have created a survey with the support of your classmates. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab. This lab demonstrates the complete process of spatial data collection and analysis, from research design through data interpretation. The skills you’ve learned can be applied to any research question involving spatial data and community analysis. Consider how similar methodologies might be used to study other aspects of community life, cultural heritage, or environmental issues in Scottish contexts.\nInclude the screenshot of the web map created using the data collected in this new survey with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts."
-  },
-  {
-    "objectID": "Lab_4.html#learning-outcomes",
-    "href": "Lab_4.html#learning-outcomes",
-    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy completing this tutorial, you should be able to:\n\nAccess and download UN SDG data from official portals\nPrepare and clean spatial data for analysis\nCreate feature layers in ArcGIS Online through geocoding\nPerform spatial joins to combine multiple datasets\nCreate choropleth maps to visualize quantitative data\nDevelop bivariate maps to compare multiple indicators\nConfigure effective pop-ups and legends for data communication\nApply spatial analysis techniques to real-world policy questions\n\nThese skills are transferable to many other contexts, including local and national policy analysis, environmental monitoring, public health studies, and economic development planning."
-  },
-  {
-    "objectID": "Lab_4.html#questions-and-policy-applications",
-    "href": "Lab_4.html#questions-and-policy-applications",
-    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
-    "section": "Questions and Policy Applications",
-    "text": "Questions and Policy Applications\nIf you toggle between layers in the Contents pane, the legend will help you perform more visual analysis on the countries. If you were looking at ways to base policy on this information, you could use the maps you created to answer the following questions (Make sure you add the response to the following questions to your data report):\n\nSDG 1: No-Poverty Questions\n\nWhich countries have the highest poverty rates?\nWhere does it appear that children are protected from labor?\nWhere should international efforts to alleviate poverty be targeted?\nWithin individual countries, what are some ways of improving the situation for children facing challenges associated with poverty?\n\n\n\nQuestions related to Both Indicators\n\nWhere do you see overlaps in patterns between the two maps that you have created for each indicator?\nWhere are the most affected areas that efforts should be focused toward helping improve the condition for children?\nWhat sorts of place-based policies could be designed to help improve the conditions for children?\n\n\nScottish Policy Examples: Using similar spatial analysis techniques, Scottish policymakers in theory could:\n- Target the Scottish Child Payment to areas with highest concentration of child poverty (using SIMD data)\n- Design place-based interventions for areas like Inverclyde, West Dunbartonshire, or parts of Glasgow where multiple deprivation indicators overlap\n- Develop rural-specific policies for Highland and Island communities where geographic isolation compounds poverty challenges\n- Create youth employment programs in areas where high poverty correlates with limited economic opportunities for young people"
-  },
-  {
-    "objectID": "Lab_4.html#step-5-share-maps-to-a-story-map-optional-step",
-    "href": "Lab_4.html#step-5-share-maps-to-a-story-map-optional-step",
-    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
-    "section": "Step 5: Share Maps to a Story Map (Optional step)",
-    "text": "Step 5: Share Maps to a Story Map (Optional step)\nYou now have three maps showing UN Sustainable Development Goals data. With a little extra work, you can share to a general audience the maps you have created in a way that everyone can understand.\n\nEmbed the maps in a Story Map using Get Started with Story Maps Go to this link and replicate the steps to create a story map using the maps you have created in this lab. This step is optional."
-  },
-  {
-    "objectID": "Lab_4.html#final-steps",
-    "href": "Lab_4.html#final-steps",
-    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
-    "section": "Final Steps:",
-    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab. Before moving on, make sure to:\n\nTake one screenshot of the final map. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK.\n\nIn the original lab, you have created a set of maps showing UN Sustainable Development Goals data related to poverty. More importantly you learned how to create a relationship map, a method that help you to present two different indicators. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab., and create another relationship map.\nInclude the screenshot of the new relationship web map created with a clear purpose relevant to a real-world issue in Scotland or the UK. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.\n\nTutorial inspired on: ArcGIS Online blog entry"
-  },
-  {
-    "objectID": "Lab_5.html#final-steps",
-    "href": "Lab_5.html#final-steps",
-    "title": "Lab No 5: Build an Interactive Dashboard",
-    "section": "Final Steps:",
-    "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab. Before moving on, make sure to:\n\nTake one screenshot of the final map. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook). Dashboard fully loaded - showing all elements working - Demonstration of functionality - show the dashboard with: - A province selected - A city selected - A connector type selected - Station details displayed - Table populated with filtered results.\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK.\n\nIn the original lab, you have created a operational dashboard. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online Dashboards using your university credentials. Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.\nApply the same techniques learned in this lab., and create another operational dashboard app, to represent the thematic of your preference.\nInclude the screenshot of the new dashboard created with a clear purpose relevant to a real-world issue in Scotland or the UK. Ensuring your full screen is visible, including the date and time. This screenshot will be required for your report. As you did for the first screenshot, make sure you the dashboard is fully loaded - showing all elements working - demonstrate the functionality - show the dashboard with: - List section, items details displayed - table populated with filtered results. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your report (see the instructions in the handbook)\n\nThis additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.\n\nScottish Context Examples:\nHere are some examples of potential operational dashboards you could create for the Scottish contexts:\n- Renewable energy monitoring (wind farms, solar installations)\n- Tourism infrastructure (attractions, accommodation, transport links)\n- Public transport optimization (bus routes, train connections, ferry services)\n- Environmental monitoring (air quality, weather stations, flood warnings)\n- Economic development (business locations, employment centers, investment zones)\n\nTutorial inspired from https://learn.arcgis.com/en/projects/build-an-interactive-dashboard/"
-  },
-  {
-    "objectID": "Lab_1.html#overview",
-    "href": "Lab_1.html#overview",
-    "title": "Lab No 1: Getting Started with ArcGIS Online",
-    "section": "Overview",
-    "text": "Overview\nBy the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes\nEstimated time of completion: 45 Minutes"
-  },
-  {
-    "objectID": "Lab_4.html#why-is-poverty-such-a-critical-issue",
-    "href": "Lab_4.html#why-is-poverty-such-a-critical-issue",
-    "title": "Lab No 4: Examine Global Poverty Using UN SDGs",
-    "section": "Why is poverty such a critical issue?",
-    "text": "Why is poverty such a critical issue?\nBecause it relates to the overall well-being of a person. Those living in poverty may lack access to basic food, housing, and healthcare. Growing up without consistent nutrition, shelter, and safety can have long-lasting developmental impacts on children and can cause lifelong problems.\n\nScottish Context: In Scotland, child poverty affects approximately 24% of children (around 240,000 children), with particular concentrations in areas like Glasgow, Dundee, and parts of Edinburgh. The Scottish Government has committed to reducing child poverty to less than 10% by 2030 through the Child Poverty (Scotland) Act 2017.\n\nIn 2015, the United Nations and world leaders developed a series of goals to improve situations for people, places and environments globally. In total, there are 17 Sustainable Development Goals that nations are striving to meet by 2035. This activity focuses on Goal 1: No Poverty and corresponding indicators that can be used to measure poverty."
-  },
-  {
-    "objectID": "Lab_2.html#adding-other-data-types",
-    "href": "Lab_2.html#adding-other-data-types",
-    "title": "Lab No 2: Using external data",
-    "section": "Adding other data types",
-    "text": "Adding other data types\nThere are several maybe hundreds of spatial data types, and often you will find data in formats that you even would not know about it, fortunately ArcGIS Online and other Cloud-GIS platform are supporting connections to most of the spatial data formats. Here are some resources to help you understand how to connect and manage data from not the usual .shapefile or .csv formats.\n\nArcGIS Online: Managing Data\n\n\n\n\nAdd Items in ArcGIS Online\n\n\nThis tutorial is inspired from ArcGIS Online Learning resources available at:\nhttps://learn.arcgis.com/en/projects/create-a-map/"
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "https://www.sdg.org/\nhttps://statistics.ukdataservice.ac.uk/organization/national-records-of-scotland\nhttps://www.spatialdata.gov.scot\nhttps://ggim.un.org/meetings/GGIM-committee/11th-Session/documents/The_Geospatial_SDGs_Roadmap_WGGI_IAEG_SDGs_20210804.pdf\nhttps://www.esri.com/about/newsroom/arcuser/eo4sdg\nhttps://www.arcgis.com/apps/solutions/index.html?gallery=true&sortField=relevance&sortOrder=desc#home\nhttps://sids.sdg.org/"
   }
 ]
