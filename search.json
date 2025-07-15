@@ -46,122 +46,122 @@
   {
     "objectID": "Lab_1.html",
     "href": "Lab_1.html",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "",
     "text": "Overview\nBy the end of this lab, students will be able to: - Navigate and use the ArcGIS Online interface - Add and configure data layers from ArcGIS Living Atlas - Style demographic data using appropriate symbology - Filter data to focus on specific geographic areas - Apply visual effects to emphasize important data patterns - Create a professional web map for emergency planning purposes\nEstimated time of completion: 45 Minutes",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#mapping-census-data-for-emergency-planning",
     "href": "Lab_1.html#mapping-census-data-for-emergency-planning",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Mapping Census Data for Emergency Planning",
     "text": "Mapping Census Data for Emergency Planning\nIn this lab, you will create a web map to identify areas that may need additional evacuation assistance during emergencies. You will work with census data to identify households with limited vehicle access, which is crucial information for emergency planning and resource allocation.",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-1-start-with-a-map",
     "href": "Lab_1.html#part-1-start-with-a-map",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 1: Start with a Map",
     "text": "Part 1: Start with a Map\n\nStep 1: Access ArcGIS Online\n\nSign in to ArcGISOnline, using your University Credentials. (see here to learn how to log in into ArcGIS)\nOn the ribbon, click the Map tab\n\n\nA default web map appears. Your map’s appearance varies based on your account or organizational settings and your browser window size. It may show the United States, the world, or another extent.\n\nThe only layer on the map is the basemap, which provides geographic context such as water bodies and political boundaries. The default basemap is Topographic, but your map may have a different basemap depending on your organization’s settings.\nOn either side of the map are the toolbars: - Contents (dark) toolbar: Allows you to manage and view map contents - Settings (light) toolbar: Provides tools and options for configuring and interacting with map layers - Layers pane: Lists the data you add to the map\n\n\nStep 2: Navigate to Your Area of Interest\n\nOn the map, at the bottom corner, click the Search button\n\nIn the search box, type Houston and choose Houston, TX, USA from the list of suggested locations\n\n\nClose the Search result window when the map zooms to your location",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-2-add-a-layer",
     "href": "Lab_1.html#part-2-add-a-layer",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 2: Add a Layer",
     "text": "Part 2: Add a Layer\nLayers contain geographic data that can be displayed on your map. To determine areas that may need evacuation assistance, you’ll add a layer containing demographic data by census tract.\n\nIn the Layers pane, click Add\nIn the Add layer pane, click My content and choose Living Atlas\nIn the search box, type or paste ACS Vehicle Availability\nClick the ACS Vehicle Availability Variables - Boundaries result\n\nIn the item pane, expand the Description section and read about the layer\nClose the item pane\nFor the ACS Vehicle Availability Variables - Boundaries layer, click Add\n\n\nThe layer is added to the map, styled to show the percentage of households with no vehicle available in each census tract. Darker areas have higher percentages of households without vehicle access.\n\n\nStep 1: Manage Layer Groups\n\nAt the top of the Add layer pane, click the Back button\n\nIn the Layers pane, expand the ACS Vehicle Availability Variables - Boundaries group\n\nDrag the ==Tract== layer above the group\n\nFor the group, click the Options button and choose Remove",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-3-style-demographic-data",
     "href": "Lab_1.html#part-3-style-demographic-data",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 3: Style Demographic Data",
     "text": "Part 3: Style Demographic Data\n\nStep 1: Select Styling Options\n\nIn the Layers pane, click the Tract layer to select it\n\nOn the Settings toolbar, click the Styles button\n\nIn the Styles pane, ensure ==Percent of households with no vehicle available== is selected\n\nThe list of available styles is determined by the data type. In this case, the options are for numeric data. The map shows the Counts and Amounts (color) style. The colors are based on the High to low theme. This style symbolizes each census tract with a different color based on the percentage of households without a vehicle. Census tracts with the lowest values have a light color, while those with the highest values have a dark color.\n\n\n\nStep 2: Customize Symbol Style\n\nFor Pick a style, on the Counts and Amounts (color) card, click Style options\n\nFor Symbol style, click the color ramp\n\nIn the Symbol style window, for Colors, click the color ramp\nIn the Ramp window, choose Purple 18\n\nThe new color ramp is applied to the map. Census tracts with high percentages are displayed in dark purple while low percentages are white.\n\nIf needed, click Flip ramp colors so high percentages show in dark purple\nClick Done to close all style windows\n\n\n\nStep 3: Rename the Layer\n\nIn the Layers pane, for the layer, click the Options button and choose Rename\n\nFor Title, type Percent of Households with No Vehicle Access\nClick OK",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-4-change-the-basemap",
     "href": "Lab_1.html#part-4-change-the-basemap",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 4: Change the Basemap",
     "text": "Part 4: Change the Basemap\n\nOn the Contents toolbar, click Basemap\n\nIn the Basemap pane, find and choose Human Geography Map\n\nOn the Contents toolbar, click Layers to return to the Layers pane\n\n\nThe new basemap shows labels and contextual information over the census data.",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-5-filter-the-map",
     "href": "Lab_1.html#part-5-filter-the-map",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 5: Filter the Map",
     "text": "Part 5: Filter the Map\n\nStep 1: Create a Geographic Filter\n\nEnsure the Percent of Households with No Vehicle Access layer is selected\nIn the Settings pane, click Filter\n\nIn the Filter pane, click Add new\nUnder Condition, click the first box and choose County\n\nLeave the operator as is\nFor the third box, click the drop-down arrow, type Harris County and select it\n\nClick Save to apply the filter",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-6-emphasize-the-top-tracts",
     "href": "Lab_1.html#part-6-emphasize-the-top-tracts",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 6: Emphasize the Top Tracts",
     "text": "Part 6: Emphasize the Top Tracts\n\nStep 1: Examine the Attribute Table\n\nFor the layer, click the Options button and choose Show table\n\nThe layer’s attribute table appears. The attribute table is a way of viewing all of the attributes that exist for each feature. Each row in the table represents a feature (in this case, a census tract area). The columns, or fields, provide information about the census tract features, such as the County attribute that you used to filter the data earlier.\nThe top of the table indicates that there are 1,122 census tracts in Harris County.\nScroll right to find the Percent of households with no vehicle available column\n\nThe table is sorted so that the Percent of households with no vehicle available field shows tracts in order of highest to lowest values. The highest value is 48.9 percent.\nClick the Menu button for this column and choose Sort descending\nIdentify the 10 highest values in the table\nClose the table\n\n\n\nStep 2: Apply Visual Effects\n\nIn the Settings pane, click the Effects button\n\nIn the Effects pane, click Feature-specific\n\nClick the Drop Shadow + Transparency effect\n\nIn the Drop Shadow + Transparency pane, drag the histogram slider to the 48.9 label. This will adjust the histogram slider to emphasize the top 10 tracts\n\nModify the logical expression to highlight areas above your identified threshold. Change the logical expression to read Percent of households with no vehicle available is greater than 36.8.\n\n\nClose the effects windows",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#part-7-final-documentation-and-submission",
     "href": "Lab_1.html#part-7-final-documentation-and-submission",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Part 7: Final Documentation and Submission",
     "text": "Part 7: Final Documentation and Submission\n\nStep 1: Save Your Map\n\nOn the Contents toolbar, click Save and open and choose Save as\nFor Title, type: Census tracts in Houston with low vehicle access\nFor Tags, add the following (press Enter after each):\n\nHurricanes\nEvacuation Assistance\nHouston\n\nFor Summary, type: This map shows census tracts in Houston, Texas, that have many households without access to a vehicle. These areas may need to be considered for evacuation assistance in case of a hurricane or other natural disaster.\nClick Save\n\nThe map is saved. It now appears in your account’s content. You can access your content by clicking the options button next to the map’s name and choosing Content. For now, you’ll set the sharing permissions.\nBy default, your content is private and only visible to you and your organization’s administrator. You can share content to different groups of viewers depending on the level of privacy you want to maintain and the content’s audience and purpose. For example, if you choose to share it with your organization, only users with accounts in the same organization ( e.g The University of St Andrews) as you can access your content.",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#final-steps",
     "href": "Lab_1.html#final-steps",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Final Steps:",
     "text": "Final Steps:\nWell Done! You have now completed all the steps for this lab, where you (in theory) created your first Web Map using ArcGIS Online. Before moving on, make sure to:\n\nTake a screenshot of your final web map, ensuring your full screen is visible, including the date and time. This screenshot will be required for your report ( see all the instructions in the handbook)\nFor the Part B of this lab in your report. Replicate the process independently by applying the same skills you practised in this lab, but using spatial data from Scotland or the UK (See the Data sources sections for a comprehensive list of data sources).\n\nIn the original lab, you created a web map using census data for emergency planning in the U.S. For your independent spatial analysis, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:\n\nUse again ArcGIS Online using your university credentials. Meet and work with your classmate to define which account want to use. You must only report one independent analysis results.\nApply the same techniques learned in this lab (e.g. adding layers, symbolising data, filtering, configuring pop-ups, etc).\nAnd create a web map with a clear purpose relevant to a real-world issue in Scotland or the UK.\n\nThis additional task is an opportunity to deepen your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
     "objectID": "Lab_1.html#additional-resources",
     "href": "Lab_1.html#additional-resources",
-    "title": "git Lab No 1: Getting Started with ArcGIS Online",
+    "title": "Lab No 1: Getting Started with ArcGIS Online",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nACS Vehicle Availability Variables - Boundaries data is from the American Community Survey.\nTopographic map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community\nHuman Geography Map sources: Esri, TomTom, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors, and the GIS User Community\n\nThis tutorial is inspired from ArcGIS Online Learning resources available at https://learn.arcgis.com/en/projects/get-started-with-arcgis-online/",
     "crumbs": [
       "Home",
-      "git Lab No 1: Getting Started with ArcGIS Online"
+      "Lab No 1: Getting Started with ArcGIS Online"
     ]
   },
   {
