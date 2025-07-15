@@ -1,4 +1,4 @@
-# git Lab No 1: Getting Started with ArcGIS Online {.unnumbered}
+# Lab No 1: Getting Started with ArcGIS Online {.unnumbered}
 
 ## Overview
 
