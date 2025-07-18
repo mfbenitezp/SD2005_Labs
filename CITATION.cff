@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this book, please cite it as below."
+authors:
+  - family-names: "Benitez-Paez"
+    given-names: "Fernando"
+    orcid: "https://orcid.org/0000-0002-9884-6471"
+title: "Intro to GIS to Sustainable Development Students"
+version: 1.0.0
+date-released: 2023-12-01
+url: "https://github.com/mfbenitezp/SD2005_Labs"
