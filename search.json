@@ -539,11 +539,11 @@
     ]
   },
   {
-    "objectID": "Lab_5.html#part-6-share-the-dashboard",
-    "href": "Lab_5.html#part-6-share-the-dashboard",
+    "objectID": "Lab_5.html#part-6-save-the-dashboard",
+    "href": "Lab_5.html#part-6-save-the-dashboard",
     "title": "Lab No 5: Build an Interactive Dashboard",
-    "section": "Part 6: Share the Dashboard",
-    "text": "Part 6: Share the Dashboard\n\nStep 1: Save and Access Dashboard Settings\n\nOn the dashboard toolbar, click Save and click Save\n\nNext to the dashboard title, click the menu button and click Dashboard item details\n\nClick Open Dashboard to test in a new browser tab\n\nTest the dashboard functionality (e.g., find J1772 charging stations in Thunder Bay, Ontario)\n\n\n\n\nStep 2: Share the Dashboard\n\nReturn to the item page and click Share\nImportant: In the Share window, choose Members of my organization (University of St Andrews) and click Save\n\n\nNote: This differs from the original tutorial which shared publicly. We’re restricting to University of St Andrews members only.\n\n\n\nStep 3: Share the Associated Web Map\n\nOn the ribbon, click Content\nFind “Electric charging stations in Canada” and click the Update sharing icon\nIn the Share window, choose Members of my organization (University of St Andrews) and click Save",
+    "section": "Part 6: Save the Dashboard",
+    "text": "Part 6: Save the Dashboard\n\nStep 1: Save and Access Dashboard Settings\n\nOn the dashboard toolbar, click Save and click Save\n\nNext to the dashboard title, click the menu button and click Dashboard item details\n\nClick Open Dashboard to test in a new browser tab\n\nTest the dashboard functionality (e.g., find J1772 charging stations in Thunder Bay, Ontario)",
     "crumbs": [
       "Home",
       "Lab No 5: Build an Interactive Dashboard"
