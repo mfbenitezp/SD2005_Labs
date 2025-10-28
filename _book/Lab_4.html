@@ -378,6 +378,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#task-1.3-data-preparation" id="toc-task-1.3-data-preparation" class="nav-link" data-scroll-target="#task-1.3-data-preparation">Task 1.3: Data Preparation</a></li>
   <li><a href="#task-1.4-creating-a-feature-layer-in-arcgis-online" id="toc-task-1.4-creating-a-feature-layer-in-arcgis-online" class="nav-link" data-scroll-target="#task-1.4-creating-a-feature-layer-in-arcgis-online">Task 1.4: Creating a Feature Layer in ArcGIS Online</a></li>
   <li><a href="#task-1.5-correcting-geocoding-errors" id="toc-task-1.5-correcting-geocoding-errors" class="nav-link" data-scroll-target="#task-1.5-correcting-geocoding-errors">Task 1.5: Correcting Geocoding Errors</a></li>
+  <li><a href="#edit-a-layer" id="toc-edit-a-layer" class="nav-link" data-scroll-target="#edit-a-layer">Edit a Layer</a></li>
   <li><a href="#task-1.6-adding-additional-data-sources" id="toc-task-1.6-adding-additional-data-sources" class="nav-link" data-scroll-target="#task-1.6-adding-additional-data-sources">Task 1.6: Adding Additional Data Sources</a></li>
   <li><a href="#task-1.7-converting-points-to-polygons" id="toc-task-1.7-converting-points-to-polygons" class="nav-link" data-scroll-target="#task-1.7-converting-points-to-polygons">Task 1.7: Converting Points to Polygons</a></li>
   <li><a href="#task-1.8-creating-a-choropleth-map" id="toc-task-1.8-creating-a-choropleth-map" class="nav-link" data-scroll-target="#task-1.8-creating-a-choropleth-map">Task 1.8: Creating a Choropleth Map</a></li>
@@ -486,11 +487,11 @@ ul.task-list li input[type="checkbox"] {
 <li><p>After you get a better understanding about the main facts that you can measure within this goal, now let’s apply the geographical approach to create web maps and apps that help you represent spatial data related to this goal.</p>
 <p>Go to <a href="https://unstats.un.org/sdgs/dataportal/database" class="uri">https://unstats.un.org/sdgs/dataportal/database</a> and get the data related to the <strong>1.1.1 indicator</strong>. Which corresponds to <strong>Proportion of population below international poverty line (%) –&gt; $2.15 per day</strong>. Once you are in the portal, follow the next options to get the required data.</p></li>
 <li><p>In the <strong>Data Series</strong> type or select the <strong>1.1.1</strong> Indicator, in the <strong>Countries, areas or Regions</strong> section, click on <strong>Countries or Areas</strong>, and for <strong>Period</strong> make sure you selected only the <strong>2017</strong> year. (you should have around 783 observations). Click <strong>Show Results</strong>.</p>
-<p><img src="images/clipboard-983732078.png" class="img-fluid"></p></li>
+<p><img src="images/clipboard-1463157399.png" class="img-fluid" width="562"></p></li>
 </ol>
 <p><strong>Expected Result</strong>: You will see a couple of tabs open up at the bottom corresponding to: - <strong>Proportion of population below international poverty line (%) SI_POV_DAY1</strong> - <strong>Employed population below international poverty line, by sex and age (%) SI_POV_EMP1</strong> indicators</p>
 <p>Expand the <strong>SI_POV_DAY1</strong> tab. At this point you should have a preview of a table that includes countries and 2017 poverty values. Now click <strong>Download XLS</strong>.</p>
-<p><img src="images/clipboard-1441162426.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2483779200.png" class="img-fluid" width="591"></p>
 </section>
 <section id="task-1.3-data-preparation" class="level3">
 <h3 class="anchored" data-anchor-id="task-1.3-data-preparation">Task 1.3: Data Preparation</h3>
@@ -501,7 +502,9 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Location</strong>: ALLAREA</li>
 <li><strong>Age</strong>: ALLAGE</li>
 </ul>
-<p>Now you should have <strong>75 records</strong>. Save the filtered table as a new Excel file (name it <code>1_1_1_indicator_filtered.xlsx</code>).</p></li>
+<p>Now you should have <strong>77 records</strong>.</p></li>
+<li><p>Save the filtered table as a new file but in <strong>a CSV format</strong> (name it as <code>1_1_1_indicator_filtered.csv</code>).</p>
+<p><img src="images/clipboard-1328805825.png" class="img-fluid" width="527"></p></li>
 </ol>
 <blockquote class="blockquote">
 <p><strong>Important Note</strong>: Data filtering is crucial for accurate spatial analysis. In Scotland, similar filtering would be applied when working with data from the Scottish Government’s statistics portal, ensuring consistency across geographic areas and demographic groups.</p>
@@ -513,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Go to <strong>ArcGIS Online</strong>, sign up with your university credentials and go to <strong>Content</strong>. Now you will upload the filtered Excel file and create a <strong>Feature Layer</strong> with the data you downloaded and filtered.</p></li>
 <li><p>Click <strong>New Item</strong></p>
 <p><img src="images/clipboard-2752107397.png" class="img-fluid"></p></li>
-<li><p><strong>Drag and drop</strong> your file or choose <strong>Device</strong> option and select the filtered Excel file (e.g., <code>1_1_1_indicator_filtered.xlsx</code>)</p></li>
+<li><p><strong>Drag and drop</strong> your file or choose <strong>Device</strong> option and select the filtered Excel file (e.g., <code>1_1_1_indicator_filtered.csv</code>)</p></li>
 <li><p>When ArcGIS Online asks <strong>“How would you like to add this file?”</strong> Select the first option: <strong><em>Add and create a hosted feature layer or table</em></strong>. Click <strong>Next</strong>.</p></li>
 <li><p>In the <strong>Field Box</strong>, the 13 columns are selected - no need to do anything here, just click <strong>Next</strong>.</p></li>
 <li><p>In the <strong>Location Settings</strong>, select <strong>Addresses or place names</strong>. Open the <strong>Advanced location settings</strong> and select <strong>World</strong> in the <strong>Region</strong> box. Now in <strong>Location fields</strong>, make sure <strong>Location information is in one field</strong> is selected. Then in front of <strong>Address or Place</strong>, select the Field <strong>GeoAreaName</strong>, click <strong>Next</strong>.</p>
@@ -522,9 +525,9 @@ ul.task-list li input[type="checkbox"] {
 </blockquote></li>
 <li><p>Finally, provide a <strong>title</strong>, <strong>tag</strong>, and <strong>summary</strong> of the feature layer you are creating. Click <strong>Save</strong>.</p></li>
 <li><p>ArcGIS Online will host your Excel file, geocode all the rows based on the name of the country (that’s why it uses credits) and then create a feature layer (the spatial data) that you can use to create web maps based on that indicator.</p></li>
-<li><p>If you get a warning/notification, please click <strong>YES</strong>.</p></li>
+<li><p>If you get a warning/notification, please click <strong>YES</strong>.</p>
+<p><img src="images/clipboard-2957583480.png" class="img-fluid" width="519"></p></li>
 </ol>
-<p><img src="images/clipboard-611136890.png" class="img-fluid"></p>
 </section>
 <section id="task-1.5-correcting-geocoding-errors" class="level3">
 <h3 class="anchored" data-anchor-id="task-1.5-correcting-geocoding-errors">Task 1.5: Correcting Geocoding Errors</h3>
@@ -532,7 +535,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Common Issue</strong>: One common problem in geocoding when using names is that you could get locations in places that do not correspond to the intended place. ArcGIS Online provides a way to correct those mislocated places.</p>
 </blockquote>
 <ol start="16" type="1">
-<li><p>Once you have the Map Viewer open, you will notice that <strong>Georgia</strong> has been automatically coded to be in the USA.</p>
+<li><p>Once you have the Map Viewer open, you will a warning pop-up window describing a new version of ArcGIS Online, click <strong>Not Right Now</strong></p>
+<p><img src="images/clipboard-2778296973.png" class="img-fluid" width="576"></p></li>
+<li><p>you will notice that <strong>Georgia</strong> has been automatically coded to be in the USA.</p>
 <p><img src="images/clipboard-2775039475.png" class="img-fluid"></p></li>
 <li><p>Using the table at the bottom, locate <strong>Georgia</strong> and select it. You will see on your left a list of all the potential candidates that ArcGIS Online used to geocode Georgia. If you click on the <strong>third option</strong>, you will realize that one is the correct match (the country Georgia, not the US state). Click <strong>Match</strong> and then <strong>Done Reviewing</strong>.</p></li>
 </ol>
@@ -544,36 +549,41 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Once your geocoding process has finished, your map should look like this:</p>
 <p><img src="images/clipboard-1362420015.png" class="img-fluid"></p></li>
 </ol>
+<p><strong>NOTE</strong>: If that does not work and Georgia point is still located in the USA. We need to Edit the layer and do it manually, unfortunately this can be a bug or glitch in the system and is very common when you work with these type of tool, so you need to adapt and find alternative solutions.</p>
+</section>
+<section id="edit-a-layer" class="level3">
+<h3 class="anchored" data-anchor-id="edit-a-layer">Edit a Layer</h3>
+<p>Click in <strong>Open in Map Viewer</strong> to open the new <strong>Map Viewer Editor.</strong></p>
+<p><img src="images/clipboard-1517317368.png" class="img-fluid"></p>
+<p>Once the map open with the new Map Viewer and the layer has displayed. Find the Georgia Point located in the USA and click on it to open the Pop-up window, click in Edit.</p>
+<p><img src="images/clipboard-851254522.png" class="img-fluid"></p>
+<p>Move it to the right location and click <strong>Update</strong>.</p>
+<p><img src="images/clipboard-2002690831.png" class="img-fluid" width="646"></p>
+<p>Save the map. Click <strong>Save</strong> to save the current web map to your account. Add the title: <strong>“Indicator 1.1.1: Proportion of population below the international poverty line (percent)”</strong></p>
+<p><img src="images/clipboard-1206315119.png" class="img-fluid"></p>
 <p><strong>Observation</strong>: You will notice that most of the African countries have not reported any data, but here is when we can use and merge other data sources. We can use data reported by the <a href="https://data.worldbank.org/indicator/SI.POV.GAPS?most_recent_value_desc=true&amp;type=shaded&amp;view=map&amp;year=2004">World Bank</a> to merge with the data you have geocoded.</p>
 </section>
 <section id="task-1.6-adding-additional-data-sources" class="level3">
 <h3 class="anchored" data-anchor-id="task-1.6-adding-additional-data-sources">Task 1.6: Adding Additional Data Sources</h3>
 <ol start="19" type="1">
 <li><p>Click <strong>Add</strong> and <strong>Search For Layers</strong> to look for a published service. Make sure you have <strong>My Organization</strong> selected, and then type <code>latest_africa_poverty_data</code>, and <strong>add</strong> the layer published by <em>mfbp1_UoStAndrews</em>.</p>
-<p><img src="images/clipboard-995050371.png" class="img-fluid"></p></li>
-</ol>
-<!-- -->
-<ol start="20" type="1">
-<li><p>Click <strong>Details</strong> again to see the table of contents with the two layers you have added to your map or click the back arrow to close the pane. In the <strong>Contents</strong> pane, hover over your <em>latest_africa_poverty_data</em> layer and click the <strong>Perform Analysis</strong> button.</p>
-<p><img src="images/clipboard-3533679184.png" class="img-fluid"></p></li>
-</ol>
-<!-- -->
-<ol start="21" type="1">
+<p><img src="images/clipboard-3104691337.png" class="img-fluid" width="500"></p></li>
+<li><p>You will see now your map has two layers.</p>
+<p><img src="images/clipboard-3729606622.png" class="img-fluid"></p></li>
+<li><p>Find the toolbar at your right and click in <strong>Analysis</strong>., then <strong>Tools</strong>.</p>
+<p><img src="images/clipboard-1927393697.png" class="img-fluid"></p></li>
 <li><p>Then in <strong>Manage Data</strong>, select <strong>Merge Layers</strong>.</p>
-<p><img src="images/clipboard-774639463.png" class="img-fluid"></p></li>
+<p><img src="images/clipboard-293124688.png" class="img-fluid"></p></li>
+<li><p>Select <code>latest_africa_poverty_data</code> as <strong>Input Layer</strong>, and <code>1_1_1_indicator_filtered</code> as <strong>Layer to Merge</strong>. Click <strong>Run</strong>.</p>
+<p><img src="images/clipboard-1877321204.png" class="img-fluid"></p></li>
 </ol>
-<!-- -->
-<ol start="22" type="1">
-<li>Make sure you have selected your poverty data layers and add a clear title (e.g., <em>poverty_data_1_1_1_indicator</em>). <strong>Important</strong>: <strong>Don’t forget to uncheck the “Use current map extent” option</strong>. Click <strong>Run Analysis</strong>.</li>
-</ol>
-<p><img src="images/clipboard-3412545992.png" class="img-fluid"></p>
 <p><strong>Processing Note</strong>: Give ArcGIS Online some time to process your analysis, and you will have a single layer that joins the poverty data for most of the countries.</p>
 <blockquote class="blockquote">
 <p><strong>Technical Tip</strong>: A key aspect you need to consider for future data joins is ensuring how the attributes will be joined. In this case, both poverty values are included as integers and the heading is called “2017”, which has allowed us to have one single column with the values we need to plot a <strong>world poverty map</strong>.</p>
 </blockquote>
-<p><img src="images/clipboard-3819038716.png" class="img-fluid"></p>
+<p><img src="images/clipboard-814402207.png" class="img-fluid"></p>
 <ol start="23" type="1">
-<li>Click <strong>Save</strong> to save the current web map to your account. Add the title: <strong>“Indicator 1.1.1: Proportion of population below the international poverty line (percent)”</strong></li>
+<li>Click <strong>Save</strong> to save the current web map to your account.</li>
 </ol>
 </section>
 <section id="task-1.7-converting-points-to-polygons" class="level3">
@@ -585,39 +595,42 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/clipboard-1835566217.png" class="img-fluid"></p>
 <p><img src="images/clipboard-3336779490.png" class="img-fluid"></p>
 <ol start="25" type="1">
-<li>Click the back arrow to close the pane. In the <strong>Contents</strong> pane, hover over your <strong>World Countries</strong> layer and click the <strong>Perform Analysis</strong> button.</li>
+<li>Click the back arrow to close the pane. In the <strong>Contents</strong> pane, re-position the World Countries Generalized Layer under the merge layer and click the <strong>Analysis</strong> button again.</li>
 </ol>
-<p><img src="images/clipboard-3446375221.png" class="img-fluid"></p>
+<p><img src="images/clipboard-459597831.png" class="img-fluid"></p>
 <ol start="25" type="1">
-<li>On the <strong>Perform Analysis</strong> pane, expand <strong>Summarize Data</strong>, then click <strong>Join Features</strong>.</li>
+<li>On <strong>Analysis</strong> pane, expand <strong>Summarize Data</strong>, then click <strong>Join Features</strong>.</li>
 <li>Configure the join as follows:
 <ul>
-<li><strong>Number 1, Choose target layer</strong>: Set to <strong>World Countries</strong></li>
-<li><strong>Choose layer to join to target layer</strong>: Choose the <strong>Indicator 1.1.1 layer</strong></li>
-<li><strong>Select the type(s) of join</strong>: Click <strong>Choose a spatial relationship</strong> and choose <strong>Intersects</strong></li>
-<li><strong>Choose join operation</strong>: Make sure <strong>Join one to one</strong> is selected</li>
+<li><p><strong>Choose target layer</strong>: Set to <strong>World Countries</strong></p></li>
+<li><p><strong>Choose Join Layer</strong> the <strong>Indicator 1.1.1 layer</strong></p></li>
+<li><p><strong>Select the type(s) of join</strong>: Click <strong>Choose a spatial relationship</strong> and choose <strong>Intersects</strong></p></li>
+<li><p><strong>Choose join operation</strong>: Make sure <strong>Join one to one</strong> is selected</p></li>
+<li><p>Leave the other options as they are</p>
+<p><img src="images/clipboard-1475228828.png" class="img-fluid" width="304"></p></li>
 </ul></li>
 </ol>
-<p><img src="images/clipboard-2092863486.png" class="img-fluid"></p>
+<!-- -->
 <ol start="28" type="1">
-<li>Name the layer <strong>World Poverty</strong>, <strong>uncheck the “Use current map extent” box</strong>, and click <strong>Run Analysis</strong>.</li>
+<li>Name the output layer as <strong>World Poverty</strong>, and click <strong>Run</strong>.</li>
 </ol>
 <p><strong>Result</strong>: When the analysis finishes, the layer will be added to the map. By default, all the countries are shown in the same color. To see the data, you’ll change the symbology to show a choropleth map.</p>
 </section>
 <section id="task-1.8-creating-a-choropleth-map" class="level3">
 <h3 class="anchored" data-anchor-id="task-1.8-creating-a-choropleth-map">Task 1.8: Creating a Choropleth Map</h3>
 <ol start="29" type="1">
-<li><strong>Uncheck all layers</strong> except for <strong>World Poverty</strong>, then hover over the <strong>World Poverty layer</strong> and click the <strong>Change Style</strong> button.</li>
+<li><p><strong>Uncheck all layers</strong> except for <strong>World Poverty</strong>, then click over the <strong>World Poverty layer</strong> and click the <strong>Style</strong> button.</p>
+<p><img src="images/clipboard-3623372937.png" class="img-fluid" width="306"></p></li>
 </ol>
-<p><img src="images/clipboard-4259794882.png" class="img-fluid" width="276"></p>
+<!-- -->
 <ol start="30" type="1">
-<li>On the <strong>Change Style</strong> pane, expand the <strong>Choose an attribute to show</strong> menu and choose <strong>2017</strong>.</li>
+<li><p>On the <strong>Style</strong> pane, click on <strong>Field</strong> to choose an attribute to show menu and choose <strong>2017</strong>.</p>
+<p><img src="images/clipboard-3944688137.png" class="img-fluid" width="510"></p></li>
 </ol>
 <p><strong>Understanding the Data</strong>: “2017” is the attribute that shows the latest reported value for any country that has reported data. The countries are symbolized with a default graduated color scheme that shows low values in light yellow and high values in dark blue. The light yellows blend into the basemap, so before analyzing the map, you’ll change the symbology.</p>
-<p><img src="images/clipboard-2863097957.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1157949635.png" class="img-fluid"></p>
 <ol start="31" type="1">
-<li><p>For <strong>Counts and Amounts (Color)</strong> click <strong>Options</strong>, then click <strong>Symbols</strong>. Choose a color ramp that stands out from the basemap. If necessary, click <strong>Invert</strong> to show the higher values in darker colors.</p>
-<p><img src="images/clipboard-393002853.png" class="img-fluid"></p></li>
+<li>For <strong>Counts and Amounts (Color)</strong> make sure the Theme High to Low is selected.</li>
 </ol>
 </section>
 <section id="initial-analysis-results" class="level3">
@@ -644,13 +657,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>On the ribbon, click <strong>Add</strong> and choose <strong>Search for Layers</strong>. (At this point you should know how to do it)</p></li>
 <li><p>Click <strong>My Content</strong> and choose <strong>My Organization</strong>, then search for <strong><em>8.7.1</em></strong></p></li>
 <li><p>Click the <strong>plus</strong> to add the result <strong>Indicator 8.7.1: Proportion of children engaged in economic activity, by sex and age (percent)</strong> to the map.</p>
-<p><img src="images/clipboard-1963985900.png" class="img-fluid"></p></li>
+<p><img src="images/clipboard-2989139910.png" class="img-fluid" width="334"></p></li>
 </ol>
 </section>
 <section id="task-2.2-joining-child-labor-data-with-poverty-data" class="level3">
 <h3 class="anchored" data-anchor-id="task-2.2-joining-child-labor-data-with-poverty-data">Task 2.2: Joining Child Labor Data with Poverty Data</h3>
 <ol start="4" type="1">
-<li><p>Hover over the <strong>World Poverty</strong> layer and click <strong>Perform Analysis</strong>.</p></li>
+<li><p>Select the <strong>World Poverty</strong> layer and click <strong>Analysis</strong>.</p></li>
 <li><p>Expand <strong>Summarize Data</strong> and choose <strong>Join Features</strong>. Enter the parameters as follows:</p>
 <ul>
 <li><strong>Choose target layer</strong>: World Poverty</li>
@@ -659,13 +672,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Join operation</strong>: one to one</li>
 <li><strong>Result layer</strong>: <em>Childhood Poverty</em></li>
 </ul></li>
-<li><p><strong>Uncheck</strong> “Use current map extent” and click <strong>Run Analysis</strong>.</p></li>
+<li><p>Click <strong>Run</strong>.</p></li>
 <li><p><strong>Turn off</strong> all layers except for <strong>Childhood Poverty</strong>.</p></li>
-<li><p>Hover over the <strong>Childhood Poverty</strong> layer and click <strong>Change Style</strong>.</p></li>
-<li><p>Change the attribute to show to <strong>Value Latest Year</strong>.</p></li>
+<li><p>Hover over the <strong>Childhood Poverty</strong> layer and click <strong>Style</strong>.</p></li>
+<li><p>Change the attribute to show to <strong>Value Latest Year</strong>., Select the Theme Extremes.</p></li>
+<li><p>Click <strong>Done</strong>.</p></li>
 </ol>
 <p><strong>Technical Note</strong>: Because you joined the datasets for global poverty and children in the workforce together, there will be many similar attribute names. Later, you’ll edit the names to make them clearer, but for now, remember that any attributes with a ‘1’ appended are from the economic labor layer.</p>
-<p><img src="images/clipboard-1930947350.png" class="img-fluid"></p>
+<p><img src="images/clipboard-3646882571.png" class="img-fluid" width="641"></p>
 <p><strong>Observation</strong>: Already, you can see that more countries have reported data for poverty rates. ArcGIS Online offers an easy way to visualize and compare relationships where data is present.</p>
 <ol start="10" type="1">
 <li>Click <strong>Done</strong>.</li>
@@ -678,38 +692,43 @@ ul.task-list li input[type="checkbox"] {
 <section id="task-3.1-creating-a-bivariate-map" class="level3">
 <h3 class="anchored" data-anchor-id="task-3.1-creating-a-bivariate-map">Task 3.1: Creating a Bivariate Map</h3>
 <ol type="1">
-<li><p>Hover over the <strong>Childhood Poverty</strong> layer and click the <em>ellipses (three dots)</em>. In the <strong>More Options</strong> menu, click <strong>Copy</strong>.</p>
-<p><strong>Result</strong>: An identical layer is added to the map.</p></li>
-<li><p>Turn off the original layer, then open the <strong>Change Style</strong> pane for the <strong>Childhood Poverty - copy</strong>.</p>
+<li><p>Hover over the <strong>Childhood Poverty</strong> layer and click <em>three dots</em>. In the menu, click <strong>Duplicate</strong>.</p>
+<p><strong>Result</strong>: An identical layer is added to the map.</p>
+<p><img src="images/clipboard-793402025.png" class="img-fluid"></p></li>
+<li><p>Turn off the original layer, then open the <strong>Style</strong> pane for the <strong>Childhood Poverty - copy</strong>.</p>
 <p><strong>Current State</strong>: The layer currently shows Value Latest Year from Indicator 8.7.1: Children engaged in economic activity. Now you’ll add the Value Latest Year attribute from Indicator 1.1.1: Global poverty for comparison.</p></li>
-<li><p>Under <strong>Choose an attribute to show</strong>, click <strong>Add attribute</strong> and choose <strong>2017</strong>.</p>
+<li><p>Under <strong>Choose an attribute</strong>, click <strong>Field</strong> and choose <strong>2017</strong>.</p>
 <blockquote class="blockquote">
 <p><strong>Question for Understanding</strong>: Do you remember what that attribute represents and what layer it comes from?</p>
 </blockquote></li>
-<li><p>Under <strong>Select a drawing style</strong>, scroll down to <strong>Relationship</strong> and click <strong>Select</strong>, then click <strong>Options</strong>.</p>
-<p><img src="images/clipboard-1600591645.png" class="img-fluid"></p></li>
+<li><p>Scroll down in the <strong>Pick a Style</strong> options to <strong>Relationship</strong> and click to <strong>Select it</strong>. Then click <strong>Done</strong>.</p></li>
 </ol>
-<!-- -->
+<p><img src="images/clipboard-2939592275.png" class="img-fluid"></p>
 <ol start="5" type="1">
-<li>Click <strong>Symbols</strong> and choose the <strong>blue-pink-purple color palette</strong>. Click <strong>OK</strong>, then <strong>Done</strong>.</li>
+<li><p>Click <strong>Style options</strong> and choose a Symbol Style <strong>blue-pink-purple color palette</strong>. Click <strong>Done</strong>. Make sure <strong>2017</strong> is on top of <strong>Value Lasted Year</strong>.</p>
+<p><img src="images/clipboard-542099049.png" class="img-fluid"></p></li>
 </ol>
 <p><strong>Understanding Bivariate Maps</strong>: The relationship symbology style is a way of creating <strong>bivariate maps</strong> that lets you easily compare two topics on a single map because only the countries with data for both indicators are shown.</p>
 </section>
 <section id="task-3.2-improving-data-labels-and-pop-ups" class="level3">
 <h3 class="anchored" data-anchor-id="task-3.2-improving-data-labels-and-pop-ups">Task 3.2: Improving Data Labels and Pop-ups</h3>
 <ol start="6" type="1">
-<li><p>Hover over the <strong>Childhood Poverty - copy</strong> layer and click the three-dots. In the <strong>More Options</strong> menu, click <strong>Rename</strong> and replace the default name with <strong>Global Childhood Poverty</strong>.</p></li>
-<li><p>Click the ellipses again and click <strong>Configure Pop-up</strong>.</p></li>
-<li><p>Under <strong>Pop-up Contents</strong>, click <strong>Configure Attributes</strong>.</p></li>
-<li><p>In the <strong>Configure Attributes</strong> window, <strong>uncheck everything</strong> except for <strong>Country, Value Latest Year, and 2017</strong>.</p>
+<li><p>Click over the <strong>Childhood Poverty - copy</strong> layer and click the three-dots. In the <strong>More Options</strong> menu, click <strong>Rename</strong> and replace the default name with <strong>Global Childhood Poverty</strong>.</p></li>
+<li><p>Click <strong>Pop-ups pane.</strong></p>
+<p><img src="images/clipboard-399557655.png" class="img-fluid"></p></li>
+<li><p>Under <strong>Pop-ups</strong>, you have <strong>Title</strong> and <strong>Fields List.</strong></p>
 <ol start="6" type="1">
-<li><p>In the <strong>Field Alias</strong> column:</p>
+<li><p>Expand the <strong>Field List</strong> option, <strong>remove everything</strong> except for <strong>Country Name, Value Latest Year, and 2017</strong>.</p>
+<p><img src="images/clipboard-3552141215.png" class="img-fluid" width="182"></p>
+<p><img src="images/clipboard-466849932.png" class="img-fluid"></p>
+<ol start="6" type="1">
+<li><p>In the <strong>Fields pane</strong>:</p>
+<p><img src="images/clipboard-4243390872.png" class="img-fluid" width="399"></p>
 <ul>
-<li>Click <strong>2017</strong> and type <strong>Global Poverty</strong></li>
-<li>Scroll down, click <strong>Value</strong> and type <strong>Engaged in Economic Activity</strong></li>
-</ul>
-<p>In the Configure Pop-up pane, click <strong>OK</strong>.</p>
-<p><img src="images/clipboard-2849139696.png" class="img-fluid"></p></li>
+<li>Click <strong>2017</strong> and replace the Display Name for <strong>Global Poverty</strong></li>
+<li>Scroll down, click <strong>Value Latest Year</strong> and replace it for <strong>Engaged in Economic Activity</strong></li>
+</ul></li>
+</ol></li>
 </ol></li>
 </ol>
 <p><strong>Result</strong>: Now when you click on a country, the pop-up shows only those three attributes with clear, understandable names.</p>
@@ -717,9 +736,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="task-3.3-analyzing-the-legend-and-patterns" class="level3">
 <h3 class="anchored" data-anchor-id="task-3.3-analyzing-the-legend-and-patterns">Task 3.3: Analyzing the Legend and Patterns</h3>
 <ol start="11" type="1">
-<li>At the top of the <strong>Contents</strong> pane, click <strong>Legend</strong>.</li>
+<li><p>At the left pane, click <strong>Legend</strong>.</p>
+<p><img src="images/clipboard-1660211728.png" class="img-fluid"></p></li>
 </ol>
-<p><img src="images/clipboard-2553034969.png" class="img-fluid" width="428"></p>
 <p><strong>Understanding the Legend</strong>: The Legend pane shows the symbology for all the layers that are turned on, and your changes will be reflected here. By comparing the legend to the map, you can see the two extremes of the spectrum:</p>
 <ul>
 <li><strong>Countries shaded purple</strong> have a <strong>high poverty rate</strong> and <strong>large proportions of children working</strong> to support themselves or their families</li>
@@ -774,7 +793,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Well Done! You have now completed all the steps for this lab. Before moving on, make sure to:</p>
 <ol type="1">
 <li><p><strong>Take one screenshot</strong> of the final map. Ensuring your <strong>full screen is visible</strong>, including the <strong>date and time</strong>. This screenshot will be required for your report ( see all the instructions in the handbook)</p></li>
-<li><p><strong>For the Part B of this lab in your report. Replicate the process independently</strong> by applying the same skills you practised in this lab, but using <strong>spatial data from Scotland or the UK</strong>.</p></li>
+<li><p><strong>For the Part B of this lab in your report. Replicate the process independently</strong> by applying the same skills you practiced in this lab, but using <strong>spatial data from Scotland or the UK</strong>.</p></li>
 </ol>
 <p>In the original lab, you have created a set of maps showing UN Sustainable Development Goals data related to poverty. More importantly you learned <strong>how to create a relationship map,</strong> a method that help you to present two different indicators. For your <strong>independent spatial analysis</strong>, you can choose a different theme and dataset (e.g.&nbsp;healthcare access, education, environmental risk), as long as you also:</p>
 <ul>

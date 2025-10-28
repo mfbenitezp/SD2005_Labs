@@ -65,13 +65,13 @@ Sustainable Development Goal 1, **"No Poverty"** is achieved when we "End povert
 
 5.  In the **Data Series** type or select the **1.1.1** Indicator, in the **Countries, areas or Regions** section, click on **Countries or Areas**, and for **Period** make sure you selected only the **2017** year. (you should have around 783 observations). Click **Show Results**.
 
-    ![](images/clipboard-983732078.png)
+    ![](images/clipboard-1463157399.png){width="562"}
 
 **Expected Result**: You will see a couple of tabs open up at the bottom corresponding to: - **Proportion of population below international poverty line (%) SI_POV_DAY1** - **Employed population below international poverty line, by sex and age (%) SI_POV_EMP1** indicators
 
 Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a table that includes countries and 2017 poverty values. Now click **Download XLS**.
 
-![](images/clipboard-1441162426.png)
+![](images/clipboard-2483779200.png){width="591"}
 
 ### Task 1.3: Data Preparation
 
@@ -81,7 +81,11 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
     -   **Location**: ALLAREA
     -   **Age**: ALLAGE
 
-    Now you should have **75 records**. Save the filtered table as a new Excel file (name it `1_1_1_indicator_filtered.xlsx`).
+    Now you should have **77 records**.
+
+7.  Save the filtered table as a new file but in **a CSV format** (name it as `1_1_1_indicator_filtered.csv`).
+
+    ![](images/clipboard-1328805825.png){width="527"}
 
 > **Important Note**: Data filtering is crucial for accurate spatial analysis. In Scotland, similar filtering would be applied when working with data from the Scottish Government's statistics portal, ensuring consistency across geographic areas and demographic groups.
 
@@ -93,7 +97,7 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
     ![](images/clipboard-2752107397.png)
 
-9.  **Drag and drop** your file or choose **Device** option and select the filtered Excel file (e.g., `1_1_1_indicator_filtered.xlsx`)
+9.  **Drag and drop** your file or choose **Device** option and select the filtered Excel file (e.g., `1_1_1_indicator_filtered.csv`)
 
 10. When ArcGIS Online asks **"How would you like to add this file?"** Select the first option: ***Add and create a hosted feature layer or table***. Click **Next**.
 
@@ -109,17 +113,21 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
 15. If you get a warning/notification, please click **YES**.
 
-![](images/clipboard-611136890.png)
+    ![](images/clipboard-2957583480.png){width="519"}
 
 ### Task 1.5: Correcting Geocoding Errors
 
 > **Common Issue**: One common problem in geocoding when using names is that you could get locations in places that do not correspond to the intended place. ArcGIS Online provides a way to correct those mislocated places.
 
-16. Once you have the Map Viewer open, you will notice that **Georgia** has been automatically coded to be in the USA.
+16. Once you have the Map Viewer open, you will a warning pop-up window describing a new version of ArcGIS Online, click **Not Right Now**
+
+    ![](images/clipboard-2778296973.png){width="576"}
+
+17. you will notice that **Georgia** has been automatically coded to be in the USA.
 
     ![](images/clipboard-2775039475.png)
 
-17. Using the table at the bottom, locate **Georgia** and select it. You will see on your left a list of all the potential candidates that ArcGIS Online used to geocode Georgia. If you click on the **third option**, you will realize that one is the correct match (the country Georgia, not the US state). Click **Match** and then **Done Reviewing**.
+18. Using the table at the bottom, locate **Georgia** and select it. You will see on your left a list of all the potential candidates that ArcGIS Online used to geocode Georgia. If you click on the **third option**, you will realize that one is the correct match (the country Georgia, not the US state). Click **Match** and then **Done Reviewing**.
 
 ![](images/clipboard-2720454312.png)
 
@@ -129,39 +137,57 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
     ![](images/clipboard-1362420015.png)
 
+**NOTE**: If that does not work and Georgia point is still located in the USA. We need to Edit the layer and do it manually, unfortunately this can be a bug or glitch in the system and is very common when you work with these type of tool, so you need to adapt and find alternative solutions.
+
+### Edit a Layer
+
+Click in **Open in Map Viewer** to open the new **Map Viewer Editor.**
+
+![](images/clipboard-1517317368.png)
+
+Once the map open with the new Map Viewer and the layer has displayed. Find the Georgia Point located in the USA and click on it to open the Pop-up window, click in Edit.
+
+![](images/clipboard-851254522.png)
+
+Move it to the right location and click **Update**.
+
+![](images/clipboard-2002690831.png){width="646"}
+
+Save the map. Click **Save** to save the current web map to your account. Add the title: **"Indicator 1.1.1: Proportion of population below the international poverty line (percent)"**
+
+![](images/clipboard-1206315119.png)
+
 **Observation**: You will notice that most of the African countries have not reported any data, but here is when we can use and merge other data sources. We can use data reported by the [World Bank](https://data.worldbank.org/indicator/SI.POV.GAPS?most_recent_value_desc=true&type=shaded&view=map&year=2004) to merge with the data you have geocoded.
 
 ### Task 1.6: Adding Additional Data Sources
 
 19. Click **Add** and **Search For Layers** to look for a published service. Make sure you have **My Organization** selected, and then type `latest_africa_poverty_data`, and **add** the layer published by *mfbp1_UoStAndrews*.
 
-    ![](images/clipboard-995050371.png)
+    ![](images/clipboard-3104691337.png){width="500"}
 
-<!-- -->
+20. You will see now your map has two layers.
 
-20. Click **Details** again to see the table of contents with the two layers you have added to your map or click the back arrow to close the pane. In the **Contents** pane, hover over your *latest_africa_poverty_data* layer and click the **Perform Analysis** button.
+    ![](images/clipboard-3729606622.png)
 
-    ![](images/clipboard-3533679184.png)
+21. Find the toolbar at your right and click in **Analysis**., then **Tools**.
 
-<!-- -->
+    ![](images/clipboard-1927393697.png)
 
-21. Then in **Manage Data**, select **Merge Layers**.
+22. Then in **Manage Data**, select **Merge Layers**.
 
-    ![](images/clipboard-774639463.png)
+    ![](images/clipboard-293124688.png)
 
-<!-- -->
+22. Select `latest_africa_poverty_data` as **Input Layer**, and `1_1_1_indicator_filtered` as **Layer to Merge**. Click **Run**.
 
-22. Make sure you have selected your poverty data layers and add a clear title (e.g., *poverty_data_1_1_1_indicator*). **Important**: **Don't forget to uncheck the "Use current map extent" option**. Click **Run Analysis**.
-
-![](images/clipboard-3412545992.png)
+    ![](images/clipboard-1877321204.png)
 
 **Processing Note**: Give ArcGIS Online some time to process your analysis, and you will have a single layer that joins the poverty data for most of the countries.
 
 > **Technical Tip**: A key aspect you need to consider for future data joins is ensuring how the attributes will be joined. In this case, both poverty values are included as integers and the heading is called "2017", which has allowed us to have one single column with the values we need to plot a **world poverty map**.
 
-![](images/clipboard-3819038716.png)
+![](images/clipboard-814402207.png)
 
-23. Click **Save** to save the current web map to your account. Add the title: **"Indicator 1.1.1: Proportion of population below the international poverty line (percent)"**
+23. Click **Save** to save the current web map to your account.
 
 ### Task 1.7: Converting Points to Polygons
 
@@ -173,38 +199,47 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
 ![](images/clipboard-3336779490.png)
 
-25. Click the back arrow to close the pane. In the **Contents** pane, hover over your **World Countries** layer and click the **Perform Analysis** button.
+25. Click the back arrow to close the pane. In the **Contents** pane, re-position the World Countries Generalized Layer under the merge layer and click the **Analysis** button again.
 
-![](images/clipboard-3446375221.png)
+![](images/clipboard-459597831.png)
 
-25. On the **Perform Analysis** pane, expand **Summarize Data**, then click **Join Features**.
+25. On **Analysis** pane, expand **Summarize Data**, then click **Join Features**.
 26. Configure the join as follows:
-    -   **Number 1, Choose target layer**: Set to **World Countries**
-    -   **Choose layer to join to target layer**: Choose the **Indicator 1.1.1 layer**
+    -   **Choose target layer**: Set to **World Countries**
+
+    -   **Choose Join Layer** the **Indicator 1.1.1 layer**
+
     -   **Select the type(s) of join**: Click **Choose a spatial relationship** and choose **Intersects**
+
     -   **Choose join operation**: Make sure **Join one to one** is selected
 
-![](images/clipboard-2092863486.png)
+    -   Leave the other options as they are
 
-28. Name the layer **World Poverty**, **uncheck the "Use current map extent" box**, and click **Run Analysis**.
+        ![](images/clipboard-1475228828.png){width="304"}
+
+<!-- -->
+
+28. Name the output layer as **World Poverty**, and click **Run**.
 
 **Result**: When the analysis finishes, the layer will be added to the map. By default, all the countries are shown in the same color. To see the data, you'll change the symbology to show a choropleth map.
 
 ### Task 1.8: Creating a Choropleth Map
 
-29. **Uncheck all layers** except for **World Poverty**, then hover over the **World Poverty layer** and click the **Change Style** button.
+29. **Uncheck all layers** except for **World Poverty**, then click over the **World Poverty layer** and click the **Style** button.
 
-![](images/clipboard-4259794882.png){width="276"}
+    ![](images/clipboard-3623372937.png){width="306"}
 
-30. On the **Change Style** pane, expand the **Choose an attribute to show** menu and choose **2017**.
+<!-- -->
+
+30. On the **Style** pane, click on **Field** to choose an attribute to show menu and choose **2017**.
+
+    ![](images/clipboard-3944688137.png){width="510"}
 
 **Understanding the Data**: "2017" is the attribute that shows the latest reported value for any country that has reported data. The countries are symbolized with a default graduated color scheme that shows low values in light yellow and high values in dark blue. The light yellows blend into the basemap, so before analyzing the map, you'll change the symbology.
 
-![](images/clipboard-2863097957.png)
+![](images/clipboard-1157949635.png)
 
-31. For **Counts and Amounts (Color)** click **Options**, then click **Symbols**. Choose a color ramp that stands out from the basemap. If necessary, click **Invert** to show the higher values in darker colors.
-
-    ![](images/clipboard-393002853.png)
+31. For **Counts and Amounts (Color)** make sure the Theme High to Low is selected.
 
 ### Initial Analysis Results
 
@@ -230,11 +265,11 @@ Now that you've mapped global poverty, you'll map reported data for **percentage
 
 3.  Click the **plus** to add the result **Indicator 8.7.1: Proportion of children engaged in economic activity, by sex and age (percent)** to the map.
 
-    ![](images/clipboard-1963985900.png)
+    ![](images/clipboard-2989139910.png){width="334"}
 
 ### Task 2.2: Joining Child Labor Data with Poverty Data
 
-4.  Hover over the **World Poverty** layer and click **Perform Analysis**.
+4.  Select the **World Poverty** layer and click **Analysis**.
 
 5.  Expand **Summarize Data** and choose **Join Features**. Enter the parameters as follows:
 
@@ -244,17 +279,19 @@ Now that you've mapped global poverty, you'll map reported data for **percentage
     -   **Join operation**: one to one
     -   **Result layer**: *Childhood Poverty*
 
-6.  **Uncheck** "Use current map extent" and click **Run Analysis**.
+6.  Click **Run**.
 
 7.  **Turn off** all layers except for **Childhood Poverty**.
 
-8.  Hover over the **Childhood Poverty** layer and click **Change Style**.
+8.  Hover over the **Childhood Poverty** layer and click **Style**.
 
-9.  Change the attribute to show to **Value Latest Year**.
+9.  Change the attribute to show to **Value Latest Year**., Select the Theme Extremes.
+
+10. Click **Done**.
 
 **Technical Note**: Because you joined the datasets for global poverty and children in the workforce together, there will be many similar attribute names. Later, you'll edit the names to make them clearer, but for now, remember that any attributes with a '1' appended are from the economic labor layer.
 
-![](images/clipboard-1930947350.png)
+![](images/clipboard-3646882571.png){width="641"}
 
 **Observation**: Already, you can see that more countries have reported data for poverty rates. ArcGIS Online offers an easy way to visualize and compare relationships where data is present.
 
@@ -266,54 +303,60 @@ Now that you've mapped global poverty, you'll map reported data for **percentage
 
 ### Task 3.1: Creating a Bivariate Map
 
-1.  Hover over the **Childhood Poverty** layer and click the *ellipses (three dots)*. In the **More Options** menu, click **Copy**.
+1.  Hover over the **Childhood Poverty** layer and click *three dots*. In the menu, click **Duplicate**.
 
     **Result**: An identical layer is added to the map.
 
-2.  Turn off the original layer, then open the **Change Style** pane for the **Childhood Poverty - copy**.
+    ![](images/clipboard-793402025.png)
+
+2.  Turn off the original layer, then open the **Style** pane for the **Childhood Poverty - copy**.
 
     **Current State**: The layer currently shows Value Latest Year from Indicator 8.7.1: Children engaged in economic activity. Now you'll add the Value Latest Year attribute from Indicator 1.1.1: Global poverty for comparison.
 
-3.  Under **Choose an attribute to show**, click **Add attribute** and choose **2017**.
+3.  Under **Choose an attribute**, click **Field** and choose **2017**.
 
     > **Question for Understanding**: Do you remember what that attribute represents and what layer it comes from?
 
-4.  Under **Select a drawing style**, scroll down to **Relationship** and click **Select**, then click **Options**.
+4.  Scroll down in the **Pick a Style** options to **Relationship** and click to **Select it**. Then click **Done**.
 
-    ![](images/clipboard-1600591645.png)
+![](images/clipboard-2939592275.png)
 
-<!-- -->
+5.  Click **Style options** and choose a Symbol Style **blue-pink-purple color palette**. Click **Done**. Make sure **2017** is on top of **Value Lasted Year**.
 
-5.  Click **Symbols** and choose the **blue-pink-purple color palette**. Click **OK**, then **Done**.
+    ![](images/clipboard-542099049.png)
 
 **Understanding Bivariate Maps**: The relationship symbology style is a way of creating **bivariate maps** that lets you easily compare two topics on a single map because only the countries with data for both indicators are shown.
 
 ### Task 3.2: Improving Data Labels and Pop-ups
 
-6.  Hover over the **Childhood Poverty - copy** layer and click the three-dots. In the **More Options** menu, click **Rename** and replace the default name with **Global Childhood Poverty**.
+6.  Click over the **Childhood Poverty - copy** layer and click the three-dots. In the **More Options** menu, click **Rename** and replace the default name with **Global Childhood Poverty**.
 
-7.  Click the ellipses again and click **Configure Pop-up**.
+7.  Click **Pop-ups pane.**
 
-8.  Under **Pop-up Contents**, click **Configure Attributes**.
+    ![](images/clipboard-399557655.png)
 
-9.  In the **Configure Attributes** window, **uncheck everything** except for **Country, Value Latest Year, and 2017**.
+8.  Under **Pop-ups**, you have **Title** and **Fields List.**
 
-    6.  In the **Field Alias** column:
+    6.  Expand the **Field List** option, **remove everything** except for **Country Name, Value Latest Year, and 2017**.
 
-        -   Click **2017** and type **Global Poverty**
-        -   Scroll down, click **Value** and type **Engaged in Economic Activity**
+        ![](images/clipboard-3552141215.png){width="182"}
 
-        In the Configure Pop-up pane, click **OK**.
+        ![](images/clipboard-466849932.png)
 
-        ![](images/clipboard-2849139696.png)
+        6.  In the **Fields pane**:
+
+            ![](images/clipboard-4243390872.png){width="399"}
+
+            -   Click **2017** and replace the Display Name for **Global Poverty**
+            -   Scroll down, click **Value Latest Year** and replace it for **Engaged in Economic Activity**
 
 **Result**: Now when you click on a country, the pop-up shows only those three attributes with clear, understandable names.
 
 ### Task 3.3: Analyzing the Legend and Patterns
 
-11. At the top of the **Contents** pane, click **Legend**.
+11. At the left pane, click **Legend**.
 
-![](images/clipboard-2553034969.png){width="428"}
+    ![](images/clipboard-1660211728.png)
 
 **Understanding the Legend**: The Legend pane shows the symbology for all the layers that are turned on, and your changes will be reflected here. By comparing the legend to the map, you can see the two extremes of the spectrum:
 
@@ -369,7 +412,7 @@ Well Done! You have now completed all the steps for this lab. Before moving on, 
 
 1.  **Take one screenshot** of the final map. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK**.
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practiced in this lab, but using **spatial data from Scotland or the UK**.
 
 In the original lab, you have created a set of maps showing UN Sustainable Development Goals data related to poverty. More importantly you learned **how to create a relationship map,** a method that help you to present two different indicators. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
