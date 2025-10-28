@@ -607,7 +607,7 @@ The last actions you will configure are on the table. The table only populates o
 
 ------------------------------------------------------------------------
 
-## Part 6: Share the Dashboard
+## Part 6: Save the Dashboard
 
 ### Step 1: Save and Access Dashboard Settings
 
@@ -626,19 +626,6 @@ The last actions you will configure are on the table. The table only populates o
 4.  Test the dashboard functionality (e.g., find J1772 charging stations in Thunder Bay, Ontario)
 
     ![](images/clipboard-1041661331.png)
-
-### Step 2: Share the Dashboard
-
-1.  Return to the item page and click **Share**
-2.  **Important**: In the Share window, choose **Members of my organization (University of St Andrews)** and click **Save**
-
-> **Note**: This differs from the original tutorial which shared publicly. We're restricting to University of St Andrews members only.
-
-### Step 3: Share the Associated Web Map
-
-1.  On the ribbon, click **Content**
-2.  Find "Electric charging stations in Canada" and click the **Update sharing** icon
-3.  In the Share window, choose **Members of my organization (University of St Andrews)** and click **Save**
 
 ------------------------------------------------------------------------
 
