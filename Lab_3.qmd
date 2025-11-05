@@ -271,7 +271,7 @@ Well Done! You have now completed all the steps for this lab. Before moving on, 
 
 1.  **Take one screenshot** of the map you created when you analyse the data collected. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK**.
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab.
 
 In the original lab, you have created a survey with the support of your classmates. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
@@ -279,7 +279,7 @@ In the original lab, you have created a survey with the support of your classmat
 
 -   Apply the same techniques learned in this lab. This lab demonstrates the complete process of spatial data collection and analysis, from research design through data interpretation. The skills you've learned can be applied to any research question involving spatial data and community analysis. Consider how similar methodologies might be used to study other aspects of community life, cultural heritage, or environmental issues in Scottish contexts.
 
--   Include the screenshot of the web map created using the data collected in this new survey with a **clear purpose** relevant to a real-world issue in Scotland or the UK.
+-   Include the screenshot of the web map created using the data collected in this new survey with a **clear purpose** relevant to a real-world issue.
 
 This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
 

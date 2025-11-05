@@ -10,7 +10,7 @@ Spatial data is **essential for advancing the Sustainable Development Goals (SDG
 
 At the centre of this framework lies **Geographic Information Systems (GIS)**—and increasingly, **Cloud GIS platforms** like *ArcGIS Online*. Providing the infrastructure to visualize, manipulate, analyse, and share spatial data seamlessly across devices and locations. Whether you are mapping deforestation hotspots, analysing access to clean water, or visualizing urban inequality, **Cloud GIS fosters collaboration, accessibility, and spatial intelligence at scale**.
 
-## Module Structure related to the use of Spatial Data 
+## Module Structure related to the use of Spatial Data
 
 This module offers a sequence of lectures and labs designed to build your spatial data literacy and technical competencies in direct relation to the SDGs:
 

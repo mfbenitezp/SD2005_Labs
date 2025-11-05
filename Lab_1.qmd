@@ -272,7 +272,7 @@ Well Done! You have now completed all the steps for this lab, where you (in theo
 
 1.  **Take a screenshot** of your final web map, ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK (**See the Data sources sections for a comprehensive list of data sources**)**.
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data ideally from Scotland or the UK** (See the Data sources sections for a comprehensive list of data sources**)**.
 
 In the original lab, you created a web map using **census data for emergency planning in the U.S.** For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
@@ -280,7 +280,7 @@ In the original lab, you created a web map using **census data for emergency pla
 
 -   Apply the same techniques learned in this lab (e.g. adding layers, symbolising data, filtering, configuring pop-ups, etc).
 
--   And create a web map with a **clear purpose** relevant to a real-world issue in Scotland or the UK.
+-   And create a web map with a **clear purpose** relevant to a real-world issue.
 
 This additional task is an opportunity to deepen your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
 

@@ -635,7 +635,7 @@ Well Done! You have now completed all the steps for this lab. Before moving on, 
 
 1.  **Take one screenshot** of the final map. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook). **Dashboard fully loaded** - showing all elements working - **Demonstration of functionality** - show the dashboard with: - A province selected - A city selected - A connector type selected - Station details displayed - Table populated with filtered results.
 
-2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK**.
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, now using **spatial data ideally from Scotland or the UK**, but it can be from other areas.
 
 In the original lab, you have created a operational dashboard. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
@@ -643,7 +643,7 @@ In the original lab, you have created a operational dashboard. For your **indepe
 
 -   Apply the same techniques learned in this lab., and create another operational dashboard app, to represent the thematic of your preference.
 
--   Include the screenshot of the new dashboard created with a **clear purpose** relevant to a real-world issue in Scotland or the UK. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report. As you did for the first screenshot, make sure you the **dashboard is fully loaded** - showing all elements working - **demonstrate the functionality** - show the dashboard with: - List section, items details displayed - table populated with filtered results. Take a full screen screenshot (not just browser window) 5. Include this screenshot with your report (see the instructions in the handbook)
+-   Include the screenshot of the new dashboard created with a **clear purpose** relevant to a real-world issue. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report. As you did for the first screenshot, make sure you the **dashboard is fully loaded** - showing all elements working - **demonstrate the functionality** - show the dashboard with: - List section, items details displayed - table populated with filtered results. Take a full screen screenshot (not just browser window)
 
 This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
 

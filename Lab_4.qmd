@@ -177,7 +177,7 @@ Save the map. Click **Save** to save the current web map to your account. Add th
 
     ![](images/clipboard-293124688.png)
 
-22. Select `latest_africa_poverty_data` as **Input Layer**, and `1_1_1_indicator_filtered` as **Layer to Merge**. Click **Run**.
+23. Select `latest_africa_poverty_data` as **Input Layer**, and `1_1_1_indicator_filtered` as **Layer to Merge**. Click **Run**.
 
     ![](images/clipboard-1877321204.png)
 
@@ -412,7 +412,7 @@ Well Done! You have now completed all the steps for this lab. Before moving on, 
 
 1.  **Take one screenshot** of the final map. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practiced in this lab, but using **spatial data from Scotland or the UK**.
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practiced in this lab., as the data you are including here comes from the UN Data Portal you can replicate the lab using another indicator and different region or period of time.
 
 In the original lab, you have created a set of maps showing UN Sustainable Development Goals data related to poverty. More importantly you learned **how to create a relationship map,** a method that help you to present two different indicators. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
@@ -420,7 +420,7 @@ In the original lab, you have created a set of maps showing UN Sustainable Devel
 
 -   Apply the same techniques learned in this lab., and create another relationship map.
 
--   Include the screenshot of the new relationship web map created with a **clear purpose** relevant to a real-world issue in Scotland or the UK. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report
+-   Include the screenshot of the new relationship web map created with a **clear purpose** relevant to a real-world issue. Ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report.
 
 This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
 

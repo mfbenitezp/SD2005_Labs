@@ -210,21 +210,19 @@ The title text disappears from the sample pop-up. You'll replace the list of fie
 
 The School_name field was one of the fields in the .csv file you used to create the feature layer. By setting the dynamic text to this field, the pop-up that displays for each school point will display the corresponding School_name field.
 
-7.  After **{School_name}**, type **enrolled {Total_elementary_secondary_stud} students during the 2019-2020 school year.**
+7.  After **{School_name}**, type **enrolled *`{Total_elementary_secondary_students__excludes_AE_}`***
 
 You can add fields by typing their names inside of curly brackets or by choosing them from the list that appears when you type a curly bracket.
 
-8.  Press Enter to start a new paragraph. Type **{Total_of_free_lunch_and_reduced} of those students were eligible for the free and reduced meal plan program.**
+8.  Press Enter to start a new paragraph. Type ***`{Total_of_free_lunch_and_reduced_price_lunch_eligible}`**`of those students were eligible for the free and reduced meal plan program.`*
 
-9.  Use the **Bold** button on the toolbar to add bold formatting to **{School_name}**, **{Total_elementary_secondary_stud}**, and **{Total_of_free_lunch_and_reduced}**.
+9.  Use the **Bold** button on the toolbar to add bold formatting to the relevant attributes.
 
-    ![](images/clipboard-347892411.png)
+    ![](images/clipboard-3285839088.png)
 
 10. Click **OK**.
 
 The preview pop-up replaces the field names with the attribute values of one of the features.
-
-![](images/clipboard-3182088464.png)
 
 All the fields still exist in the data table, but they don't display in the pop-up. You can modify the contents of the pop-up at any time. You can still see all the attributes by showing the table.
 
@@ -324,7 +322,7 @@ Well Done! You have now completed all the steps for this lab, where you (in theo
 
 1.  **Take a screenshot** of your final web map, ensuring your **full screen is visible**, including the **date and time**. This screenshot will be required for your report ( see all the instructions in the handbook)
 
-2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data from Scotland or the UK** ( see the Data sources sections for a comprehensive list of data sources).
+2.  **For the Part B of this lab in your report. Replicate the process independently** by applying the same skills you practised in this lab, but using **spatial data ideally from Scotland or the UK** ( see the Data sources sections for a comprehensive list of data sources).
 
 In the original lab, you have created a web map with a .csv file of school location and demographic data. For your **independent spatial analysis**, you can choose a different theme and dataset (e.g. healthcare access, education, environmental risk), as long as you also:
 
@@ -332,7 +330,7 @@ In the original lab, you have created a web map with a .csv file of school locat
 
 -   Apply the same techniques learned in this lab (e.g. adding external data (excel), symbolising data, filtering, configuring pop-ups, etc).
 
--   And create a web map with a **clear purpose** relevant to a real-world issue in Scotland or the UK.
+-   And create a web map with a **clear purpose** relevant to a real-world issue.
 
 This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.
 
