@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,19 +35,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="./images/StA.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-46779a600b581cde7c223b72de02171b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-a75178bb8babf72518748dbfed4a5132.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-46779a600b581cde7c223b72de02171b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b26f1356e4a529654e33d9dea049c07d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-bdfc144f11e19f1fcd81d572686af4f3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-b26f1356e4a529654e33d9dea049c07d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -257,8 +256,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">SD2005 - From Sustainable Development to Human Security</span>
     </a>
@@ -304,10 +301,6 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -588,17 +581,16 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>The School_name field was one of the fields in the .csv file you used to create the feature layer. By setting the dynamic text to this field, the pop-up that displays for each school point will display the corresponding School_name field.</p>
 <ol start="7" type="1">
-<li>After <strong>{School_name}</strong>, type <strong>enrolled {Total_elementary_secondary_stud} students during the 2019-2020 school year.</strong></li>
+<li>After <strong>{School_name}</strong>, type <strong>enrolled <em><code>{Total_elementary_secondary_students__excludes_AE_}</code></em></strong></li>
 </ol>
 <p>You can add fields by typing their names inside of curly brackets or by choosing them from the list that appears when you type a curly bracket.</p>
 <ol start="8" type="1">
-<li><p>Press Enter to start a new paragraph. Type <strong>{Total_of_free_lunch_and_reduced} of those students were eligible for the free and reduced meal plan program.</strong></p></li>
-<li><p>Use the <strong>Bold</strong> button on the toolbar to add bold formatting to <strong>{School_name}</strong>, <strong>{Total_elementary_secondary_stud}</strong>, and <strong>{Total_of_free_lunch_and_reduced}</strong>.</p>
-<p><img src="images/clipboard-347892411.png" class="img-fluid"></p></li>
+<li><p>Press Enter to start a new paragraph. Type <em><strong><code>{Total_of_free_lunch_and_reduced_price_lunch_eligible}</code></strong><code>of those students were eligible for the free and reduced meal plan program.</code></em></p></li>
+<li><p>Use the <strong>Bold</strong> button on the toolbar to add bold formatting to the relevant attributes.</p>
+<p><img src="images/clipboard-3285839088.png" class="img-fluid"></p></li>
 <li><p>Click <strong>OK</strong>.</p></li>
 </ol>
 <p>The preview pop-up replaces the field names with the attribute values of one of the features.</p>
-<p><img src="images/clipboard-3182088464.png" class="img-fluid"></p>
 <p>All the fields still exist in the data table, but they don’t display in the pop-up. You can modify the contents of the pop-up at any time. You can still see all the attributes by showing the table.</p>
 <ol start="11" type="1">
 <li><p>In the Layers pane, next to <strong>Detroit high schools</strong>, click the <strong>Options</strong> button. Click <strong>Show table</strong>.</p>
@@ -673,13 +665,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Well Done! You have now completed all the steps for this lab, where you (in theory) created your <strong>second Web Map</strong> using <strong>ArcGIS Online</strong>. Before moving on, make sure to:</p>
 <ol type="1">
 <li><p><strong>Take a screenshot</strong> of your final web map, ensuring your <strong>full screen is visible</strong>, including the <strong>date and time</strong>. This screenshot will be required for your report ( see all the instructions in the handbook)</p></li>
-<li><p><strong>For the Part B of this lab in your report. Replicate the process independently</strong> by applying the same skills you practised in this lab, but using <strong>spatial data from Scotland or the UK</strong> ( see the Data sources sections for a comprehensive list of data sources).</p></li>
+<li><p><strong>For the Part B of this lab in your report. Replicate the process independently</strong> by applying the same skills you practised in this lab, but using <strong>spatial data ideally from Scotland or the UK</strong> ( see the Data sources sections for a comprehensive list of data sources).</p></li>
 </ol>
 <p>In the original lab, you have created a web map with a .csv file of school location and demographic data. For your <strong>independent spatial analysis</strong>, you can choose a different theme and dataset (e.g.&nbsp;healthcare access, education, environmental risk), as long as you also:</p>
 <ul>
 <li><p>Use again <strong>ArcGIS Online</strong> using your university credentials. <strong>Meet and work with your classmate to define which account want to use . You must only report one independent analysis results.</strong></p></li>
 <li><p>Apply the same techniques learned in this lab (e.g.&nbsp;adding external data (excel), symbolising data, filtering, configuring pop-ups, etc).</p></li>
-<li><p>And create a web map with a <strong>clear purpose</strong> relevant to a real-world issue in Scotland or the UK.</p></li>
+<li><p>And create a web map with a <strong>clear purpose</strong> relevant to a real-world issue.</p></li>
 </ul>
 <p>This additional task is an opportunity to improve your technical skills, explore new datasets, and demonstrate your ability to adapt spatial analysis methods to new contexts.</p>
 <hr>
@@ -769,14 +761,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
