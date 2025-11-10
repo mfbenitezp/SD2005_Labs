@@ -83,7 +83,7 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
     Now you should have **77 records**.
 
-7.  Save the filtered table as a new file but in **a CSV format** (name it as `1_1_1_indicator_filtered.csv`).
+7.  Save the filtered table **as a new file** but in **a CSV format** (name it as `1_1_1_indicator_filtered.csv`).
 
     ![](images/clipboard-1328805825.png){width="527"}
 
@@ -97,7 +97,7 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
     ![](images/clipboard-2752107397.png)
 
-9.  **Drag and drop** your file or choose **Device** option and select the filtered Excel file (e.g., `1_1_1_indicator_filtered.csv`)
+9.  **Drag and drop** your file or choose **Device** option and select the filtered CSV file (e.g., `1_1_1_indicator_filtered.csv`)
 
 10. When ArcGIS Online asks **"How would you like to add this file?"** Select the first option: ***Add and create a hosted feature layer or table***. Click **Next**.
 
@@ -105,7 +105,7 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
 12. In the **Location Settings**, select **Addresses or place names**. Open the **Advanced location settings** and select **World** in the **Region** box. Now in **Location fields**, make sure **Location information is in one field** is selected. Then in front of **Address or Place**, select the Field **GeoAreaName**, click **Next**.
 
-    > **⚠️ Credit Usage Warning**: You will use approximately 3 Credits from your ArcGIS Online Account for this geocoding process.
+    > **⚠️ Credit Usage Warning**: **You will use approximately 3 Credits** from your ArcGIS Online Account for this geocoding process. If you see you are using more credits cancel and double check, as you are probably uploading and geocoding the wrong file. **Each student has a limited quota of credits, and the University cannot provide you with more credits if you accidentally use more of the estimated and required credits.**
 
 13. Finally, provide a **title**, **tag**, and **summary** of the feature layer you are creating. Click **Save**.
 
@@ -114,6 +114,10 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 15. If you get a warning/notification, please click **YES**.
 
     ![](images/clipboard-2957583480.png){width="519"}
+
+    ::: callout-warning
+    This indicates how many rows or locations were geocoded. If you have included more than 77 locations, you probably geocoded the wrong file. You need to cancel, remove that file from ArcGIS Online, and repeat the process, ensuring you select the correct filtered CSV file. You have a limited number of credits for this lab, and the University cannot provide you with more.
+    :::
 
 ### Task 1.5: Correcting Geocoding Errors
 
@@ -137,7 +141,9 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
     ![](images/clipboard-1362420015.png)
 
-**NOTE**: If that does not work and Georgia point is still located in the USA. We need to Edit the layer and do it manually, unfortunately this can be a bug or glitch in the system and is very common when you work with these type of tool, so you need to adapt and find alternative solutions.
+::: callout-important
+**NOTE**: If that does not work and Georgia point is still located in the USA. **We need to Edit the layer and do it manually**, unfortunately this can be a bug or glitch in the system and is very common when you work with these type of tools, so you need to adapt and find alternative solutions.
+:::
 
 ### Edit a Layer
 
