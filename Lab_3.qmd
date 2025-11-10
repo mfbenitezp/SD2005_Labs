@@ -179,15 +179,20 @@ Consider how many responses you need to answer your research question effectivel
 
     ![](images/clipboard-2095152014.png)
 
-3.  Click **Save**
+3.  If the option to share to **Members of my Organization (University of St Andrews)**, isn't available due to the University IT restrictions, share your survey to your class by selecting **Member of the Following groups** and select the **202X SD2005 - From Sustainable Development to Human Security**
 
-4.  For "Share this survey," copy and share the link, or click "Show the QR code" to allow your class to open the survey
+    ![](images/clipboard-4086815083.png)
+
+4.  Click **Save**
+
+5.  For "Share this survey," copy and share the link, or click "Show the QR code" to allow your classmates to open the survey, they will need to sign in to ArcGIS Online and then reply to your survey.
 
     ![](images/clipboard-3419278361.png)
 
 ### Step 11: Gather Survey Responses
 
-1.  Have your classmates fill out and submit the survey. Ask your classmates to fill up your survey, you will need at least 20 replies to get enough data to analyse in the next part.
+1.  Have your classmates fill out and submit the survey. Ask your classmates to fill up your survey, you will need at least **20 replies** to get enough data to analyse in the next part.
+    1.  If you cannot recruit 20 colleagues, you may complete the survey yourself with the necessary responses. Aim for diversity in your answers to ensure a wide range of replies.
 2.  Monitor the number of responses to ensure you meet your data collection goal
 3.  Remember to consider data quality and potential bias as responses come in
 
