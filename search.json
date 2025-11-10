@@ -279,7 +279,7 @@
     "href": "Lab_3.html#learning-objectives",
     "title": "Lab No 3: Mapping Meaningful Places in Your Community",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this lab, you will be able to: - Design a research project with clear objectives and methodology - Create digital surveys using ArcGIS Survey123 - Collect and analyze spatial data about community places - Visualize data patterns using heat maps and other analytical tools - Draw conclusions about community identity and important places\nEstimated time of completion: 45 Minutes",
+    "text": "Learning Objectives\nBy the end of this lab, you will be able to: - Design a research project with clear objectives and methodology - Create digital surveys using ArcGIS Survey123 - Collect and analyze spatial data about community places - Visualize data patterns using heat maps and other analytic tools - Draw conclusions about community identity and important places\nEstimated time of completion: 45 Minutes",
     "crumbs": [
       "Home",
       "Lab No 3: Mapping Meaningful Places in Your Community"
@@ -312,7 +312,7 @@
     "href": "Lab_3.html#part-3-collect-data",
     "title": "Lab No 3: Mapping Meaningful Places in Your Community",
     "section": "Part 3: Collect Data",
-    "text": "Part 3: Collect Data\n\nStep 10: Share Your Survey\n\nIn the Survey123 site, click the Collaborate tab\n\nFor “Who can submit to this survey,” check the box Members of my organization (University of St Andrews)\n\nClick Save\nFor “Share this survey,” copy and share the link, or click “Show the QR code” to allow your class to open the survey\n\n\n\n\nStep 11: Gather Survey Responses\n\nHave your classmates fill out and submit the survey. Ask your classmates to fill up your survey, you will need at least 20 replies to get enough data to analyse in the next part.\nMonitor the number of responses to ensure you meet your data collection goal\nRemember to consider data quality and potential bias as responses come in",
+    "text": "Part 3: Collect Data\n\nStep 10: Share Your Survey\n\nIn the Survey123 site, click the Collaborate tab\n\nFor “Who can submit to this survey,” check the box Members of my organization (University of St Andrews)\n\nIf the option to share to Members of my Organization (University of St Andrews), isn’t available due to the University IT restrictions, share your survey to your class by selecting Member of the Following groups and select the 202X SD2005 - From Sustainable Development to Human Security\n\nClick Save\nFor “Share this survey,” copy and share the link, or click “Show the QR code” to allow your classmates to open the survey, they will need to sign in to ArcGIS Online and then reply to your survey.\n\n\n\n\nStep 11: Gather Survey Responses\n\nHave your classmates fill out and submit the survey. Ask your classmates to fill up your survey, you will need at least 20 replies to get enough data to analyse in the next part.\n\nIf you cannot recruit 20 colleagues, you may complete the survey yourself with the necessary responses. Aim for diversity in your answers to ensure a wide range of replies.\n\nMonitor the number of responses to ensure you meet your data collection goal\nRemember to consider data quality and potential bias as responses come in",
     "crumbs": [
       "Home",
       "Lab No 3: Mapping Meaningful Places in Your Community"
