@@ -105,7 +105,9 @@ Expand the **SI_POV_DAY1** tab. At this point you should have a preview of a tab
 
 12. In the **Location Settings**, select **Addresses or place names**. Open the **Advanced location settings** and select **World** in the **Region** box. Now in **Location fields**, make sure **Location information is in one field** is selected. Then in front of **Address or Place**, select the Field **GeoAreaName**, click **Next**.
 
-    > **⚠️ Credit Usage Warning**: **You will use approximately 3 Credits** from your ArcGIS Online Account for this geocoding process. If you see you are using more credits cancel and double check, as you are probably uploading and geocoding the wrong file. **Each student has a limited quota of credits, and the University cannot provide you with more credits if you accidentally use more of the estimated and required credits.**
+    > ::: callout-important
+    > **⚠️ Credit Usage Warning**: **You will use approximately 3 Credits** from your ArcGIS Online Account for this geocoding process. If you see you are using more credits cancel and double check, as you are probably uploading and geocoding the wrong file. **Each student has a limited quota of credits, and the University cannot provide you with more credits if you accidentally use more than the estimated and required credits.**
+    > :::
 
 13. Finally, provide a **title**, **tag**, and **summary** of the feature layer you are creating. Click **Save**.
 
